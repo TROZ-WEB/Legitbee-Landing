@@ -23,13 +23,7 @@ window.onbeforeunload = function () {
 // Render
 export default function Home() {
 	return (
-		<div>
-			<Head>
-				<title>Legitbee</title>
-				<meta name="description" content="Legitbee" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
+		<>
 			<Navbar />
 			<Hero />
 			<Partners />
@@ -42,6 +36,6 @@ export default function Home() {
 			<FAQ />
 			<CallToAction />
 			<Footer />
-		</div>
+		</>
 	);
 }

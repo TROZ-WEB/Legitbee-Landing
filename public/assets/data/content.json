@@ -47,6 +47,54 @@
 			"answer": "Qu'il s'agisse de les aider à liquider vos biens numériques ou à clôturer vos différents comptes numériques, Legitbee facilitera les démarches de vos héritiers dans le cadre d'un mandat successoral conventionnel, par lequel ils nous confieront des missions précises dans le respect de vos volontés et pour le bénéfice de la succession."
 		}
 	],
+	"security": {
+		"title": "Sécurité",
+		"caption": "La sécurité et la protection de vos données sont au coeur de nos priorités. Nous concevons une solution sécurisée respectant les normes européennes en vigueur.",
+		"content": [
+			{
+				"title": "Chiffrement des données",
+				"caption": "L’accès à votre compte est sécurisé par plusieurs mécanismes de protection. Nous protégeons scrupuleusement vos données, que nous chiffrons en transit comme au repos dans nos bases.",
+				"list": [
+					"Toutes vos données personnelles sont stockées après avoir été chiffrées via un chiffrement AES-256 utilisant une clé dérivée unique par utilisateur.",
+					"La transmission des données est assurée uniquement grâce au protocole TLS/SSL.",
+					"Toute transmission entre les clients et les serveurs est chiffrée de bout-en-bout par le protocole HTTPS.",
+					"Notre politique de confidentialité et de traitement des données personnelles est conforme au règlement général sur la protection des données."
+				]
+			},
+			{
+				"title": "Hébergement",
+				"caption": "Legitbee contrôle strictement l’accès à vos données, en ligne comme en interne, afin de vous garantir que vos documents soient protégés contre toute modification. Plus de sûreté, nous effectuons des sauvegardes quotidiennement.",
+				"list": [
+					"Toutes les données sont hébergées en Europe, y compris les sauvegardes.",
+					"L'hébergement est assuré auprès de prestataires certifiés ISO 27001.",
+					"Les environnements de test et de production sont strictement distincts.",
+					"Une authentication des utilisateurs via email et mot de passe est obligatoire (contrôlés par une politique stricte), avec possibilité de double authentification via SMS.",
+					"L'accès aux données en interne est uniquement réservé aux employés dûment autorisés."
+				],
+				"link": {
+					"label": "Politique de confidentialité",
+					"href": "/privacy-policy"
+				}
+			},
+			{
+				"title": "Sécurité physique",
+				"caption": "Legitbee s’engage sur chacun des points qui participent à garantir l'intégrité physique de vos données : employés, sécurité physique, accès aux données, hébergement et réseaux.",
+				"list": [
+					"La protection de l'accès aux locaux de Legitbee est assurée par des badges individuels.",
+					"La surveillance des locaux de Legitbee est garantie 24h/24 par un système d'alarme et de vidéo-surveillance.",
+					"Les visiteurs sont supervisés directement par un membre de Legitbee pendant toute la durée de leur visite."
+				]
+			},
+			{
+				"title": "Vie privée",
+				"caption": "Vous restez souverain de vos données à tout moment.",
+				"list": [
+					"L'intégralité de la solution a été pensée et conçue en priorisant le respect des données utilisateurs.",
+					"Si vous souhaitez arrêter d'utiliser Legitbee, vous pouvez supprimer définitivement l’intégralité de vos données depuis votre profil."
+				]
+			}
+		]
+	},
 	"pricingPhone": {
 		"banner": {
 			"title": "Tarifs",
