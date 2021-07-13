@@ -5,8 +5,13 @@
 // Style
 
 // Render
-export default function () {
+const Template = () => {
   return (
-    
+    <>
+      Template
+    </>
   )
 }
+
+
+export default Template;

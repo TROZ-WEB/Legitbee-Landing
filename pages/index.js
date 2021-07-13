@@ -16,14 +16,14 @@ import CallToAction from '../frames/CallToAction';
 import Footer from '../components/Footer';
 
 // Functions
-window.onbeforeunload = function () {
-	window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+// 	window.scrollTo(0, 0);
+// };
 
 // Render
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Legitbee</title>
 				<meta name="description" content="Legitbee" />
@@ -42,6 +42,6 @@ export default function Home() {
 			<FAQ />
 			<CallToAction />
 			<Footer />
-		</div>
+		</>
 	);
 }
