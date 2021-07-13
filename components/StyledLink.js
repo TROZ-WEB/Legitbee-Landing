@@ -33,6 +33,7 @@ const SLink = styled.a`
 	}
 
 	&.footer {
+		color: ${(props) => props.theme.grey};
 		margin: 1rem 0rem;
 	}
 

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 // Style
 const ListContainer = styled.ul`
 	list-style: none;
+	padding-left: 1rem;
 `;
 
 const ListItem = styled.li`
@@ -14,6 +15,7 @@ const ListItem = styled.li`
 	background-size: 1rem 1rem;
 	background-position: center left;
 	padding-left: 1.75rem;
+	text-align: left;
 `;
 
 // Render

@@ -12,7 +12,7 @@ const Box = styled.div`
 	height: 13rem;
 	border-radius: 1rem;
 	position: relative;
-	padding: 4rem 1rem 1rem 1rem;
+	padding: 4rem 1rem 2rem 1rem;
 	margin-top: 4rem;
 	margin-bottom: 1rem;
 	text-align: center;
@@ -21,6 +21,10 @@ const Box = styled.div`
 
 	@media (max-width: ${(props) => props.theme.lg}) {
 		height: 15rem;
+	}
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		height: auto;
 	}
 `;
 

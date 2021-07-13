@@ -9,17 +9,22 @@ const Box = styled.div`
 	flex-shrink: 0;
 	background-color: white;
 	margin: auto;
-	width: 20rem;
+	width: 100%;
+	max-width: 20rem;
 	height: 22rem;
 	border-radius: 1rem;
 	${boxShadow}
 	position: relative;
-	padding: 2rem;
+	padding: 2rem 1rem;
 	margin-bottom: 2rem;
 	text-align: left;
 	margin-right: 2rem;
 	position: relative;
 	z-index: 50;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		height: auto;
+	}
 `;
 
 const Title = styled.h2`

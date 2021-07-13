@@ -22,6 +22,10 @@ const Box = styled(Row)`
 	@media (max-width: ${(props) => props.theme.md}) {
 		margin: 5rem 0rem 0rem 0rem;
 	}
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		padding: 1rem;
+	}
 `;
 
 const ImgCol = styled(Col)`
@@ -37,6 +41,10 @@ const TextCol = styled(Col)`
 	align-items: flex-start;
 	justify-content: center;
 	padding: ${(props) => (props.inversed ? '0rem 0rem 0rem 4rem' : '0rem 4rem 0rem 0rem')};
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		padding: 1rem;
+	}
 `;
 
 const Image = styled.img`

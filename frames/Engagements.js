@@ -16,7 +16,10 @@ const Image = styled.img`
 	height: 26rem;
 
 	@media (max-width: ${(props) => props.theme.md}) {
-		margin-left: 6rem;
+		margin-left: 11%;
+		height: auto;
+		max-width: 90%;
+		max-height: 26rem;
 	}
 `;
 
@@ -48,7 +51,7 @@ export default function Engagements() {
 										Accompagnement
 									</>
 								}
-								caption="Vous vous sentez perdu dans l’organisation de votre succession ? Pas de panique, nous vous guidons  pas à pas."
+								caption="Vous vous sentez perdu dans l’organisation de votre succession ? Pas de panique, nous vous guidons  pas à pas."
 							/>
 						</Col>
 						<Col xs={12} md={6}>

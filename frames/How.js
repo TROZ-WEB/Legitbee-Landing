@@ -1,6 +1,7 @@
 // Dependencies
 import { useState, useRef } from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 
 if (typeof window === 'undefined') {
 	global.window = {};
@@ -9,6 +10,7 @@ if (typeof window === 'undefined') {
 // Components
 import Title from '../components/Title';
 import NumberBox from '../components/NumberBox';
+import Container from '../components/Container';
 
 // Style
 const BoxContainer = styled.div`
@@ -104,34 +106,53 @@ export default function How() {
 	useEvent('resize', handleResize);
 	useEvent('scroll', handleScroll);
 
+	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
+
 	return (
 		<>
-			<Section ref={section}>
-				<SliderContainer position={position}>
+			{isMobile ? (
+				<Container>
 					<Title>
 						Comment
 						<mark> ça marche </mark>?
 					</Title>
-					<div
-						ref={slider}
-						style={{
-							transform: 'translateX(' + String(Xpos) + 'px)',
-						}}
-					>
-						<BoxContainer>
-							{Content.how.map((item, i) => (
-								<NumberBox
-									key={i}
-									number={i + 1}
-									title={item.title}
-									caption={item.caption}
-								/>
-							))}
-						</BoxContainer>
-						<Rect />
-					</div>
-				</SliderContainer>
-			</Section>
+					{Content.how.map((item, i) => (
+						<NumberBox
+							key={i}
+							number={i + 1}
+							title={item.title}
+							caption={item.caption}
+						/>
+					))}
+				</Container>
+			) : (
+				<Section ref={section}>
+					<SliderContainer position={position}>
+						<Title>
+							Comment
+							<mark> ça marche </mark>?
+						</Title>
+						<div
+							ref={slider}
+							style={{
+								transform: 'translateX(' + String(Xpos) + 'px)',
+							}}
+						>
+							<BoxContainer>
+								{Content.how.map((item, i) => (
+									<NumberBox
+										key={i}
+										number={i + 1}
+										title={item.title}
+										caption={item.caption}
+									/>
+								))}
+							</BoxContainer>
+							<Rect />
+						</div>
+					</SliderContainer>
+				</Section>
+			)}
 		</>
 	);
 }

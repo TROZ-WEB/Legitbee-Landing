@@ -26,13 +26,14 @@ const Image = styled.img`
 // Render
 export default function Partners() {
 	var isTablet = useMediaQuery({ query: '(max-width: 48rem)' });
+	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
 	return (
 		<Container>
 			<CarouselProvider
 				naturalSlideWidth={100}
 				naturalSlideHeight={50}
 				totalSlides={6}
-				visibleSlides={isTablet ? 4 : 6}
+				visibleSlides={isTablet ? (isMobile ? 2 : 4) : 6}
 				step={2}
 				infinite={true}
 				isPlaying={true}

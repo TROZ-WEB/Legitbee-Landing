@@ -13,7 +13,7 @@ import Engagements from '../frames/Engagements';
 import Pricing from '../frames/Pricing';
 import FAQ from '../frames/FAQ';
 import CallToAction from '../frames/CallToAction';
-import Footer from '../frames/Footer';
+import Footer from '../components/Footer';
 
 // Functions
 window.onbeforeunload = function () {

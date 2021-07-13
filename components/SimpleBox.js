@@ -13,9 +13,13 @@ const Box = styled.div`
 	border-radius: 1rem;
 	${boxShadow}
 	position: relative;
-	padding: 2rem;
+	padding: 2rem 1rem;
 	margin-bottom: 2rem;
 	text-align: center;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		height: auto;
+	}
 `;
 
 const Title = styled.h2`

@@ -20,6 +20,11 @@ const LeftCol = styled(Col)`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		text-align: center;
+		align-items: center;
+	}
 `;
 
 const RightCol = styled(Col)`
@@ -44,6 +49,10 @@ const Video = styled.video`
 		top: 22.5%;
 		left: 18.3%;
 	}
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		top: 6.5%;
+	}
 `;
 
 // Render
@@ -52,7 +61,7 @@ export default function CallToAction() {
 		<Background>
 			<Container>
 				<Row>
-					<LeftCol>
+					<LeftCol xs={{ size: 12, order: 2 }} md={{ size: 6, order: 1 }}>
 						<h1>Accédez au service</h1>
 						<p className="my-2">
 							Au cours de votre vie, vous avez accumulé un patrimoine traditionnel et
@@ -61,7 +70,7 @@ export default function CallToAction() {
 						</p>
 						<Button to="/pricing">Testez gratuitement</Button>
 					</LeftCol>
-					<RightCol>
+					<RightCol xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
 						<Image src="/assets/images/screen.png" alt="screen mockup" />
 						<Video autoPlay muted loop>
 							<source src="/assets/images/legitbee-app.mp4" type="video/mp4" />

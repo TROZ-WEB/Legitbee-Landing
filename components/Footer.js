@@ -1,20 +1,19 @@
 // Dependencies
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
-import { Link } from 'next/link';
 
 // Components
-import Container from '../components/Container';
-import StyledLink from '../components/StyledLink';
-import IconLink from '../components/IconLink';
+import Container from './Container';
+import StyledLink from './StyledLink';
+import IconLink from './IconLink';
 
 // SVG
-import Linkedin from '../components/Svg/Linkedin';
-import Facebook from '../components/Svg/Facebook';
-import Instagram from '../components/Svg/Instagram';
-import Twitter from '../components/Svg/Twitter';
-import Email from '../components/Svg/Email';
-import Location from '../components/Svg/Location';
+import Linkedin from './Svg/Linkedin';
+import Facebook from './Svg/Facebook';
+import Instagram from './Svg/Instagram';
+import Twitter from './Svg/Twitter';
+import Email from './Svg/Email';
+import Location from './Svg/Location';
 
 // Style
 const Logo = styled.img`
@@ -29,12 +28,21 @@ const SocialContainer = styled.div`
 	display: flex;
 `;
 
+const StyledCol = styled(Col)`
+	@media (max-width: ${(props) => props.theme.sm}) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 2rem;
+	}
+`;
+
 // Render
 export default function Footer() {
 	return (
 		<Container>
 			<FooterContainer>
-				<Col>
+				<StyledCol xs={12} md={4}>
 					<Logo src="/assets/images/logo.svg" alt="logo" />
 					<SocialContainer>
 						<IconLink href="https://www.linkedin.com/company/legitbee/about/">
@@ -46,14 +54,18 @@ export default function Footer() {
 						<IconLink href="https://www.instagram.com/legitbee_/?hl=fr">
 							<Instagram />
 						</IconLink>
-						<IconLink href="https://twitter.com/Legitbee_Fr">
+						<IconLink href="https://twitter.com/Legitbee_Fr" className="mr-0">
 							<Twitter />
 						</IconLink>
 					</SocialContainer>
-				</Col>
-				<Col>
+				</StyledCol>
+				<StyledCol xs={12} md={4}>
 					<h2>Contact</h2>
-					<IconLink href="mailto:contact@legitbee.com" caption="contact@legitbee.com">
+					<IconLink
+						href="mailto:contact@legitbee.com"
+						caption="contact@legitbee.com"
+						className="mr-0 md-mr-1"
+					>
 						<Email />
 					</IconLink>
 					<IconLink
@@ -67,11 +79,12 @@ export default function Footer() {
 								France
 							</>
 						}
+						className="mr-0 md-mr-1"
 					>
 						<Location />
 					</IconLink>
-				</Col>
-				<Col>
+				</StyledCol>
+				<StyledCol xs={12} md={4}>
 					<h2>Liens</h2>
 					<StyledLink href="/mentions-legales" className="footer">
 						Mentions légales
@@ -88,7 +101,7 @@ export default function Footer() {
 					<StyledLink href="/signaler-deces" className="footer">
 						Signaler un décès
 					</StyledLink>
-				</Col>
+				</StyledCol>
 			</FooterContainer>
 		</Container>
 	);

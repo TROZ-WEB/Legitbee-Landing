@@ -23,6 +23,10 @@ const LeftCol = styled(Col)`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@media (max-width: ${(props) => props.theme.md}) {
+		text-align: center;
+	}
 `;
 
 const RightCol = styled(Col)`

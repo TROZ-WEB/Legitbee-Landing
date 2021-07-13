@@ -44,7 +44,7 @@ const Title = styled.h1`
 export default function Solution() {
 	return (
 		<Container>
-			<Title>
+			<Title className="d-none d-md-block">
 				Préservez <br className="d-block d-lg-none" />
 				<TextLoop mask="true" interval="1500">
 					<h1>
@@ -54,6 +54,9 @@ export default function Solution() {
 						<mark>votre patrimoine pas traditionnel</mark>
 					</h1>
 				</TextLoop>
+			</Title>
+			<Title className="d-block d-md-none">
+				Préservez <mark>votre patrimoine traditionnel</mark>
 			</Title>
 			<ImageBox
 				src="/assets/images/succession-simplifiee.jpg"

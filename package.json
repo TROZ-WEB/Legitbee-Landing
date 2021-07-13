@@ -1,27 +1,27 @@
 {
-  "name": "landing",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "bootstrap": "^5.0.2",
-    "next": "11.0.1",
-    "pure-react-carousel": "^1.27.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-responsive": "^8.2.0",
-    "react-text-loop": "^2.3.0",
-    "reactstrap": "^8.9.0",
-    "styled-components": "^5.3.0"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.13.2",
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
-  }
+	"name": "landing",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"bootstrap": "^5.0.2",
+		"next": "11.0.1",
+		"pure-react-carousel": "^1.27.6",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-responsive": "^8.2.0",
+		"react-text-loop": "^2.3.0",
+		"reactstrap": "^8.9.0",
+		"styled-components": "^5.3.0"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.13.2",
+		"eslint": "7.30.0",
+		"eslint-config-next": "11.0.1"
+	}
 }

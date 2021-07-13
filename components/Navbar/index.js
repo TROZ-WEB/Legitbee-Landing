@@ -15,7 +15,7 @@ import Hamburger from './Hamburger';
 
 // Style
 const NavbarContainer = styled(Nav)`
-	width: 100%;
+	width: 100vw;
 	position: fixed;
 	top: 0rem;
 	left: 0rem;
@@ -29,6 +29,10 @@ const NavbarContainer = styled(Nav)`
 
 	&.navshadow {
 		${boxShadow}
+	}
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		padding: 0rem 2rem;
 	}
 `;
 
@@ -98,7 +102,7 @@ export default function Navbar() {
 					<Button className="secondary mx-2" to="https://app.legitbee.com/auth/register">
 						Souscrire
 					</Button>
-					<Button className="md-mt-1" to="https://app.legitbee.com/auth/login">
+					<Button className="mt-1 lg-mt-0" to="https://app.legitbee.com/auth/login">
 						Se connecter
 					</Button>
 				</LinksContainer>

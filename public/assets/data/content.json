@@ -14,7 +14,7 @@
 		},
 		{
 			"title": "Tout est prêt, ou presque",
-			"caption": "Afin de s'assurer que les informations renseignées soient toujours à jour, nous vous enverrons une notification tous les ans pour les vérifier.       "
+			"caption": "Afin de s'assurer que les informations renseignées soient toujours à jour, nous vous enverrons une notification tous les ans pour les vérifier."
 		},
 		{
 			"title": "Même les meilleurs s'en vont un jour…",
@@ -23,28 +23,115 @@
 	],
 	"faq": [
 		{
-			"question": "Sécurité : comment mes données sont-elles traitées par Legitbee ?",
+			"question": "Sécurité : comment mes données sont-elles traitées par Legitbee ?",
 			"answer": "La confidentialité et la sécurité de vos données sont notre priorité. Legitbee est conçu en privacy by design, conforme au RGPD, et toutes les données que vous nous confiez sont chiffrées de bout en bout. La sécurité informatique de Legitbee est régulièrement auditée par des organismes indépendants et nous nous engageons à respecter la Charte pour un développement éthique du numérique notarial."
 		},
 		{
-			"question": "Mots de passe : Dois-je confier mes mots de passe à Legitbee ?",
+			"question": "Mots de passe : Dois-je confier mes mots de passe à Legitbee ?",
 			"answer": "Nous ne vous demanderons jamais vos mots de passe. Ceux-ci sont personnels et, une fois décédé, personne n'a à se connecter grâce à eux. Comme pour vos comptes bancaires, vos comptes et biens numériques sont clôturés et liquidés lors de la succession au bénéfice de vos héritiers qui peuvent agir en votre nom sans vos mots de passe. Il s'agit d'une sécurité supplémentaire pour vous : les informations renseignées dans Legitbee ne sont exploitables que par vos héritiers et sans vos mots de passe, personne ne peut agir frauduleusement."
 		},
 		{
-			"question": "Déclenchement : Comment Legitbee est-il informé de mon décès ?",
+			"question": "Déclenchement : Comment Legitbee est-il informé de mon décès ?",
 			"answer": "La succession Legitbee n'est déclenchée que lorsque le décès est établi avec certitude. L'information du décès parvient à Legitbee soit par un contact avec un héritier ou le notaire en charge de la succession, soit par l'interrogation régulière du fichier des personnes décédées établi par l’INSEE, soit par l'interrogation du fichier des comptes numériques (Ficonum) auquel Legitbee donne accès aux seuls notaires, sur le modèle du fichier national des comptes bancaires et assimilés (Ficoba)."
 		},
 		{
-			"question": "Notaires : Ont-ils accès au montant des biens numériques que je possède ?",
+			"question": "Notaires : Ont-ils accès au montant des biens numériques que je possède ?",
 			"answer": "Les notaires en charge de la succession pourront interroger le fichier des comptes numériques que nous mettrons à leur disposition. Ils obtiendront ainsi la liste des comptes de biens numériques qui doivent entrer dans les successions. Comme pour le fichier des comptes bancaires, le solde de vos différents comptes ne leur sera pas accessible. Seuls vos héritiers auront accès à cette information et pourront faire procéder à la liquidation de vos comptes."
 		},
 		{
-			"question": "Bénéficiaires : Qui a accès à mes données ?",
+			"question": "Bénéficiaires : Qui a accès à mes données ?",
 			"answer": "Vous avez la possibilité de désigner qui aura accès à vos données et de paramétrer ces droits pour les différents bénéficiaires de vos informations et les différents types de données renseignées dans votre compte Legitbee. Vous pouvez transmettre des informations à des personnes de votre choix en toute confidentialité (assurances vies, messages personnels, fichiers conservés sur les Clouds). L'inventaire de vos biens numériques sera accessible au notaire en charge de la succession, mais par leur solde, connu de vos héritiers seuls ou de votre exécuteur testamentaire ou mandataire à effet posthume, le cas échéant."
 		},
 		{
-			"question": "Comment Legitbee agit en faveur de mes héritiers ?",
+			"question": "Comment Legitbee agit en faveur de mes héritiers ?",
 			"answer": "Qu'il s'agisse de les aider à liquider vos biens numériques ou à clôturer vos différents comptes numériques, Legitbee facilitera les démarches de vos héritiers dans le cadre d'un mandat successoral conventionnel, par lequel ils nous confieront des missions précises dans le respect de vos volontés et pour le bénéfice de la succession."
 		}
-	]
+	],
+	"pricingPhone": {
+		"banner": {
+			"title": "Tarifs",
+			"text": "Testez Legitbee pendant 1 mois, c'est gratuit et sans engagement."
+		}
+	},
+	"pricing": {
+		"list": [
+			{
+				"text": "Volontés sur le devenir des comptes en ligne",
+				"info": "Exprimez vos volontés sur le devenir de vos comptes en ligne (réseaux sociaux, messageries, etc) : décidez de leur suppression et garantissez votre droit à la mort numérique.",
+				"free": true,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Transmission des fichiers clouds",
+				"info": "Vous possédez un grand nombre de fichiers hébérgés sur des solutions clouds (Google Drive, Dropbox, iCloud etc) : garantissez leur transmission à des bénéficiaires choisis.",
+				"free": true,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Biens numériques intégrés à la succession",
+				"info": "Comptes de trading, crowdlending, néo-banques ou encore cryptomonnaies : assurez-vous que ces actifs ne soient pas oubliés lors de la succession.",
+				"free": true,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Messagerie posthume",
+				"info": "Planifiez l'envoi d'un dernier mot ou de pensées bienveillantes pour vos proches qui les découvriront le moment venu.",
+				"free": true,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Coffre-fort numérique posthume",
+				"info": "Stockez des fichiers et informations sous toutes leurs formes dans un coffre-fort numérique sécurisé, et attribuez à chaque répertoire des destinataires qui recevront le contenu le moment venu.",
+				"free": false,
+				"serenity": "10Go",
+				"premium": "100Go"
+			},
+			{
+				"text": "Simplification des démarches pour vos héritiers",
+				"info": "Centralisez toutes vos informations administratives, qui seront ensuite transmises le moment venu aux personnes que vous avez désignées, afin d'alléger et de réduire les coûts des démarches pour vos héritiers.",
+				"free": false,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Transmission de vos souvenirs",
+				"info": "Vos albums photos en ligne, vos recettes de cuisine secrètes, le souvenir d'un moment de vie, l'histoire d'un objet, la mémoire de votre famille : assignez-leur des bénéficiaires qui les recevront le moment venu.",
+				"free": false,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Déclenchement en cas d'incapacité",
+				"info": "Automatisez l'ouverture et les accès à vos informations à vos bénéficiaires désignés en cas de dépendance, d'incapacité temporaire ou définitive.",
+				"free": false,
+				"serenity": true,
+				"premium": true
+			},
+			{
+				"text": "Inventaire de vos actifs diversifiés",
+				"info": "Vos actifs sous toutes leurs formes (investissement immobilier, sociétés, titres, tokens etc) sont recensés avec toutes les informations utiles à la succession : elles seront ensuite transmises aux bénéficiaires designés.",
+				"free": false,
+				"serenity": false,
+				"premium": true
+			},
+			{
+				"text": "Accès notarial lors de la succession",
+				"info": "Si vous le souhaitez, vous pouvez inscrire tout ou partie de vos informations renseignées dans Legitbee dans un fichier central accessible uniquement au notaire en charge de la succession, qui en prendra connaissance uniquement le moment venu.",
+				"free": false,
+				"serenity": false,
+				"premium": true
+			},
+			{
+				"text": "Information bénéficiaires d'assurances vie",
+				"info": "Assurez-vous que cette information ne soit pas perdue : les bénéficiaires de vos assurances vie ou prévoyance seront prévenus directement le moment venu de l'existance d'un contrat à leur nom.",
+				"free": false,
+				"serenity": false,
+				"premium": true
+			}
+		]
+	}
 }

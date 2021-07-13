@@ -25,31 +25,31 @@ export default function Problem() {
 		<Container>
 			<Title>
 				Vous pensez que votre succession sera <br />
-				<mark>simple</mark> et <mark>complète</mark> ?
+				<mark>simple</mark> et <mark>complète</mark> ?
 			</Title>
 			<Row>
-				<StyledCol>
+				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/money.svg"
 						alt="Vos actifs diversifiés"
 						title="Vos actifs diversifiés"
-						caption="Êtes-vous certains que l'intégralité de vos actifs intégreront votre succession ?"
+						caption="Êtes-vous certains que l'intégralité de vos actifs intégreront votre succession ?"
 					/>
 				</StyledCol>
-				<StyledCol>
+				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/memories.svg"
 						alt="Votre héritage numérique"
 						title="Votre héritage numérique"
-						caption="Avez-vous pensé à votre héritage numérique ? Qu'adviendront vos données et documents personnels ?"
+						caption="Avez-vous pensé à votre héritage numérique ? Qu'adviendront vos données et documents personnels ?"
 					/>
 				</StyledCol>
-				<StyledCol>
+				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/infos.svg"
 						alt="Vos informations personnelles"
 						title="Vos informations personnelles"
-						caption="Vos proches auront-ils accès à toutes les informations nécessaires à la gestion de votre succession ?"
+						caption="Vos proches auront-ils accès à toutes les informations nécessaires à la gestion de votre succession ?"
 					/>
 				</StyledCol>
 			</Row>

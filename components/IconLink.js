@@ -38,14 +38,19 @@ const SLink = styled.div`
 			fill: ${(props) => props.theme.secondary};
 		}
 	}
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		flex-direction: column;
+		text-align: center;
+	}
 `;
 
 // Render
 export default function IconLink({ className, href, caption, ...props }) {
 	return (
 		<Link href={href} passHref>
-			<SLink className={className}>
-				<Icon>{props.children}</Icon>
+			<SLink>
+				<Icon className={className}>{props.children}</Icon>
 				{caption}
 			</SLink>
 		</Link>
