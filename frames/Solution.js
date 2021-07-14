@@ -32,12 +32,8 @@ const Line4 = styled.img`
 `;
 
 const Title = styled.h1`
-	margin: 6rem 0rem 5rem 12rem;
-
-	@media (max-width: ${(props) => props.theme.md}) {
-		margin: 6rem 0rem 5rem 0rem;
-		text-align: center;
-	}
+	margin: 6rem 0rem 5rem 0rem;
+	text-align: center;
 `;
 
 // Render
@@ -51,7 +47,13 @@ export default function Solution() {
 						<mark>votre patrimoine traditionnel</mark>
 					</h1>
 					<h1>
-						<mark>votre patrimoine pas traditionnel</mark>
+						<mark>votre patrimoine numérique</mark>
+					</h1>
+					<h1>
+						<mark>vos souvenirs</mark>
+					</h1>
+					<h1>
+						<mark>vos proches</mark>
 					</h1>
 				</TextLoop>
 			</Title>
@@ -69,7 +71,7 @@ export default function Solution() {
 				}
 				caption="Désormais, tous les documents nécessaires à la gestion de votre succession : vos informations administratives et documents importants, vos consignes et instructions sont organisés, sécurisés et transmis rapidement à vos proches."
 			/>
-			<Line1 src="/assets/images/line-1.svg" className="d-none d-lg-block" />
+			<Line1 src="/assets/images/line-1.svg" className="d-none d-xl-block" />
 			<ImageBox
 				inversed="true"
 				src="/assets/images/heritage-numerique.jpg"
@@ -82,7 +84,7 @@ export default function Solution() {
 				}
 				caption="Vos actifs sous toutes leurs formes (biens numériques, patrimoine diversifié, professionnel ou international) sont intégrés facilement à la succession : rien de ce que vous avez constitué n’est laissé de côté !"
 			/>
-			<Line2 src="/assets/images/line-2.svg" className="d-none d-lg-block" />
+			<Line2 src="/assets/images/line-2.svg" className="d-none d-xl-block" />
 			<ImageBox
 				src="/assets/images/demarches-administratives.jpg"
 				alt="démarches administratives"
@@ -94,7 +96,7 @@ export default function Solution() {
 				}
 				caption="La gestion d'une succession est souvent complexe. En organisant et préparant votre succession, vous facilitez les démarches de vos proches et vous leur permettez de se recentrer sur leur deuil."
 			/>
-			<Line3 src="/assets/images/line-3.svg" className="d-none d-lg-block" />
+			<Line3 src="/assets/images/line-3.svg" className="d-none d-xl-block" />
 			<ImageBox
 				inversed="true"
 				src="/assets/images/souvenirs-transmis.jpg"
@@ -107,7 +109,7 @@ export default function Solution() {
 				}
 				caption="Vos proches veulent conserver votre souvenir et celui de votre famille : transmettez-leur tout ce que vous souhaitez leur confier : Photos, vidéos, correspondances, textes, histoires, généalogie… Vous pouvez également préciser vos souhaits quant au devenir de vos comptes en ligne."
 			/>
-			<Line4 src="/assets/images/line-4.svg" className="d-none d-lg-block" />
+			<Line4 src="/assets/images/line-4.svg" className="d-none d-xl-block" />
 		</Container>
 	);
 }

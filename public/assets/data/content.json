@@ -99,7 +99,87 @@
 		"banner": {
 			"title": "Tarifs",
 			"text": "Testez Legitbee pendant 1 mois, c'est gratuit et sans engagement."
-		}
+		},
+		"content": [
+			{
+				"title": "Numérique",
+				"caption": "Transmettez l'intégralité de votre patrimoine numérique ainsi que vos souvenirs et données personnelles.",
+				"monthPrice": "3€/mois",
+				"yearPrice": "ou 30€/an",
+				"list": [
+					{
+						"label": "Volontés sur le devenir des comptes en ligne",
+						"info": "Exprimez vos volontés sur le devenir de vos comptes en ligne (réseaux sociaux, messageries, etc) : décidez de leur suppression et garantissez votre droit à la mort numérique."
+					},
+					{
+						"label": "Transmission des fichiers clouds",
+						"info": "Vous possédez un grand nombre de fichiers hébérgés sur des solutions clouds (Google Drive, Dropbox, iCloud etc) : garantissez leur transmission à des bénéficiaires choisis."
+					},
+					{
+						"label": "Biens numériques intégrés à la succession",
+						"info": "Comptes de trading, crowdlending, néo-banques ou encore cryptomonnaies : assurez-vous que ces actifs ne soient pas oubliés lors de la succession."
+					},
+					{
+						"label": "Messagerie posthume",
+						"info": "Planifiez l'envoi d'un dernier mot ou de pensées bienveillantes pour vos proches qui les découvriront le moment venu."
+					}
+				]
+			},
+			{
+				"title": "Sérénité",
+				"caption": "Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers.",
+				"monthPrice": "6€/mois",
+				"yearPrice": "ou 60€/an",
+				"list": [
+					{
+						"label": "Tous les avantages de l'offre numérique"
+					},
+					{
+						"label": "10 G0 de Coffre-fort numérique posthume",
+						"info": "Stockez des fichiers et informations sous toutes leurs formes dans un coffre-fort numérique sécurisé, et attribuez à chaque répertoire des destinataires qui recevront le contenu le moment venu."
+					},
+					{
+						"label": "Simplification des démarches pour vos héritiers",
+						"info": "Centralisez toutes vos informations administratives, qui seront ensuite transmises le moment venu aux personnes que vous avez désignées, afin d'alléger et de réduire les coûts des démarches pour vos héritiers."
+					},
+					{
+						"label": "Transmission de vos souvenirs",
+						"info": "Vos albums photos en ligne, vos recettes de cuisine secrètes, le souvenir d'un moment de vie, l'histoire d'un objet, la mémoire de votre famille : assignez-leur des bénéficiaires qui les recevront le moment venu."
+					},
+					{
+						"label": "Déclenchement en cas d'incapacité",
+						"info": "Automatisez l'ouverture et les accès à vos informations à vos bénéficiaires désignés en cas de dépendance, d'incapacité temporaire ou définitive."
+					}
+				]
+			},
+			{
+				"title": "Premium",
+				"caption": "Anticipez et assurez la transmission de votre patrimoine diversifié.",
+				"monthPrice": "9€/mois",
+				"yearPrice": "ou 90€/an",
+				"list": [
+					{
+						"label": "Tous les avantages de l'offre sérénité"
+					},
+					{
+						"label": "100Go de coffre-fort numérique",
+						"info": "Stockez des fichiers et informations sous toutes leurs formes dans un coffre-fort numérique sécurisé, et attribuez à chaque répertoire des destinataires qui recevront le contenu le moment venu."
+					},
+					{
+						"label": "Inventaire de vos actifs diversifiés",
+						"info": "Vos actifs sous toutes leurs formes (investissement immobilier, sociétés, titres, tokens etc) sont recensés avec toutes les informations utiles à la succession : elles seront ensuite transmises aux bénéficiaires designés."
+					},
+					{
+						"label": "Accès notarial lors de la succession",
+						"info": "Si vous le souhaitez, vous pouvez inscrire tout ou partie de vos informations renseignées dans Legitbee dans un fichier central accessible uniquement au notaire en charge de la succession, qui en prendra connaissance uniquement le moment venu."
+					},
+					{
+						"label": "Information bénéficiaires d'assurances vie",
+						"info": "Assurez-vous que cette information ne soit pas perdue : les bénéficiaires de vos assurances vie ou prévoyance seront prévenus directement le moment venu de l'existance d'un contrat à leur nom."
+					}
+				]
+			}
+		]
 	},
 	"pricing": {
 		"list": [

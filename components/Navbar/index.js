@@ -85,7 +85,7 @@ export default function Navbar() {
 
 	return (
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
-			<Col xs={6} md={4}>
+			<Col xs={6} md={3}>
 				<NavLink to="/">
 					<Logo src="/assets/images/logo.svg" alt="logo" />
 				</NavLink>
@@ -95,10 +95,10 @@ export default function Navbar() {
 			</Col>
 			<StyledCollapse isOpen={isMenuOpen} navbar>
 				<LinksContainer>
-					<NavLink to="/fonctionnalites">Fonctionnalités</NavLink>
-					<NavLink to="/securite">Sécurité</NavLink>
-					<NavLink to="/a-propos">À propos</NavLink>
-					<NavLink to="/tarifs">Tarifs</NavLink>
+					<NavLink to="/functionalities">Fonctionnalités</NavLink>
+					<NavLink to="/security">Sécurité</NavLink>
+					<NavLink to="/about">À propos</NavLink>
+					<NavLink to="/pricing">Tarifs</NavLink>
 					<Button className="secondary mx-2" to="https://app.legitbee.com/auth/register">
 						Souscrire
 					</Button>

@@ -13,7 +13,7 @@ const ListItem = styled.li`
 	background-image: url(/assets/images/list.svg);
 	background-repeat: no-repeat;
 	background-size: 1rem 1rem;
-	background-position: center left;
+	background-position: 0rem 0.3rem;
 	padding-left: 1.75rem;
 	text-align: left;
 `;

@@ -16,7 +16,8 @@ const ImageContainer = styled(Col)`
 `;
 
 const Image = styled.img`
-	width: 20rem;
+	width: 100%;
+	max-width: 20rem;
 	height: fit-content;
 `;
 

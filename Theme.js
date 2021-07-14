@@ -38,6 +38,8 @@ export const fontSize = (size, base = 16) => `
 
 export const GlobalStyle = createGlobalStyle`
   body{
+    width : 100vw;
+    overflow-x: hidden;
     font-size: 100%;
 
     @media (max-width: 48rem) {

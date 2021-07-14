@@ -1,6 +1,7 @@
 // Dependencies
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
+import { GA_TRACKING_ID } from '../lib/gtag';
 
 class MyDocument extends Document {
 	render() {
@@ -13,8 +14,7 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap"
 						rel="stylesheet"
 					/>
-					<link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
-					<link rel="manifest" href="/manifest.json" />
+					<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 					<link rel="apple-touch-icon" href="/images/legitbee.png" />
 					<meta
 						name="description"
@@ -47,14 +47,14 @@ class MyDocument extends Document {
 					<Script
 						dangerouslySetInnerHTML={{
 							__html: `
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-                            gtag('config', '${GA_TRACKING_ID}', {
-                              page_path: window.location.pathname,
-                            });
-                          `,
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `,
 						}}
 					/>
 				</Head>

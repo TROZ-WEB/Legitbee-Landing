@@ -16,9 +16,9 @@ import CallToAction from '../frames/CallToAction';
 import Footer from '../components/Footer';
 
 // Functions
-window.onbeforeunload = function () {
-	window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+// 	window.scrollTo(0, 0);
+// };
 
 // Render
 export default function Home() {

@@ -5,8 +5,6 @@
 // Style
 
 // Render
-export default function () {
-  return (
-    
-  )
+export default function Template() {
+	return <>Template</>;
 }

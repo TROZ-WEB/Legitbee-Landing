@@ -20,7 +20,8 @@ const BlueContainer = styled(Row)`
 `;
 
 const Image = styled.img`
-	width: 29rem;
+	width: 20vw;
+	max-width: 29rem;
 	position: relative;
 	left: -3rem;
 `;

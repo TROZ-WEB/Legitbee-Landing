@@ -10,11 +10,11 @@ import StyledLink from '../../../components/StyledLink';
 export default function TextBlock({ title, caption, list, link }) {
 	return (
 		<>
-			<h2>{title}</h2>
-			<p>{caption}</p>
+			<h2 className="my-2">{title}</h2>
+			<p className="mb-2">{caption}</p>
 			<List items={list} />
 			{link && (
-				<StyledLink className="arrow" href={link?.href}>
+				<StyledLink className="arrow mt-2" href={link?.href}>
 					{link?.label}
 				</StyledLink>
 			)}

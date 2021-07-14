@@ -19,7 +19,7 @@ const Box = styled(Row)`
 	position: relative;
 	z-index: 50;
 
-	@media (max-width: ${(props) => props.theme.md}) {
+	@media (max-width: ${(props) => props.theme.lg}) {
 		margin: 5rem 0rem 0rem 0rem;
 	}
 
