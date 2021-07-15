@@ -63,15 +63,14 @@ export default function Pricing() {
 				Nos <mark>offres</mark>
 			</Title>
 			<StyledRow>
-				<StyledCol xs={12} md={4}>
+				{/* <StyledCol xs={12} md={4}>
 					<PriceBox
-						monthPrice="3€/mois"
-						yearPrice="ou 30€/an"
+						monthPrice="Gratuit"
 						title="Numérique"
 						caption="Transmettez l'intégralité de votre patrimoine numérique ainsi que vos souvenirs et données personnelles."
 					/>
-				</StyledCol>
-				<StyledCol xs={12} md={4}>
+				</StyledCol> */}
+				<StyledCol xs={12} md={6}>
 					<PriceBox
 						monthPrice="6€/mois"
 						yearPrice="ou 60€/an"
@@ -79,7 +78,7 @@ export default function Pricing() {
 						caption="Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers."
 					/>
 				</StyledCol>
-				<StyledCol xs={12} md={4}>
+				<StyledCol xs={12} md={6}>
 					<PriceBox
 						monthPrice="9€/mois"
 						yearPrice="ou 90€/an"

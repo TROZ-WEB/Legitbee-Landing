@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useState } from 'react';
+import useEvent from '../functions/useEvent';
 
 export default function useRect(ref) {
 	const [rect, setRect] = useState(getRect(ref ? ref.current : null));
@@ -7,8 +8,6 @@ export default function useRect(ref) {
 		if (!ref.current) {
 			return;
 		}
-
-		// Update client rect
 		setRect(getRect(ref.current));
 	}, [ref]);
 
@@ -19,28 +18,9 @@ export default function useRect(ref) {
 		}
 
 		handleResize();
-
-		if (typeof ResizeObserver === 'function') {
-			let resizeObserver = new ResizeObserver(() => handleResize());
-			resizeObserver.observe(element);
-
-			return () => {
-				if (!resizeObserver) {
-					return;
-				}
-
-				resizeObserver.disconnect();
-				resizeObserver = null;
-			};
-		} else {
-			// Browser support, remove freely
-			window.addEventListener('resize', handleResize);
-
-			return () => {
-				window.removeEventListener('resize', handleResize);
-			};
-		}
 	}, [ref, handleResize]);
+
+	useEvent('resize', handleResize);
 
 	return rect;
 }
@@ -57,5 +37,16 @@ function getRect(element) {
 		};
 	}
 
-	return element.getBoundingClientRect();
+	var rect = element.getBoundingClientRect();
+	var scrollLeft = window.scrollX;
+	var scrollTop = window.scrollY;
+
+	var top = rect.top + scrollTop;
+	var bottom = rect.bottom + scrollTop;
+	var left = rect.left + scrollLeft;
+	var right = rect.right + scrollLeft;
+	var width = rect.width;
+	var height = rect.height;
+
+	return { top, bottom, left, right, width, height };
 }

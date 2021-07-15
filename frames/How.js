@@ -77,13 +77,11 @@ export default function How() {
 			let window_top = window.scrollY;
 			let window_bottom = window_top + window.innerHeight;
 
+			console.log('sectionRect.top :', sectionRect.top);
+
 			let offset = window_bottom - sliderRect.top;
 			let scroll_spead = (offset / 100) * 75 - 900; // (/ 100) * 75 to have a good horizontal scrolling speed, -900 for good initial placement
 			setXpos(-scroll_spead);
-
-			// let slider_bottom_space = (windowHeight - sliderRect.height) / 2;
-
-			// console.log(sliderRect.bottom + slider_bottom_space);
 
 			if (sliderRect.top !== 0) {
 				// when windows arrive to the bottom of the container of the scrolling section, we make the slider absolute with bottom = 0

@@ -1,40 +1,37 @@
 // Dependencies
-import styled from 'styled-components';
-import { Row, Col } from 'reactstrap';
-import { boxShadow } from '../../Theme';
+import { useMediaQuery } from 'react-responsive';
 
 // Components
 import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
+import TablePhone from './components/phone/TablePhone';
+import Table from './components/pc/Table';
 
 // Style
-const Image = styled.img`
-	width: 15rem;
-	border-radius: 2rem;
-	${boxShadow}
-`;
-
-const StyledCol = styled(Col)`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 2rem 0rem;
-`;
 
 // Render
 export default function About() {
+	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
 	return (
 		<>
 			<Navbar />
 			<Container>
-				<Banner>
-					<h1 className="mb-2">Tarifs</h1>
-					<p className="mb-2">
-						Testez Legitbee pendant 1 mois, c&apos;est gratuit et sans engagement.
-					</p>
-				</Banner>
+				{isMobile ? (
+					<>
+						<Banner>
+							<h1 className="mb-2">Tarifs</h1>
+							<p className="mb-2">
+								Testez Legitbee pendant 1 mois, c&apos;est gratuit et sans
+								engagement.
+							</p>
+						</Banner>
+						<TablePhone />
+					</>
+				) : (
+					<Table />
+				)}
 			</Container>
 			<Footer />
 		</>

@@ -104,8 +104,8 @@
 			{
 				"title": "Numérique",
 				"caption": "Transmettez l'intégralité de votre patrimoine numérique ainsi que vos souvenirs et données personnelles.",
-				"monthPrice": "3€/mois",
-				"yearPrice": "ou 30€/an",
+				"monthPrice": "Gratuit",
+				"link": "https://app.legitbee.com/auth/register?plan=basic",
 				"list": [
 					{
 						"label": "Volontés sur le devenir des comptes en ligne",
@@ -130,6 +130,7 @@
 				"caption": "Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers.",
 				"monthPrice": "6€/mois",
 				"yearPrice": "ou 60€/an",
+				"link": "https://app.legitbee.com/auth/register?plan=basic",
 				"list": [
 					{
 						"label": "Tous les avantages de l'offre numérique"
@@ -157,6 +158,7 @@
 				"caption": "Anticipez et assurez la transmission de votre patrimoine diversifié.",
 				"monthPrice": "9€/mois",
 				"yearPrice": "ou 90€/an",
+				"link": "https://app.legitbee.com/auth/register?plan=premium",
 				"list": [
 					{
 						"label": "Tous les avantages de l'offre sérénité"
