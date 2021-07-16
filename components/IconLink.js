@@ -6,7 +6,7 @@ import { boxShadow } from '../Theme';
 // Components
 
 // Style
-const Icon = styled.a`
+const Icon = styled.div`
 	width: 2.5rem;
 	height: 2.5rem;
 	display: flex;
@@ -23,12 +23,14 @@ const Icon = styled.a`
 	}
 `;
 
-const SLink = styled.div`
+const SLink = styled.a`
 	margin-top: 1.5rem;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	transition: all 0.1s;
+	color: ${(props) => props.theme.grey};
+	text-decoration: none;
 
 	&:hover,
 	&:focus {
@@ -46,10 +48,10 @@ const SLink = styled.div`
 `;
 
 // Render
-export default function IconLink({ className, href, caption, ...props }) {
+export default function IconLink({ className, href, caption, blank, ...props }) {
 	return (
 		<Link href={href} passHref>
-			<SLink>
+			<SLink target={blank && '_blank'}>
 				<Icon className={className}>{props.children}</Icon>
 				{caption}
 			</SLink>

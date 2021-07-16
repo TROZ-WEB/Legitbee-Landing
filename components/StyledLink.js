@@ -13,6 +13,12 @@ const SLink = styled.a`
 	display: block;
 	position: relative;
 	width: fit-content;
+	display: inline;
+
+	&:hover,
+	&:focus {
+		color: ${(props) => props.theme.secondary};
+	}
 
 	&.arrow::after {
 		content: '▶';
@@ -35,6 +41,7 @@ const SLink = styled.a`
 	&.footer {
 		color: ${(props) => props.theme.grey};
 		margin: 1rem 0rem;
+		display: block;
 	}
 
 	&.footer:hover {
@@ -43,10 +50,12 @@ const SLink = styled.a`
 `;
 
 // Render
-export default function StyledLink({ className, href, ...props }) {
+export default function StyledLink({ className, href, blank, ...props }) {
 	return (
 		<Link href={href} passHref>
-			<SLink className={className}>{props.children}</SLink>
+			<SLink target={blank && '_blank'} className={className}>
+				{props.children}
+			</SLink>
 		</Link>
 	);
 }

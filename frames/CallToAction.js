@@ -68,7 +68,9 @@ export default function CallToAction() {
 							numérique précieux. Ne le perdez plus, transmettez-le facilement grâce à
 							Legitbee.
 						</p>
-						<Button to="/pricing">Testez gratuitement</Button>
+						<Button to="/pricing" className="big">
+							Testez gratuitement
+						</Button>
 					</LeftCol>
 					<RightCol xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
 						<Image src="/assets/images/screen.png" alt="screen mockup" />

@@ -47,7 +47,6 @@ const Answer = styled(Collapse)`
 	border-radius: 0rem 0rem 2rem 2rem;
 	position: relative;
 	top: -2rem;
-	padding: 2rem 2rem 1rem 2rem;
 `;
 
 // Render
@@ -60,7 +59,7 @@ export default function FAQCollapse({ question, answer, questionId, openId, hand
 				<h2>{question}</h2>
 			</Button>
 			<Answer isOpen={isOpen}>
-				<p>{answer}</p>
+				<p className="m-2 mb-1">{answer}</p>
 			</Answer>
 		</div>
 	);

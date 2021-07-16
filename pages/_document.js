@@ -14,7 +14,7 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap"
 						rel="stylesheet"
 					/>
-					<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+					<link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav.png" />
 					<link rel="apple-touch-icon" href="/images/legitbee.png" />
 					<meta
 						name="description"

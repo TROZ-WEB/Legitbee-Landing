@@ -65,7 +65,9 @@ export default function Hero() {
 							Tout est organisé, sécurisé et transmit le moment venu aux bénéficiaires
 							de votre choix.
 						</p>
-						<Button>Préparer ma succession</Button>
+						<Button to="https://app.legitbee.com/auth/login" className="big">
+							Préparer ma succession
+						</Button>
 					</TextContainer>
 				</LeftCol>
 				<RightCol

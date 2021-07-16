@@ -131,7 +131,7 @@ export default function Table() {
 			</StyledUl> */}
 			<StyledUl highlight>
 				<StyledLi>
-					<Price monthPrice="6€/mois" yearPrice="ou 60€/an" />
+					<Price monthPrice="3€/mois" yearPrice="ou 30€/an" />
 					<h2>Sérénité</h2>
 					<p className="text-center">
 						Transmettez votre patrimoine numérique, vos souvenirs et simplifiez les
@@ -151,7 +151,7 @@ export default function Table() {
 					<h2>3€/mois</h2>
 					<p className="text">ou 30€/an</p>
 					<br />
-					<Button href="https://app.legitbee.com/auth/register?plan=basic">
+					<Button to="https://app.legitbee.com/auth/register?plan=basic">
 						Découvrir
 					</Button>
 					<p>Un mois d&apos;essai</p>
@@ -178,7 +178,7 @@ export default function Table() {
 					<h2>9€/mois</h2>
 					<p className="text">ou 90€/an</p>
 					<br />
-					<Button href="https://app.legitbee.com/auth/register?plan=premium">
+					<Button to="https://app.legitbee.com/auth/register?plan=premium">
 						Découvrir
 					</Button>
 					<p>Un mois d&apos;essai</p>

@@ -72,8 +72,8 @@ export default function Pricing() {
 				</StyledCol> */}
 				<StyledCol xs={12} md={6}>
 					<PriceBox
-						monthPrice="6€/mois"
-						yearPrice="ou 60€/an"
+						monthPrice="3€/mois"
+						yearPrice="ou 30€/an"
 						title="Sérénité"
 						caption="Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers."
 					/>

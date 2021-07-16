@@ -38,7 +38,7 @@ export default function PriceBox({ monthPrice, yearPrice, title, caption, list, 
 			</Title>
 			<p className="mb-2">{caption}</p>
 			<List list={list} />
-			<Button href={link}>Découvrir</Button>
+			<Button to={link}>Découvrir</Button>
 		</Box>
 	);
 }

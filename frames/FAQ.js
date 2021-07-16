@@ -54,7 +54,10 @@ export default function FAQ() {
 						/>
 					))}
 					<div className="d-flex justify-content-center d-lg-block">
-						<StyledLink href="/faq" className="arrow mt-1 ml-lg-05">
+						<StyledLink
+							href="https://help.legitbee.com/fr/"
+							className="arrow mt-1 ml-lg-05"
+						>
 							Accéder à la FAQ complète
 						</StyledLink>
 					</div>

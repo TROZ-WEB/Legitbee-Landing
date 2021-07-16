@@ -45,16 +45,16 @@ export default function Footer() {
 				<StyledCol xs={12} md={4}>
 					<Logo src="/assets/images/logo.svg" alt="logo" />
 					<SocialContainer>
-						<IconLink href="https://www.linkedin.com/company/legitbee/about/">
+						<IconLink href="https://www.linkedin.com/company/legitbee/about/" blank>
 							<Linkedin />
 						</IconLink>
-						<IconLink href="https://www.facebook.com/LegitbeeFrance">
+						<IconLink href="https://www.facebook.com/LegitbeeFrance" blank>
 							<Facebook />
 						</IconLink>
-						<IconLink href="https://www.instagram.com/legitbee_/?hl=fr">
+						<IconLink href="https://www.instagram.com/legitbee_/?hl=fr" blank>
 							<Instagram />
 						</IconLink>
-						<IconLink href="https://twitter.com/Legitbee_Fr" className="mr-0">
+						<IconLink href="https://twitter.com/Legitbee_Fr" className="mr-0" blank>
 							<Twitter />
 						</IconLink>
 					</SocialContainer>
@@ -65,6 +65,7 @@ export default function Footer() {
 						href="mailto:contact@legitbee.com"
 						caption="contact@legitbee.com"
 						className="mr-0 md-mr-1"
+						blank
 					>
 						<Email />
 					</IconLink>
@@ -80,25 +81,26 @@ export default function Footer() {
 							</>
 						}
 						className="mr-0 md-mr-1"
+						blank
 					>
 						<Location />
 					</IconLink>
 				</StyledCol>
 				<StyledCol xs={12} md={4}>
 					<h2>Liens</h2>
-					<StyledLink href="/mentions-legales" className="footer">
+					<StyledLink href="/legal-notices" className="footer">
 						Mentions légales
 					</StyledLink>
-					<StyledLink href="/assets/images/privacy-policy.pdf" className="footer">
+					<StyledLink href="/assets/images/footer/privacy-policy.pdf" className="footer">
 						Politique de confidentialité
 					</StyledLink>
-					<StyledLink href="/assets/images/CGS.pdf" className="footer">
+					<StyledLink href="/assets/images/footer/CGS.pdf" className="footer">
 						Conditions générales de service
 					</StyledLink>
-					<StyledLink href="https://legitbee-ficonum.web.app/" className="footer">
+					<StyledLink href="https://legitbee-ficonum.web.app/" blank className="footer">
 						Pour les notaires
 					</StyledLink>
-					<StyledLink href="/signaler-deces" className="footer">
+					<StyledLink href="/report-death" className="footer">
 						Signaler un décès
 					</StyledLink>
 				</StyledCol>

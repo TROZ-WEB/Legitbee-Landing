@@ -41,6 +41,10 @@ const Btn = styled.button`
 		display: flex;
 		align-items: center;
 	}
+
+	&.big {
+		padding: 0.5rem 1.5rem;
+	}
 `;
 
 // Render

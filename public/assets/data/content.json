@@ -73,7 +73,7 @@
 				],
 				"link": {
 					"label": "Politique de confidentialité",
-					"href": "/privacy-policy"
+					"href": "/assets/images/footer/privacy-policy.pdf"
 				}
 			},
 			{
@@ -128,8 +128,8 @@
 			{
 				"title": "Sérénité",
 				"caption": "Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers.",
-				"monthPrice": "6€/mois",
-				"yearPrice": "ou 60€/an",
+				"monthPrice": "3€/mois",
+				"yearPrice": "ou 30€/an",
 				"link": "https://app.legitbee.com/auth/register?plan=basic",
 				"list": [
 					{
