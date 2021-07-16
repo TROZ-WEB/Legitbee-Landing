@@ -64,7 +64,7 @@ const StyledCollapse = styled(Collapse)`
 `;
 
 // Render
-export default function Navbar() {
+export default function Navbar({ active }) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [showShadow, setShowShadow] = useState(false);
 
@@ -95,10 +95,18 @@ export default function Navbar() {
 			</Col>
 			<StyledCollapse isOpen={isMenuOpen} navbar>
 				<LinksContainer>
-					<NavLink to="/functionalities">Fonctionnalités</NavLink>
-					<NavLink to="/security">Sécurité</NavLink>
-					<NavLink to="/about">À propos</NavLink>
-					<NavLink to="/pricing">Tarifs</NavLink>
+					<NavLink to="/features" active={active === 'features'}>
+						Fonctionnalités
+					</NavLink>
+					<NavLink to="/security" active={active === 'security'}>
+						Sécurité
+					</NavLink>
+					<NavLink to="/about" active={active === 'about'}>
+						À propos
+					</NavLink>
+					<NavLink to="/pricing" active={active === 'pricing'}>
+						Tarifs
+					</NavLink>
 					<Button className="secondary mx-2" to="https://app.legitbee.com/auth/register">
 						Souscrire
 					</Button>

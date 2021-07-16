@@ -27,10 +27,10 @@ const StyledCol = styled(Col)`
 import Content from '../../public/assets/data/content.json';
 
 // Render
-export default function Functionalities() {
+export default function features() {
 	return (
 		<>
-			<Navbar />
+			<Navbar active="security" />
 			<Container>
 				<Banner>
 					<h1 className="mb-2">Sécurité</h1>

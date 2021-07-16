@@ -13,6 +13,7 @@ const BlueContainer = styled(Row)`
 	border-radius: 2rem;
 	padding: 3rem 5rem;
 	max-width: 50rem;
+	margin-top: 2rem;
 
 	@media (max-width: ${(props) => props.theme.sm}) {
 		padding: 1rem;

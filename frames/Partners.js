@@ -21,6 +21,13 @@ const Image = styled.img`
 	width: 100%;
 	padding: 0rem 3rem;
 	align-self: center;
+
+	filter: grayscale(1) opacity(50%);
+	-webkit-filter: grayscale(1) opacity(50%);
+`;
+
+const Title = styled.h2`
+	/* color: #959595; */
 `;
 
 // Render
@@ -40,10 +47,7 @@ export default function Partners() {
 				interval={3000}
 			>
 				<div>
-					<h2>
-						Ils nous font
-						<mark> confiance</mark>
-					</h2>
+					<Title>Ils nous font confiance</Title>
 					<div>
 						<Slider>
 							<StyledSlide index={0}>
@@ -56,21 +60,21 @@ export default function Partners() {
 								/>
 							</StyledSlide>
 							<StyledSlide index={2}>
-								<Image src="/assets/images/partners/hodefi.png" alt="hodefi" />
+								<Image src="/assets/images/partners/nataxis.png" alt="nataxis" />
 							</StyledSlide>
 							<StyledSlide index={3}>
 								<Image
-									src="/assets/images/partners/le-village.png"
-									alt="le-village"
+									src="/assets/images/partners/notaires-pdc.png"
+									alt="notaires-pdc"
 								/>
 							</StyledSlide>
 							<StyledSlide index={4}>
-								<Image src="/assets/images/partners/nataxis.png" alt="nataxis" />
+								<Image src="/assets/images/partners/hodefi.png" alt="hodefi" />
 							</StyledSlide>
 							<StyledSlide index={5}>
 								<Image
-									src="/assets/images/partners/notaires-pdc.png"
-									alt="notaires-pdc"
+									src="/assets/images/partners/le-village.png"
+									alt="le-village"
 								/>
 							</StyledSlide>
 						</Slider>

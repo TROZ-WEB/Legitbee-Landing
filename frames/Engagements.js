@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 // Components
 import Container from '../components/Container';
-import Title from '../components/Title';
 import SimpleBox from '../components/SimpleBox';
 
 // Style
@@ -23,13 +22,23 @@ const Image = styled.img`
 	}
 `;
 
+const StyledTitle = styled.h1`
+	text-align: center;
+	margin: 0rem 0rem 5rem 0rem;
+	background-color: white;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		margin: 4rem 0rem 4rem 0rem;
+	}
+`;
+
 // Render
 export default function Engagements() {
 	return (
 		<Container>
-			<Title>
+			<StyledTitle>
 				Legitbee <mark>s&apos;engage</mark>
-			</Title>
+			</StyledTitle>
 			<Row>
 				<Col xs={12} lg={5} className="text-center">
 					<Image

@@ -91,10 +91,10 @@ export default function Footer() {
 					<StyledLink href="/legal-notices" className="footer">
 						Mentions légales
 					</StyledLink>
-					<StyledLink href="/assets/images/footer/privacy-policy.pdf" className="footer">
+					<StyledLink href="/privacy-policy.pdf" className="footer">
 						Politique de confidentialité
 					</StyledLink>
-					<StyledLink href="/assets/images/footer/CGS.pdf" className="footer">
+					<StyledLink href="/CGS.pdf" className="footer">
 						Conditions générales de service
 					</StyledLink>
 					<StyledLink href="https://legitbee-ficonum.web.app/" blank className="footer">

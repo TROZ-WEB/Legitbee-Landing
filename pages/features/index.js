@@ -5,7 +5,6 @@ import { boxShadow } from '../../Theme';
 
 // Components
 import Navbar from '../../components/Navbar';
-import Title from '../../components/Title';
 import List from '../../components/List';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
@@ -26,10 +25,10 @@ const StyledCol = styled(Col)`
 `;
 
 // Render
-export default function Functionalities() {
+export default function Features() {
 	return (
 		<>
-			<Navbar />
+			<Navbar active="features" />
 			<Container>
 				<Banner>
 					<h1 className="mb-2">
@@ -48,7 +47,7 @@ export default function Functionalities() {
 				<Row>
 					<Col xs={12} md={6}>
 						<Image
-							src="/assets/images/functionnalities/espace-administratif.png"
+							src="/assets/images/features/espace-administratif.png"
 							alt="Espace administratif"
 						/>
 					</Col>
@@ -81,17 +80,14 @@ export default function Functionalities() {
 						/>
 					</StyledCol>
 					<Col xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
-						<Image
-							src="/assets/images/functionnalities/destinataire.png"
-							alt="Destinataire"
-						/>
+						<Image src="/assets/images/features/destinataire.png" alt="Destinataire" />
 					</Col>
 				</Row>
 
 				<Row>
 					<Col xs={12} md={6}>
 						<Image
-							src="/assets/images/functionnalities/patrimoine-classique.png"
+							src="/assets/images/features/patrimoine-classique.png"
 							alt="Patrimoine classique"
 						/>
 					</Col>

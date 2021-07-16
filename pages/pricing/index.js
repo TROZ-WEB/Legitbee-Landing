@@ -16,7 +16,7 @@ export default function About() {
 	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
 	return (
 		<>
-			<Navbar />
+			<Navbar active="pricing" />
 			<Container>
 				{isMobile ? (
 					<>

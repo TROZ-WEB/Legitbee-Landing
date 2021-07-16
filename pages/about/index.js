@@ -27,7 +27,7 @@ const StyledCol = styled(Col)`
 export default function About() {
 	return (
 		<>
-			<Navbar />
+			<Navbar active="about" />
 			<Container>
 				<Banner>
 					<h1 className="mb-2">À propos</h1>

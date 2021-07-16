@@ -13,13 +13,15 @@ const NavbarLink = styled.a`
 	&:hover {
 		color: ${(props) => props.theme.secondary};
 	}
+
+	${(props) => props.active && `color : ${props.theme.secondary}`}
 `;
 
 // Render
-export default function NavLink({ to, ...props }) {
+export default function NavLink({ to, active, ...props }) {
 	return (
 		<Link href={to} passHref>
-			<NavbarLink>{props.children}</NavbarLink>
+			<NavbarLink active={active}>{props.children}</NavbarLink>
 		</Link>
 	);
 }

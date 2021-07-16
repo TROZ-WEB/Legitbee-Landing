@@ -38,13 +38,14 @@ class MyDocument extends Document {
 					/>
 					<meta name="theme-color" content="#004080" />
 
-					<Script src="/assets/js/hotjar.js"></Script>
-					<Script src="/assets/js/google-tag-manager.js"></Script>
-					<Script
+					<script type="text/javascript" src="/assets/js/hotjar.js"></script>
+					<script type="text/javascript" src="/assets/js/google-tag-manager.js"></script>
+					<script
 						async
+						type="text/javascript"
 						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-					/>
-					<Script
+					></script>
+					<script
 						dangerouslySetInnerHTML={{
 							__html: `
                 window.dataLayer = window.dataLayer || [];
@@ -61,7 +62,7 @@ class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
-					<Script src="/assets/js/axeptio.js"></Script>
+					<script type="text/javascript" src="/assets/js/axeptio.js"></script>
 				</body>
 			</Html>
 		);
