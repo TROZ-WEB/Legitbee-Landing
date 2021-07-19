@@ -56,7 +56,7 @@ export default function ImageBox({ src, alt, title, caption, inversed }) {
 	return (
 		<Box inversed={inversed}>
 			<TextCol md={{ size: 9, order: inversed && 2 }} inversed={inversed}>
-				<h2>{title}</h2>
+				<h2 className="mb-1">{title}</h2>
 				<p>{caption}</p>
 			</TextCol>
 			<ImgCol xs={{ size: 12, order: 1 }} md={{ size: 3, order: inversed && 1 }}>

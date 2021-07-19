@@ -37,16 +37,6 @@ export const fontSize = (size, base = 16) => `
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  body{
-    width : 100vw;
-    overflow-x: hidden;
-    font-size: 100%;
-
-    @media (max-width: 48rem) {
-      font-size : 80%
-    }
-  }
-
   * {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: -0.002rem;
@@ -54,6 +44,20 @@ export const GlobalStyle = createGlobalStyle`
     color : #57687A;
     margin : 0;
     padding : 0;
+  }
+
+  body, html{
+    width : 100vw;
+    overflow-x: hidden;
+    font-size: 100%;
+
+    @media (min-width: 112.5rem) {
+      font-size : 110%
+    }
+
+    @media (max-width: 48rem) {
+      font-size : 80%
+    }
   }
 
   h1 {

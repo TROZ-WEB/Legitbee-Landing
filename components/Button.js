@@ -10,7 +10,7 @@ const Btn = styled.button`
 	border: 0.125rem solid ${(props) => props.theme.primary};
 	color: white;
 	border-radius: 10rem;
-	padding: 0.25rem 1rem;
+	padding: 0.5rem 1.5rem;
 	text-decoration: none;
 	transition: all 0.1s;
 	width: fit-content;
@@ -40,10 +40,6 @@ const Btn = styled.button`
 		padding: 0rem;
 		display: flex;
 		align-items: center;
-	}
-
-	&.big {
-		padding: 0.5rem 1.5rem;
 	}
 `;
 

@@ -26,6 +26,9 @@ const LeftCol = styled(Col)`
 
 	@media (max-width: ${(props) => props.theme.md}) {
 		text-align: center;
+		display: block;
+		margin-bottom: 4rem;
+		min-height: auto;
 	}
 `;
 

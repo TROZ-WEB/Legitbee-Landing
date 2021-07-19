@@ -9,11 +9,11 @@ const Button = styled.button`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid ${(props) => props.theme.primary};
+	border: 0.125rem solid ${(props) => props.theme.primary};
 	color: ${(props) => props.theme.primary};
-	width: 20px;
-	height: 20px;
-	border-radius: 50px;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 4rem;
 	cursor: pointer;
 	top: 50%;
 	transform: translateY(-50%);
@@ -28,18 +28,18 @@ const StyledTooltip = styled(Tooltip)`
 	}
 
 	.tooltip-inner {
-		margin-left: 5px;
+		margin-left: 0.313rem;
 		background-color: ${(props) => props.theme.primary};
 		color: white;
-		box-shadow: 0 3px 14px rgba(102, 108, 117, 0.18);
-		max-width: 300px;
+		box-shadow: 0 0.188rem 0.875rem rgba(102, 108, 117, 0.18);
+		max-width: 18.75rem;
 		text-align: left;
 		padding: 1rem;
 	}
 
 	.arrow::before {
 		border-right-color: ${(props) => props.theme.primary} !important;
-		box-shadow: 0 3px 14px rgba(102, 108, 117, 0.18);
+		box-shadow: 0 0.188rem 0.875rem rgba(102, 108, 117, 0.18);
 	}
 `;
 

@@ -38,7 +38,7 @@ const SliderContainer = styled.div`
 `;
 
 const Rect = styled.div`
-	border: 2px solid ${(props) => props.theme.secondary};
+	border: 0.125rem solid ${(props) => props.theme.secondary};
 	margin: 0rem -3rem;
 	border-radius: 2rem;
 	width: 114rem;

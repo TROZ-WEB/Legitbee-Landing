@@ -3,6 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
+import { fontSize } from '../Theme';
 
 // Components
 import Container from '../components/Container';
@@ -27,7 +28,8 @@ const Image = styled.img`
 `;
 
 const Title = styled.h2`
-	/* color: #959595; */
+	color: #959595;
+	${fontSize(18)}
 `;
 
 // Render

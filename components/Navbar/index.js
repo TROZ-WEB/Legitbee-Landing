@@ -54,9 +54,8 @@ const Logo = styled.img`
 const StyledCollapse = styled(Collapse)`
 	@media (max-width: ${(props) => props.theme.md}) {
 		width: 100vw;
-		position: absolute;
-		top: 60px;
-		left: 0px;
+		position: 3.75rem;
+		left: 0rem;
 		padding: 2rem;
 		background-color: white;
 		${boxShadow}

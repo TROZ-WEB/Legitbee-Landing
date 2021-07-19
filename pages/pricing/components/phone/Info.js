@@ -8,16 +8,16 @@ const Button = styled.button`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid ${(props) => props.theme.primary};
+	border: 0.125rem solid ${(props) => props.theme.primary};
 	color: ${(props) => props.theme.primary};
-	width: 20px;
-	height: 20px;
-	border-radius: 50px;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 4rem;
 	cursor: pointer;
 	top: 0rem;
 	display: inline-flex;
 	position: absolute;
-	right: 0px;
+	right: 0rem;
 `;
 
 // Render

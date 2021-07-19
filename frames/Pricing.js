@@ -26,7 +26,7 @@ const StyledRow = styled(Row)`
 `;
 
 const Rect = styled.div`
-	border: 2px solid ${(props) => props.theme.secondary};
+	border: 0.125rem solid ${(props) => props.theme.secondary};
 	border-radius: 2rem;
 	width: 100%;
 	height: 12rem;
@@ -36,7 +36,7 @@ const Rect = styled.div`
 	@media (max-width: ${(props) => props.theme.sm}) {
 		position: relative;
 		height: auto;
-		border: 0px;
+		border: 0rem;
 		bottom: auto;
 	}
 `;

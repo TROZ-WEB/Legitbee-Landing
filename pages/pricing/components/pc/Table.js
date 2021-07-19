@@ -12,8 +12,8 @@ const Checkmark = styled.img`
 `;
 
 const Container = styled.div`
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.1);
 	border-radius: 1.25rem;
 	display: flex;
 	flex-wrap: nowrap;
@@ -24,25 +24,25 @@ const Container = styled.div`
 const StyledUl = styled.ul`
 	background-color: ${(props) => props.theme.lightPrimary};
 	display: inline-block;
-	padding: 0px;
-	margin: 0px;
+	padding: 0rem;
+	margin: 0rem;
 	flex-shrink: 1;
 	width: 60%;
 
 	li:first-child {
-		min-height: 220px;
+		min-height: 13.75rem;
 		padding-top: 3rem;
 	}
 
 	li:last-child {
-		min-height: 180px;
-		border-bottom: 0px;
+		min-height: 11.25rem;
+		border-bottom: 0rem;
 	}
 
 	${(props) =>
 		props.white &&
 		`background-color: white;
-		border-radius: 1.25rem 0px 0px 1.25rem;
+		border-radius: 1.25rem 0rem 0rem 1.25rem;
 		text-align: left;
 		width: 100%;
 
@@ -56,10 +56,10 @@ const StyledUl = styled.ul`
 
 	${(props) =>
 		props.highlight &&
-		`-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		`-webkit-box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.1);
 		border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
-		margin: -1.5rem 0px;
+		margin: -1.5rem 0rem;
 		padding: 1.5rem 0rem;
 		position: relative;
 		z-index: 10;
@@ -72,7 +72,7 @@ const StyledUl = styled.ul`
 const StyledLi = styled.li`
 	list-style: none;
 	height: 2.5rem;
-	border-bottom: 2px solid #eeeeee;
+	border-bottom: 0.125rem solid #eeeeee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
