@@ -41,10 +41,6 @@
 		{
 			"question": "Bénéficiaires : Qui a accès à mes données ?",
 			"answer": "Vous avez la possibilité de désigner qui aura accès à vos données et de paramétrer ces droits pour les différents bénéficiaires de vos informations et les différents types de données renseignées dans votre compte Legitbee. Vous pouvez transmettre des informations à des personnes de votre choix en toute confidentialité (assurances vies, messages personnels, fichiers conservés sur les Clouds). L'inventaire de vos biens numériques sera accessible au notaire en charge de la succession, mais par leur solde, connu de vos héritiers seuls ou de votre exécuteur testamentaire ou mandataire à effet posthume, le cas échéant."
-		},
-		{
-			"question": "Comment Legitbee agit en faveur de mes héritiers ?",
-			"answer": "Qu'il s'agisse de les aider à liquider vos biens numériques ou à clôturer vos différents comptes numériques, Legitbee facilitera les démarches de vos héritiers dans le cadre d'un mandat successoral conventionnel, par lequel ils nous confieront des missions précises dans le respect de vos volontés et pour le bénéfice de la succession."
 		}
 	],
 	"security": {

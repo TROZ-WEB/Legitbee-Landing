@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Container from '../components/Container';
 import IconBox from '../components/IconBox';
 import Title from '../components/Title';
+import StyledLink from '../components/StyledLink';
 
 // Style
 const BlueContainer = styled(Row)`
@@ -38,7 +39,7 @@ export default function Keypoints() {
 	return (
 		<Container>
 			<Title>
-				<mark>Soyez serain</mark> <br /> votre héritage est entre de bonnes mains
+				<mark>Soyez serein</mark> <br /> votre héritage est entre de bonnes mains
 			</Title>
 			<FlexContainer>
 				<BlueContainer>
@@ -48,7 +49,20 @@ export default function Keypoints() {
 							src="/assets/images/safe.svg"
 							alt="Pas de mots de passe"
 							title="Pas de mots de passe"
-							caption="Ils ne sont pas nécessaires pour intégrer vos comptes à la succession. En savoir plus"
+							caption={
+								<>
+									<p>
+										Ils ne sont pas nécessaires pour intégrer vos comptes à la
+										succession.
+									</p>
+									<StyledLink
+										href="https://help.legitbee.com/fr/"
+										className="arrow mt-1"
+									>
+										En savoir plus
+									</StyledLink>
+								</>
+							}
 						/>
 					</Col>
 					<Col xs={12} md={6}>
@@ -57,7 +71,20 @@ export default function Keypoints() {
 							src="/assets/images/id.svg"
 							alt="Pas de pièce d'identité"
 							title="Pas de pièce d'identité"
-							caption="Vérification de l'identité via FranceConnect, service de l'Etat."
+							caption={
+								<>
+									<p>
+										Vérification de l&apos;identité via FranceConnect, service
+										de l&apos;Etat.
+									</p>
+									<StyledLink
+										href="https://franceconnect.gouv.fr/"
+										className="arrow mt-1"
+									>
+										En savoir plus
+									</StyledLink>
+								</>
+							}
 						/>
 					</Col>
 					<Col xs={12} md={6}>
@@ -66,16 +93,39 @@ export default function Keypoints() {
 							src="/assets/images/secure.svg"
 							alt="Données sécurisées"
 							title="Données sécurisées"
-							caption="Seuls les destinataires que vous avez choisis pourront accéder à vos informations."
+							caption={
+								<>
+									<p>
+										Seuls les destinataires que vous avez choisis pourront
+										accéder à vos informations.
+									</p>
+									<StyledLink href="/security" className="arrow mt-1">
+										En savoir plus
+									</StyledLink>
+								</>
+							}
 						/>
 					</Col>
 					<Col xs={12} md={6}>
 						<IconBox
 							noShadow="true"
 							src="/assets/images/fast.svg"
-							alt="Déclenchement une fois le décès vérifié"
-							title="Déclenchement une fois le décès vérifié"
-							caption="Vos informations et documents sont transmis à vos bénéficiaires une fois le décès vérifié sur l'INSEE."
+							alt="Vérification des décès"
+							title="Vérification des décès"
+							caption={
+								<>
+									<p>
+										Vos informations et documents sont transmis à vos
+										bénéficiaires une fois le décès vérifié.
+									</p>
+									<StyledLink
+										href="https://help.legitbee.com/fr/"
+										className="arrow mt-1"
+									>
+										En savoir plus
+									</StyledLink>
+								</>
+							}
 						/>
 					</Col>
 				</BlueContainer>

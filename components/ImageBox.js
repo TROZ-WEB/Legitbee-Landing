@@ -12,9 +12,8 @@ const Box = styled(Row)`
 	${boxShadow}
 	position: relative;
 	padding: 4rem 1rem 1rem 1rem;
-	margin-top: 4rem;
 	text-align: left;
-	margin: ${(props) => (props.inversed ? '5rem 12rem 5rem 7rem' : '5rem 7rem 5rem 12rem')};
+	margin: ${(props) => (props.inversed ? '7rem 12rem 7rem 0rem' : '7rem 0rem 7rem 12rem')};
 	padding: 2rem 5rem;
 	position: relative;
 	z-index: 50;
@@ -48,18 +47,18 @@ const TextCol = styled(Col)`
 `;
 
 const Image = styled.img`
-	width: 15rem;
+	width: 18rem;
 `;
 
 // Render
-export default function ImageBox({ src, alt, title, caption, inversed }) {
+export default function ImageBox({ src, alt, title, caption, inversed, className }) {
 	return (
-		<Box inversed={inversed}>
-			<TextCol md={{ size: 9, order: inversed && 2 }} inversed={inversed}>
+		<Box inversed={inversed} className={className}>
+			<TextCol md={{ size: 8, order: inversed && 2 }} inversed={inversed}>
 				<h2 className="mb-1">{title}</h2>
 				<p>{caption}</p>
 			</TextCol>
-			<ImgCol xs={{ size: 12, order: 1 }} md={{ size: 3, order: inversed && 1 }}>
+			<ImgCol xs={{ size: 12, order: 1 }} md={{ size: 4, order: inversed && 1 }}>
 				<Image src={src} alt={alt} />
 			</ImgCol>
 		</Box>

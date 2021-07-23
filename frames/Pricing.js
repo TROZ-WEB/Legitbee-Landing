@@ -75,7 +75,7 @@ export default function Pricing() {
 						monthPrice="3€/mois"
 						yearPrice="ou 30€/an"
 						title="Sérénité"
-						caption="Transmettez l'intégralité de votre patrimoine numérique et simplifiez les démarches de vos héritiers."
+						caption="Transmettez l'intégralité de votre héritage numérique et simplifiez les démarches de vos héritiers."
 					/>
 				</StyledCol>
 				<StyledCol xs={12} md={6}>
@@ -83,7 +83,7 @@ export default function Pricing() {
 						monthPrice="9€/mois"
 						yearPrice="ou 90€/an"
 						title="Premium"
-						caption="Anticipez et assurez la transmission de votre patrimoine diversifié. "
+						caption="Anticipez, sécurisez et simplifiez la transmission de l'ensemble de votre patrimoine. "
 					/>
 				</StyledCol>
 			</StyledRow>

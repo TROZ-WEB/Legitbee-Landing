@@ -20,6 +20,10 @@ const SLink = styled.a`
 		color: ${(props) => props.theme.secondary};
 	}
 
+	&.arrow {
+		margin-right: 1rem;
+	}
+
 	&.arrow::after {
 		content: '▶';
 		${fontSize(12)}
@@ -27,7 +31,7 @@ const SLink = styled.a`
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: -1.25rem;
+		right: -1.1rem;
 	}
 
 	&.arrow:hover::after {

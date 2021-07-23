@@ -16,6 +16,7 @@ import Container from '../components/Container';
 const BoxContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
+	max-width: 20rem;
 `;
 
 const Section = styled.div`

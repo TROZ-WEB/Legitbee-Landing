@@ -24,40 +24,41 @@ export default function Problem() {
 	return (
 		<Container>
 			<Title>
-				Vous pensez que votre succession sera <br />
-				<mark>simple</mark> et <mark>complète</mark> ?
+				Avez-vous pensé à tout pour <br />
+				<mark>votre succession</mark> ?
 			</Title>
 			<Row>
 				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/money.svg"
-						alt="Vos actifs diversifiés"
-						title="Vos actifs diversifiés"
-						caption="Êtes-vous certains que l'intégralité de vos actifs intégreront votre succession ?"
+						alt="Patrimoine diversifié"
+						title="Patrimoine diversifié"
+						caption="Comment vos héritiers vont-ils retrouver l'ensemble du patrimoine que vous avez constitué ?"
 					/>
 				</StyledCol>
 				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/memories.svg"
-						alt="Votre héritage numérique"
-						title="Votre héritage numérique"
-						caption="Avez-vous pensé à votre héritage numérique ? Qu'adviendront vos données et documents personnels ?"
+						alt="Héritage numérique"
+						title="Héritage numérique"
+						caption="Comment allez-vous transmettre vos actifs et fichiers captifs de vos comptes en ligne ?"
 					/>
 				</StyledCol>
 				<StyledCol xs={12} md={4}>
 					<IconBox
 						src="/assets/images/infos.svg"
-						alt="Vos informations personnelles"
-						title="Vos informations personnelles"
-						caption="Vos proches auront-ils accès à toutes les informations nécessaires à la gestion de votre succession ?"
+						alt="Informations personnelles"
+						title="Informations personnelles"
+						caption="Combien de jours passeront vos héritiers à chercher vos informations nécessaires aux démarches ?"
 					/>
 				</StyledCol>
 			</Row>
 			<TextContainer>
-				<p>
-					Avec Legitbee, vous préparez votre transmission complète, facilement et en toute
-					confidentialité.
-				</p>
+				<h2>
+					Avec Legitbee, vous préparez votre transmission <mark>complète</mark>,{' '}
+					<mark>facilement</mark> et en toute
+					<mark> confidentialité</mark>.
+				</h2>
 			</TextContainer>
 		</Container>
 	);

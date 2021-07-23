@@ -44,7 +44,7 @@ export default function features() {
 				<Row>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/money.svg"
+							src="/assets/images/encryption.svg"
 							alt="Chiffrement"
 							title="Chiffrement"
 							caption="Nous mettons en oeuvre les algorithmes de chiffrement les plus robustes du marché et sommes fréquemment audités par des spécialistes de la sécurité."
@@ -52,7 +52,7 @@ export default function features() {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/memories.svg"
+							src="/assets/images/conformity.svg"
 							alt="Conformité"
 							title="Conformité"
 							caption="Nous respectons les procédures successorales et la charte pour un développement éthique du numérique notarial."
@@ -60,7 +60,7 @@ export default function features() {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/infos.svg"
+							src="/assets/images/rgpd.svg"
 							alt="Respect RGPD"
 							title="Respect RGPD"
 							caption="Le respect des données utilisateurs est au coeur de notre projet. Vous restez souverains de vos données à tout moment."

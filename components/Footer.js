@@ -98,7 +98,7 @@ export default function Footer() {
 						Conditions générales de service
 					</StyledLink>
 					<StyledLink href="https://legitbee-ficonum.web.app/" blank className="footer">
-						Pour les notaires
+						Accès notaires
 					</StyledLink>
 					<StyledLink href="/report-death" className="footer">
 						Signaler un décès

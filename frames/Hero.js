@@ -10,7 +10,15 @@ import Button from '../components/Button';
 // Style
 const Image = styled.img`
 	width: 100%;
-	max-width: 35rem;
+	max-width: 32rem;
+`;
+
+const CSN = styled.img`
+	max-height: 4rem;
+`;
+
+const BV = styled.img`
+	max-height: 6rem;
 `;
 
 const StyledRow = styled(Row)`
@@ -71,6 +79,18 @@ export default function Hero() {
 						<Button to="https://app.legitbee.com/auth/login" className="big">
 							Préparer ma succession
 						</Button>
+
+						{/* <div>
+							<p className="mt-2 mb-1">
+								Audité, labellisé et soutenu par le Conseil Supérieur du Notariat
+							</p>
+							<CSN
+								src="/assets/images/CSN.png"
+								alt="Conseil Supérieur du Notariat"
+								className="mr-3"
+							/>
+							<BV src="/assets/images/BV.png" alt="Bureau Veritas" />
+						</div> */}
 					</TextContainer>
 				</LeftCol>
 				<RightCol

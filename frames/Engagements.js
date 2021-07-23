@@ -60,21 +60,18 @@ export default function Engagements() {
 										Accompagnement
 									</>
 								}
-								caption="Vous vous sentez perdu dans l’organisation de votre succession ? Pas de panique, nous vous guidons  pas à pas."
+								caption="Nous vous guidons dans l’organisation de votre transmission pour préserver votre héritage et vos héritiers."
 							/>
 						</Col>
 						<Col xs={12} md={6}>
 							<SimpleBox
 								title={
 									<>
-										<Icon
-											src="/assets/images/simplicite.svg"
-											alt="Simplicité"
-										/>{' '}
-										Simplicité
+										<Icon src="/assets/images/securite.svg" alt="Sécurité" />{' '}
+										Sécurité
 									</>
 								}
-								caption="Dites adieu aux démarches administratives laborieuses. Legitbee est là pour vous simplifier la vie."
+								caption="Nous sommes audités par le Bureau Veritas et labellisés par le Conseil Supérieur du Notariat."
 							/>
 						</Col>
 						<Col xs={12} md={6}>
@@ -102,7 +99,7 @@ export default function Engagements() {
 										Conformité
 									</>
 								}
-								caption="Nous sommes conformes au règlement général sur la protection des données et au droit successoral."
+								caption="Nous sommes conformes au règlement général sur la protection des données et au droit des successions."
 							/>
 						</Col>
 					</Row>

@@ -27,17 +27,12 @@ const Image = styled.img`
 	-webkit-filter: grayscale(1) opacity(50%);
 `;
 
-const Title = styled.h2`
-	color: #959595;
-	${fontSize(18)}
-`;
-
 // Render
 export default function Partners() {
 	var isTablet = useMediaQuery({ query: '(max-width: 48rem)' });
 	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
 	return (
-		<Container>
+		<Container className="mt-5">
 			<CarouselProvider
 				naturalSlideWidth={100}
 				naturalSlideHeight={50}
@@ -49,7 +44,9 @@ export default function Partners() {
 				interval={3000}
 			>
 				<div>
-					<Title>Ils nous font confiance</Title>
+					<h2>
+						Ils nous font <mark>confiance</mark>
+					</h2>
 					<div>
 						<Slider>
 							<StyledSlide index={0}>

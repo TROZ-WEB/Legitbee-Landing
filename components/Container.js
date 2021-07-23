@@ -12,6 +12,6 @@ const StyledContainer = styled.div`
 `;
 
 // Render
-export default function Container({ ...props }) {
-	return <StyledContainer>{props.children}</StyledContainer>;
+export default function Container({ className, ...props }) {
+	return <StyledContainer className={className}>{props.children}</StyledContainer>;
 }

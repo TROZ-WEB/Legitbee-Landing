@@ -84,7 +84,7 @@ export default function Navbar({ active }) {
 
 	return (
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
-			<Col xs={6} md={3}>
+			<Col xs={6} md={2}>
 				<NavLink to="/">
 					<Logo src="/assets/images/logo.svg" alt="logo" />
 				</NavLink>

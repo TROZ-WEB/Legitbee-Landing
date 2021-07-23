@@ -4,6 +4,7 @@ import Head from 'next/head';
 // Components
 import Navbar from '../components/Navbar';
 import Hero from '../frames/Hero';
+import Labels from '../frames/Labels';
 import Partners from '../frames/Partners';
 import Problem from '../frames/Problem';
 import Solution from '../frames/Solution';
@@ -26,7 +27,7 @@ export default function Home() {
 		<>
 			<Navbar />
 			<Hero />
-			<Partners />
+			<Labels />
 			<Problem />
 			<Solution />
 			<Keypoints />
@@ -34,6 +35,7 @@ export default function Home() {
 			<Engagements />
 			<Pricing />
 			<FAQ />
+			<Partners />
 			<CallToAction />
 			<Footer />
 		</>

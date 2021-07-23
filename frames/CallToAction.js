@@ -13,7 +13,6 @@ const Background = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 6rem;
 `;
 
 const LeftCol = styled(Col)`
@@ -39,20 +38,7 @@ const Image = styled.img`
 `;
 
 const Video = styled.video`
-	position: absolute;
-	width: 66%;
-	top: 6.5%;
-	left: 17%;
-
-	@media (max-width: ${(props) => props.theme.md}) {
-		width: 63.5%;
-		top: 22.5%;
-		left: 18.3%;
-	}
-
-	@media (max-width: ${(props) => props.theme.sm}) {
-		top: 6.5%;
-	}
+	width: 80%;
 `;
 
 // Render
@@ -64,18 +50,17 @@ export default function CallToAction() {
 					<LeftCol xs={{ size: 12, order: 2 }} md={{ size: 6, order: 1 }}>
 						<h1>Accédez au service</h1>
 						<p className="my-2">
-							Au cours de votre vie, vous avez accumulé un patrimoine traditionnel et
-							numérique précieux. Ne le perdez plus, transmettez-le facilement grâce à
-							Legitbee.
+							Au cours de votre vie, vous avez constitué un patrimoine traditionnel et
+							numérique précieux. Garantissez sa transmission dès aujourd&apos;hui
+							avec Legitbee.
 						</p>
 						<Button to="/pricing" className="big">
 							Testez gratuitement
 						</Button>
 					</LeftCol>
 					<RightCol xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
-						<Image src="/assets/images/screen.png" alt="screen mockup" />
 						<Video autoPlay muted loop>
-							<source src="/assets/images/legitbee-app.mp4" type="video/mp4" />
+							<source src="/assets/images/screen.mp4" type="video/mp4" />
 						</Video>
 					</RightCol>
 				</Row>
