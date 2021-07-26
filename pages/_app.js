@@ -8,7 +8,7 @@ import '../public/assets/css/spaces.css';
 import Head from 'next/head';
 
 Router.events.on('routeChangeComplete', (url) => {
-	window.scrollTo(0, 0);
+	// window.scrollTo(0, 0);
 	//   gtag.pageview(url);
 });
 

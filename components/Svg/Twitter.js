@@ -4,9 +4,7 @@ export default function Twitter() {
 		<svg
 			id="Layer_1"
 			enableBackground="new 0 0 100 100"
-			height="512"
 			viewBox="0 0 100 100"
-			width="512"
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path

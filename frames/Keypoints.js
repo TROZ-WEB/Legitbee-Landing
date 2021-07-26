@@ -51,10 +51,10 @@ export default function Keypoints() {
 							title="Pas de mots de passe"
 							caption={
 								<>
-									<p>
+									<span className="mb-05 d-block">
 										Ils ne sont pas nécessaires pour intégrer vos comptes à la
 										succession.
-									</p>
+									</span>
 									<StyledLink
 										href="https://help.legitbee.com/fr/"
 										className="arrow mt-1"
@@ -73,10 +73,10 @@ export default function Keypoints() {
 							title="Pas de pièce d'identité"
 							caption={
 								<>
-									<p>
+									<span className="mb-05 d-block">
 										Vérification de l&apos;identité via FranceConnect, service
 										de l&apos;Etat.
-									</p>
+									</span>
 									<StyledLink
 										href="https://franceconnect.gouv.fr/"
 										className="arrow mt-1"
@@ -95,10 +95,10 @@ export default function Keypoints() {
 							title="Données sécurisées"
 							caption={
 								<>
-									<p>
+									<span className="mb-05 d-block">
 										Seuls les destinataires que vous avez choisis pourront
 										accéder à vos informations.
-									</p>
+									</span>
 									<StyledLink href="/security" className="arrow mt-1">
 										En savoir plus
 									</StyledLink>
@@ -114,10 +114,10 @@ export default function Keypoints() {
 							title="Vérification des décès"
 							caption={
 								<>
-									<p>
+									<span className="mb-05 d-block">
 										Vos informations et documents sont transmis à vos
 										bénéficiaires une fois le décès vérifié.
-									</p>
+									</span>
 									<StyledLink
 										href="https://help.legitbee.com/fr/"
 										className="arrow mt-1"

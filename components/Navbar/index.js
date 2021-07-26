@@ -4,14 +4,17 @@ import styled from 'styled-components';
 import { boxShadow } from '../../Theme';
 import { Navbar as Nav, Row, Col, Collapse } from 'reactstrap';
 
-if (typeof window === 'undefined') {
-	global.window = {};
-}
-
 // Components
 import Button from '../Button';
 import NavLink from './NavLink';
 import Hamburger from './Hamburger';
+
+// Functions
+import useEvent from '../../functions/useEvent';
+
+if (typeof window === 'undefined') {
+	global.window = {};
+}
 
 // Style
 const NavbarContainer = styled(Nav)`
@@ -78,9 +81,7 @@ export default function Navbar({ active }) {
 		}
 	};
 
-	useEffect(() => {
-		window.addEventListener('scroll', handleScroll);
-	}, []);
+	useEvent('scroll', handleScroll);
 
 	return (
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
