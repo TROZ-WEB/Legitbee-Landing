@@ -23,6 +23,15 @@ const StyledCol = styled(Col)`
 	justify-content: center;
 `;
 
+const CSN = styled.img`
+	max-height: 4rem;
+	margin-right: 2rem;
+`;
+
+const BV = styled.img`
+	max-height: 5rem;
+`;
+
 // Data
 import Content from '../../public/assets/data/content.json';
 
@@ -39,6 +48,12 @@ export default function features() {
 						Nous concevons une solution sécurisée respectant les normes européennes en
 						vigueur.
 					</p>
+					<p className="my-2">
+						Legitbee est une solution labellisée par le Conseil Supérieur du Notariat et
+						auditée par le Bureau Veritas.
+					</p>
+					<CSN src="/assets/images/CSN.png" alt="Conseil Supérieur du Notariat" />
+					<BV src="/assets/images/BV.png" alt="Bureau Veritas" />
 				</Banner>
 
 				<Row>

@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: -0.002rem;
-    ${fontSize(15)};
+    ${fontSize(16)};
     color : #57687A;
     margin : 0;
     padding : 0;

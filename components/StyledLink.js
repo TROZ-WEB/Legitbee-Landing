@@ -51,15 +51,34 @@ const SLink = styled.a`
 	&.footer:hover {
 		color: ${(props) => props.theme.secondary};
 	}
+
+	&.bottom {
+		width: 7rem;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		bottom: 1rem;
+	}
 `;
 
 // Render
-export default function StyledLink({ className, href, blank, ...props }) {
+export default function StyledLink({ className, href, blank, onClick, ...props }) {
 	return (
-		<Link href={href} passHref>
-			<SLink target={blank && '_blank'} className={className}>
-				{props.children}
-			</SLink>
-		</Link>
+		<>
+			{href ? (
+				<Link href={href} passHref>
+					<SLink target={blank && '_blank'} className={className}>
+						{props.children}
+					</SLink>
+				</Link>
+			) : (
+				<SLink className={className} onClick={onClick} type="button">
+					{props.children}
+				</SLink>
+			)}
+		</>
 	);
 }

@@ -1,72 +1,100 @@
 // Dependencies
+import { useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 // Components
 import Container from '../components/Container';
-import List from '../components/List';
+import StyledLink from '../components/StyledLink';
 import Button from '../components/Button';
 
 // Style
-const Image = styled.img`
-	width: 100%;
-	max-width: 32rem;
+const Icon = styled.img`
+	width: 3rem;
+	margin-right: 1rem;
 `;
 
 const CSN = styled.img`
-	max-height: 4rem;
+	max-height: 5rem;
 `;
 
-const BV = styled.img`
-	max-height: 6rem;
+const Background = styled.div`
+	background-color: ${(props) => props.theme.lightPrimary};
+	padding: 2rem 0rem;
 `;
 
-const StyledRow = styled(Row)`
-	margin-top: 3rem;
-`;
-
-const LeftCol = styled(Col)`
-	min-height: 70vh;
+const StyledCol = styled(Col)`
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-
-	@media (max-width: ${(props) => props.theme.md}) {
-		text-align: center;
-		display: block;
-		margin-bottom: 4rem;
-		min-height: auto;
-	}
-`;
-
-const RightCol = styled(Col)`
-	display: flex;
 	justify-content: center;
-	align-items: center;
-`;
-
-const TextContainer = styled.div`
-	max-width: 30rem;
 `;
 
 // Render
 export default function Labels() {
+	const [modal, setModal] = useState(false);
+	const toggle = () => setModal(!modal);
+
 	return (
-		<Container>
-			<div className="d-flex flex-column align-items-center">
-				<h2 className="mt-3 mb-1">
-					Audité, labellisé et soutenu par le <mark>Conseil Supérieur du Notariat</mark>
-				</h2>
-				<div>
-					<CSN
-						src="/assets/images/CSN.png"
-						alt="Conseil Supérieur du Notariat"
-						className="mr-3"
-					/>
-					<BV src="/assets/images/BV.png" alt="Bureau Veritas" />
+		<Background>
+			<Container>
+				<div className="d-flex flex-column align-items-center">
+					<CSN src="/assets/images/CSN.png" alt="Conseil Supérieur du Notariat" />
+					<h2 className="mt-2 mb-2">
+						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
+					</h2>
+					<Row>
+						<StyledCol>
+							<Icon src="/assets/images/rules.svg" alt="Respect de la déontologie" />
+							<p>Respect de la déontologie</p>
+						</StyledCol>
+						<StyledCol>
+							<Icon src="/assets/images/security.svg" alt="Respect de la sécurité" />
+							<p>Données sécurisées</p>
+						</StyledCol>
+						<StyledCol>
+							<Icon
+								src="/assets/images/privacy.svg"
+								alt="Respect du droit et de la vie privée"
+							/>
+							<p>Respect du droit et de la vie privée</p>
+						</StyledCol>
+					</Row>
+					<StyledLink onClick={toggle} className="arrow mt-2">
+						En savoir plus
+					</StyledLink>
+
+					<Modal isOpen={modal} toggle={toggle}>
+						<ModalBody className="d-flex flex-column align-items-center">
+							<h2>Mesurez la qualité de nos services !</h2>
+							<CSN
+								src="/assets/images/CSN.png"
+								alt="Conseil Supérieur du Notariat"
+								className="my-1"
+							/>
+							<p className="mb-1">
+								Notre Société est labellisée pour un développement éthique et du
+								numérique notarial. Nous contribuons ainsi au développement vertueux
+								d’un écosystème d’acteurs qui s’inscrivent dans les valeurs de la
+								profession.
+							</p>
+							<p className="mb-1">
+								La labellisation de notre société en tant que solutions numériques
+								pour les notaires et leurs clients a été prononcée par le président
+								du Conseil Supérieur du Notariat pour la période du 8 octobre 2020
+								au 7 octobre 2023.
+							</p>
+							<p>
+								Le périmètre audité inclus les activités de formalités postérieures
+								et préalables.
+							</p>
+						</ModalBody>
+						<ModalFooter className="border-top-0">
+							<Button onClick={toggle}>Fermer</Button>
+						</ModalFooter>
+					</Modal>
 				</div>
-			</div>
-		</Container>
+			</Container>
+		</Background>
 	);
 }

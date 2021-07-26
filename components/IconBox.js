@@ -17,9 +17,20 @@ const Box = styled.div`
 	margin-bottom: 1rem;
 	text-align: center;
 	${boxShadow};
-	${(props) => props.noShadow && 'box-shadow:none'};
 
-	@media (max-width: ${(props) => props.theme.lg}) {
+	&.height {
+		height: 14rem;
+
+		@media (max-width: ${(props) => props.theme.xl}) {
+			height: 15rem;
+		}
+	}
+
+	&.noshadow {
+		box-shadow: none;
+	}
+
+	@media (max-width: ${(props) => props.theme.xl}) {
 		height: 15rem;
 	}
 
@@ -37,9 +48,9 @@ const Image = styled.img`
 `;
 
 // Render
-export default function IconBox({ src, alt, title, caption, noShadow }) {
+export default function IconBox({ src, alt, title, caption, className }) {
 	return (
-		<Box noShadow={noShadow}>
+		<Box className={className}>
 			<Image src={src} alt={alt} />
 			<h2 className="mb-05">
 				<mark>{title}</mark>

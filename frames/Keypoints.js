@@ -45,7 +45,7 @@ export default function Keypoints() {
 				<BlueContainer>
 					<Col xs={12} md={6}>
 						<IconBox
-							noShadow="true"
+							className="noshadow height"
 							src="/assets/images/safe.svg"
 							alt="Pas de mots de passe"
 							title="Pas de mots de passe"
@@ -57,7 +57,7 @@ export default function Keypoints() {
 									</span>
 									<StyledLink
 										href="https://help.legitbee.com/fr/"
-										className="arrow mt-1"
+										className="arrow bottom mt-1"
 									>
 										En savoir plus
 									</StyledLink>
@@ -67,7 +67,7 @@ export default function Keypoints() {
 					</Col>
 					<Col xs={12} md={6}>
 						<IconBox
-							noShadow="true"
+							className="noshadow height"
 							src="/assets/images/id.svg"
 							alt="Pas de pièce d'identité"
 							title="Pas de pièce d'identité"
@@ -79,7 +79,7 @@ export default function Keypoints() {
 									</span>
 									<StyledLink
 										href="https://franceconnect.gouv.fr/"
-										className="arrow mt-1"
+										className="arrow bottom mt-1"
 									>
 										En savoir plus
 									</StyledLink>
@@ -89,7 +89,7 @@ export default function Keypoints() {
 					</Col>
 					<Col xs={12} md={6}>
 						<IconBox
-							noShadow="true"
+							className="noshadow height"
 							src="/assets/images/secure.svg"
 							alt="Données sécurisées"
 							title="Données sécurisées"
@@ -99,7 +99,7 @@ export default function Keypoints() {
 										Seuls les destinataires que vous avez choisis pourront
 										accéder à vos informations.
 									</span>
-									<StyledLink href="/security" className="arrow mt-1">
+									<StyledLink href="/security" className="arrow bottom mt-1">
 										En savoir plus
 									</StyledLink>
 								</>
@@ -108,7 +108,7 @@ export default function Keypoints() {
 					</Col>
 					<Col xs={12} md={6}>
 						<IconBox
-							noShadow="true"
+							className="noshadow height"
 							src="/assets/images/fast.svg"
 							alt="Vérification des décès"
 							title="Vérification des décès"
@@ -120,7 +120,7 @@ export default function Keypoints() {
 									</span>
 									<StyledLink
 										href="https://help.legitbee.com/fr/"
-										className="arrow mt-1"
+										className="arrow bottom mt-1"
 									>
 										En savoir plus
 									</StyledLink>

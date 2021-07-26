@@ -25,10 +25,16 @@ const Image = styled.img`
 
 	filter: grayscale(1) opacity(50%);
 	-webkit-filter: grayscale(1) opacity(50%);
+	transition: all 0.2s;
+
+	&:hover {
+		filter: grayscale(0) opacity(100%);
+		-webkit-filter: grayscale(0) opacity(100%);
+	}
 `;
 
 const Title = styled.h2`
-	color: #9c9c9c;
+	/* color: #9c9c9c; */
 `;
 
 // Render
@@ -41,14 +47,16 @@ export default function Partners() {
 				naturalSlideWidth={100}
 				naturalSlideHeight={50}
 				totalSlides={6}
-				visibleSlides={isTablet ? (isMobile ? 2 : 4) : 6}
+				visibleSlides={isTablet ? (isMobile ? 2 : 4) : 5}
 				step={2}
 				infinite={true}
 				isPlaying={true}
 				interval={3000}
 			>
 				<div>
-					<Title>Ils nous font confiance</Title>
+					<Title>
+						Ils nous font <mark>confiance</mark>
+					</Title>
 					<div>
 						<Slider>
 							<StyledSlide index={0}>

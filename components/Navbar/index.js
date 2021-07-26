@@ -22,7 +22,7 @@ const NavbarContainer = styled(Nav)`
 	position: fixed;
 	top: 0rem;
 	left: 0rem;
-	z-index: 10000;
+	z-index: 1000;
 	background-color: white;
 	transition: all 0.5s;
 	height: 4rem;

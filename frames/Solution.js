@@ -9,25 +9,25 @@ import ImageBox from '../components/ImageBox';
 // Style
 const Line1 = styled.img`
 	position: absolute;
-	top: 10rem;
+	top: 14rem;
 	right: -5rem;
 `;
 
 const Line2 = styled.img`
 	position: absolute;
-	top: 44rem;
+	top: 48rem;
 	left: 5rem;
 `;
 
 const Line3 = styled.img`
 	position: absolute;
-	top: 76rem;
+	top: 80rem;
 	right: 17rem;
 `;
 
 const Line4 = styled.img`
 	position: absolute;
-	top: 106rem;
+	top: 110rem;
 	right: -8rem;
 `;
 
@@ -41,7 +41,7 @@ export default function Solution() {
 	return (
 		<Container>
 			<Title className="d-none d-md-block">
-				Préservez <br className="d-block d-lg-none" />
+				Préservez <br />
 				<TextLoop mask="true" interval="1500">
 					<h1>
 						<mark>ce(ux) que vous avez de plus cher(s)</mark>
@@ -76,7 +76,7 @@ export default function Solution() {
 						<mark>personnalisée</mark>
 					</>
 				}
-				caption="Désormais, tous les documents nécessaires à la gestion de votre succession : vos informations administratives et documents importants, vos consignes et instructions sont organisés, sécurisés et transmis rapidement à vos proches."
+				caption="Désormais, tous les documents nécessaires à la gestion de votre succession : vos informations administratives et documents importants, vos consignes et instructions sont organisés, sécurisés et transmis rapidement à vos proches."
 			/>
 			<Line1 src="/assets/images/line-1.svg" className="d-none d-xl-block" />
 			<ImageBox
@@ -89,7 +89,7 @@ export default function Solution() {
 						<mark> héritage numérique</mark>
 					</>
 				}
-				caption="Vos actifs sous toutes leurs formes (titres et placements, immobilier, collections, cryptomonnaies, neobanques, jeux et paris, trading) sont intégrés à la succession : tout est documenté, rien n'est oublié."
+				caption="Vos actifs sous toutes leurs formes (titres et placements, immobilier, collections, cryptomonnaies, neobanques, jeux et paris, trading) sont intégrés à la succession : tout est documenté, rien n'est oublié."
 			/>
 			<Line2 src="/assets/images/line-2.svg" className="d-none d-xl-block" />
 			<ImageBox
@@ -114,7 +114,7 @@ export default function Solution() {
 						sont transmis à vos bénéficiaires
 					</>
 				}
-				caption="Vos proches veulent conserver votre souvenir et celui de votre famille. Transmettez-leur tout ce que vous souhaitez leur confier : photos, vidéos, correspondances, textes, histoires, généalogie… Vous pouvez également préciser vos souhaits quant au devenir de vos comptes en ligne."
+				caption="Vos proches veulent conserver votre souvenir et celui de votre famille. Transmettez-leur tout ce que vous souhaitez leur confier : photos, vidéos, correspondances, textes, histoires, généalogie… Vous pouvez également préciser vos souhaits quant au devenir de vos comptes en ligne."
 			/>
 			<Line4 src="/assets/images/line-4.svg" className="d-none d-xl-block" />
 		</Container>

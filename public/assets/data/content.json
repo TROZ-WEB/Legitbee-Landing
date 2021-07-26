@@ -114,10 +114,6 @@
 					{
 						"label": "Biens numériques intégrés à la succession",
 						"info": "Comptes de trading, crowdlending, néo-banques ou encore cryptomonnaies : assurez-vous que ces actifs ne soient pas oubliés lors de la succession."
-					},
-					{
-						"label": "Messagerie posthume",
-						"info": "Planifiez l'envoi d'un dernier mot ou de pensées bienveillantes pour vos proches qui les découvriront le moment venu."
 					}
 				]
 			},
@@ -130,6 +126,10 @@
 				"list": [
 					{
 						"label": "Tous les avantages de l'offre numérique"
+					},
+					{
+						"label": "Messagerie posthume",
+						"info": "Planifiez l'envoi d'un dernier mot ou de pensées bienveillantes pour vos proches qui les découvriront le moment venu."
 					},
 					{
 						"label": "10 G0 de Coffre-fort numérique posthume",
@@ -164,8 +164,12 @@
 						"info": "Stockez des fichiers et informations sous toutes leurs formes dans un coffre-fort numérique sécurisé, et attribuez à chaque répertoire des destinataires qui recevront le contenu le moment venu."
 					},
 					{
-						"label": "Inventaire de vos actifs diversifiés",
+						"label": "Inventaire des actifs personnels",
 						"info": "Vos actifs sous toutes leurs formes (investissement immobilier, sociétés, titres, tokens etc) sont recensés avec toutes les informations utiles à la succession : elles seront ensuite transmises aux bénéficiaires designés."
+					},
+					{
+						"label": "Inventaire du patrimoine professionnel",
+						"info": "Vos sociétés et fonds de commerce sous toutes leurs formes sont recensés avec la documentation nécessaire pour une reprise d'activité sans accroche : elles seront ensuite transmise aux bénéficiaires désignés."
 					},
 					{
 						"label": "Accès notarial lors de la succession",
@@ -205,7 +209,7 @@
 			{
 				"text": "Messagerie posthume",
 				"info": "Planifiez l'envoi d'un dernier mot ou de pensées bienveillantes pour vos proches qui les découvriront le moment venu.",
-				"free": true,
+				"free": false,
 				"serenity": true,
 				"premium": true
 			},
@@ -238,8 +242,15 @@
 				"premium": true
 			},
 			{
-				"text": "Inventaire de vos actifs diversifiés",
+				"text": "Inventaire des actifs personnels",
 				"info": "Vos actifs sous toutes leurs formes (investissement immobilier, sociétés, titres, tokens etc) sont recensés avec toutes les informations utiles à la succession : elles seront ensuite transmises aux bénéficiaires designés.",
+				"free": false,
+				"serenity": false,
+				"premium": true
+			},
+			{
+				"text": "Inventaire du patrimoine professionnel",
+				"info": "Vos sociétés et fonds de commerce sous toutes leurs formes sont recensés avec la documentation nécessaire pour une reprise d'activité sans accroche : elles seront ensuite transmise aux bénéficiaires désignés.",
 				"free": false,
 				"serenity": false,
 				"premium": true

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 // Components
 import Button from '../../../../components/Button';
-import Price from '../Price';
 
 // Style
 const Checkmark = styled.img`
@@ -81,6 +80,23 @@ const StyledLi = styled.li`
 	padding: 1rem 1.5rem;
 `;
 
+const Price = styled.div`
+	background-color: ${(props) => props.theme.primary};
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	height: 4rem;
+
+	h2,
+	p {
+		color: white;
+	}
+`;
+
 // Datas
 import Content from '../../../../public/assets/data/content.json';
 
@@ -106,13 +122,14 @@ export default function Table() {
 				<StyledLi></StyledLi>
 			</StyledUl>
 			{/* <StyledUl>
-				<StyledLi>
-					<Price monthPrice="Gratuit" />
-					<h2>Découverte</h2>
+				<StyledLi className="p-05 pb-5">
+					<h2>Numérique</h2>
 					<p className="text-center">
-						Décidez de l&apos;avenir de votre vie numérique et planifiez l&apos;envoi de
-						vos messages posthumes
+						Sécurisez la transmission de votre héritage numérique
 					</p>
+					<Price>
+						<h2>Gratuit</h2>
+					</Price>
 				</StyledLi>
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
@@ -124,19 +141,20 @@ export default function Table() {
 					</StyledLi>
 				))}
 				<StyledLi>
-					<h2>Gratuit</h2>
-					<br />
 					<Button href="https://app.legitbee.com/auth/register">Découvrir</Button>
 				</StyledLi>
 			</StyledUl> */}
 			<StyledUl highlight>
-				<StyledLi>
-					<Price monthPrice="3€/mois" yearPrice="ou 30€/an" />
+				<StyledLi className="p-05 pb-5">
 					<h2>Sérénité</h2>
 					<p className="text-center">
 						Transmettez votre patrimoine numérique, vos souvenirs et simplifiez les
 						démarches de vos héritiers
 					</p>
+					<Price>
+						<h2>3€/mois</h2>
+						<p>ou 30€/an</p>
+					</Price>
 				</StyledLi>
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
@@ -148,22 +166,23 @@ export default function Table() {
 					</StyledLi>
 				))}
 				<StyledLi>
-					<h2>3€/mois</h2>
-					<p className="text">ou 30€/an</p>
 					<br />
 					<Button to="https://app.legitbee.com/auth/register?plan=basic">
 						Découvrir
 					</Button>
-					<p>Un mois d&apos;essai</p>
+					<p className="mt-05">Un mois d&apos;essai</p>
 				</StyledLi>
 			</StyledUl>
 			<StyledUl>
-				<StyledLi>
-					<Price monthPrice="9€/mois" yearPrice="ou 90€/an" />
-					<h2>Premium</h2>
+				<StyledLi className="p-05 pb-5">
+					<h2>Patrimoine</h2>
 					<p className="text-center">
 						Anticipez et simplifiez la transmission de votre patrimoine diversifié
 					</p>
+					<Price>
+						<h2>9€/mois</h2>
+						<p>ou 90€/an</p>
+					</Price>
 				</StyledLi>
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
@@ -175,13 +194,10 @@ export default function Table() {
 					</StyledLi>
 				))}
 				<StyledLi>
-					<h2>9€/mois</h2>
-					<p className="text">ou 90€/an</p>
-					<br />
 					<Button to="https://app.legitbee.com/auth/register?plan=premium">
 						Découvrir
 					</Button>
-					<p>Un mois d&apos;essai</p>
+					<p className="mt-05">Un mois d&apos;essai</p>
 				</StyledLi>
 			</StyledUl>
 		</Container>
