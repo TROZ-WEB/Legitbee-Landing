@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import FAQCollapse from '../components/FAQCollapse';
 import Title from '../components/Title';
 import StyledLink from '../components/StyledLink';
+import FAQImage from '../public/assets/images/faq.jpg';
 
 // Style
 const ImageContainer = styled(Col)`
@@ -15,7 +17,7 @@ const ImageContainer = styled(Col)`
 	justify-content: center;
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 100%;
 	max-width: 20rem;
 	height: fit-content;
@@ -63,8 +65,8 @@ export default function FAQ() {
 					</div>
 				</Col>
 				<ImageContainer>
-					<Image
-						src="/assets/images/faq.jpg"
+					<StyledImage
+						src={FAQImage}
 						alt="faq illustration"
 						className="d-none d-lg-block"
 					/>

@@ -1,24 +1,18 @@
 // Dependencies
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import List from '../components/List';
 import Button from '../components/Button';
+import HeroImage from '../public/assets/images/hero.jpg';
 
 // Style
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 100%;
 	max-width: 32rem;
-`;
-
-const CSN = styled.img`
-	max-height: 4rem;
-`;
-
-const BV = styled.img`
-	max-height: 6rem;
 `;
 
 const StyledRow = styled(Row)`
@@ -79,18 +73,6 @@ export default function Hero() {
 						<Button to="https://app.legitbee.com/auth/login" className="big">
 							Préparer ma succession
 						</Button>
-
-						{/* <div>
-							<p className="mt-2 mb-1">
-								Audité, labellisé et soutenu par le Conseil Supérieur du Notariat
-							</p>
-							<CSN
-								src="/assets/images/CSN.png"
-								alt="Conseil Supérieur du Notariat"
-								className="mr-3"
-							/>
-							<BV src="/assets/images/BV.png" alt="Bureau Veritas" />
-						</div> */}
 					</TextContainer>
 				</LeftCol>
 				<RightCol
@@ -98,7 +80,7 @@ export default function Hero() {
 					md={{ size: 5, order: 2 }}
 					lg={{ size: 6, order: 2 }}
 				>
-					<Image src="/assets/images/hero.jpg" alt="hero" />
+					<StyledImage src={HeroImage} alt="hero" />
 				</RightCol>
 			</StyledRow>
 		</Container>

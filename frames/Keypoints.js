@@ -1,12 +1,14 @@
 // Dependencies
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import IconBox from '../components/IconBox';
 import Title from '../components/Title';
 import StyledLink from '../components/StyledLink';
+import Serenite from '../public/assets/images/serenite.jpg';
 
 // Style
 const BlueContainer = styled(Row)`
@@ -21,7 +23,7 @@ const BlueContainer = styled(Row)`
 	}
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 20vw;
 	max-width: 29rem;
 	position: relative;
@@ -129,11 +131,7 @@ export default function Keypoints() {
 						/>
 					</Col>
 				</BlueContainer>
-				<Image
-					src="/assets/images/serenite.jpg"
-					alt="soyez serains"
-					className="d-none d-lg-block"
-				/>
+				<StyledImage src={Serenite} alt="soyez serains" className="d-none d-lg-block" />
 			</FlexContainer>
 		</Container>
 	);

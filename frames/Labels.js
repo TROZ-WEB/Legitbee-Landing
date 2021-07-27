@@ -2,20 +2,25 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import StyledLink from '../components/StyledLink';
 import Button from '../components/Button';
+import CSNImage from '../public/assets/images/CSN.png';
+import Rules from '../public/assets/images/rules.svg';
+import Security from '../public/assets/images/security.svg';
+import Privacy from '../public/assets/images/privacy.svg';
 
 // Style
-const Icon = styled.img`
+const Icon = styled(Image)`
 	width: 3rem;
 	margin-right: 1rem;
 `;
 
-const CSN = styled.img`
+const CSN = styled(Image)`
 	max-height: 5rem;
 `;
 
@@ -43,24 +48,21 @@ export default function Labels() {
 		<Background>
 			<Container>
 				<div className="d-flex flex-column align-items-center text-center">
-					<CSN src="/assets/images/CSN.png" alt="Conseil Supérieur du Notariat" />
+					<CSN src={CSNImage} alt="Conseil Supérieur du Notariat" />
 					<h2 className="mt-2 mb-2">
 						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
 					</h2>
 					<Row>
 						<StyledCol xs={12} md={4}>
-							<Icon src="/assets/images/rules.svg" alt="Respect de la déontologie" />
+							<Icon src={Rules} alt="Respect de la déontologie" />
 							<p>Respect de la déontologie</p>
 						</StyledCol>
 						<StyledCol xs={12} md={4}>
-							<Icon src="/assets/images/security.svg" alt="Respect de la sécurité" />
+							<Icon src={Security} alt="Respect de la sécurité" />
 							<p>Données sécurisées</p>
 						</StyledCol>
 						<StyledCol xs={12} md={4}>
-							<Icon
-								src="/assets/images/privacy.svg"
-								alt="Respect du droit et de la vie privée"
-							/>
+							<Icon src={Privacy} alt="Respect du droit et de la vie privée" />
 							<p>Respect du droit et de la vie privée</p>
 						</StyledCol>
 					</Row>

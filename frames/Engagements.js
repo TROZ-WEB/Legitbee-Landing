@@ -1,13 +1,19 @@
 // Dependencies
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import SimpleBox from '../components/SimpleBox';
+import Accompagnement from '../public/assets/images/accompagnement.svg';
+import Securite from '../public/assets/images/securite.svg';
+import Protection from '../public/assets/images/protection.svg';
+import Conformite from '../public/assets/images/conformite.svg';
+import EngagementsImage from '../public/assets/images/engagements.jpg';
 
 // Style
-const Icon = styled.img`
+const Icon = styled(Image)`
 	margin-right: 1rem;
 
 	@media (max-width: ${(props) => props.theme.sm}) {
@@ -15,7 +21,7 @@ const Icon = styled.img`
 	}
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	height: 26rem;
 
 	@media (max-width: ${(props) => props.theme.md}) {
@@ -45,8 +51,8 @@ export default function Engagements() {
 			</StyledTitle>
 			<Row>
 				<Col xs={12} lg={5} className="text-center">
-					<Image
-						src="/assets/images/engagements.jpg"
+					<StyledImage
+						src={EngagementsImage}
 						alt="engagements"
 						className="mb-2 mb-lg-0"
 					/>
@@ -57,10 +63,7 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon
-											src="/assets/images/accompagnement.svg"
-											alt="Accompagnement"
-										/>{' '}
+										<Icon src={Accompagnement} alt="Accompagnement" />{' '}
 										Accompagnement
 									</>
 								}
@@ -71,8 +74,7 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon src="/assets/images/securite.svg" alt="Sécurité" />{' '}
-										Sécurité
+										<Icon src={Securite} alt="Sécurité" /> Sécurité
 									</>
 								}
 								caption="Nous sommes audités par le Bureau Veritas et labellisés par le Conseil Supérieur du Notariat."
@@ -82,11 +84,7 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon
-											src="/assets/images/protection.svg"
-											alt="Protection"
-										/>{' '}
-										Protection
+										<Icon src={Protection} alt="Protection" /> Protection
 									</>
 								}
 								caption="Nous respectons votre vie privée et nous interdisons toute commercialisation de vos données personnelles."
@@ -96,11 +94,7 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon
-											src="/assets/images/conformite.svg"
-											alt="Conformité"
-										/>{' '}
-										Conformité
+										<Icon src={Conformite} alt="Conformité" /> Conformité
 									</>
 								}
 								caption="Nous sommes conformes au règlement général sur la protection des données et au droit des successions."

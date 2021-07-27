@@ -1,12 +1,13 @@
 // Dependencies
 import Info from './Info';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 // Components
 import Button from '../../../../components/Button';
 
 // Style
-const Checkmark = styled.img`
+const Checkmark = styled(Image)`
 	width: 1rem;
 `;
 

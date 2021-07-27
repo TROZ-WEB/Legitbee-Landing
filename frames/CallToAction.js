@@ -33,10 +33,6 @@ const RightCol = styled(Col)`
 	position: relative;
 `;
 
-const Image = styled.img`
-	width: 80%;
-`;
-
 const Video = styled.video`
 	width: 80%;
 `;

@@ -1,12 +1,18 @@
 // Dependencies
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
-import { fontSize } from '../Theme';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
+import CEHDF from '../public/assets/images/partners/cehdf.png';
+import Euratechnologies from '../public/assets/images/partners/euratechnologies.png';
+import Nataxis from '../public/assets/images/partners/nataxis.png';
+import NotairesPdc from '../public/assets/images/partners/notaires-pdc.png';
+import Hodefi from '../public/assets/images/partners/hodefi.png';
+import LeVillage from '../public/assets/images/partners/le-village.png';
 
 // Style
 const StyledSlide = styled(Slide)`
@@ -18,7 +24,7 @@ const StyledSlide = styled(Slide)`
 	}
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 100%;
 	padding: 0rem 3rem;
 	align-self: center;
@@ -60,31 +66,22 @@ export default function Partners() {
 					<div>
 						<Slider>
 							<StyledSlide index={0}>
-								<Image src="/assets/images/partners/cehdf.png" alt="cehdf" />
+								<StyledImage src={CEHDF} alt="cehdf" />
 							</StyledSlide>
 							<StyledSlide index={1}>
-								<Image
-									src="/assets/images/partners/euratechnologies.png"
-									alt="euratechnologies"
-								/>
+								<StyledImage src={Euratechnologies} alt="euratechnologies" />
 							</StyledSlide>
 							<StyledSlide index={2}>
-								<Image src="/assets/images/partners/nataxis.png" alt="nataxis" />
+								<StyledImage src={Nataxis} alt="nataxis" />
 							</StyledSlide>
 							<StyledSlide index={3}>
-								<Image
-									src="/assets/images/partners/notaires-pdc.png"
-									alt="notaires-pdc"
-								/>
+								<StyledImage src={NotairesPdc} alt="notaires-pdc" />
 							</StyledSlide>
 							<StyledSlide index={4}>
-								<Image src="/assets/images/partners/hodefi.png" alt="hodefi" />
+								<StyledImage src={Hodefi} alt="hodefi" />
 							</StyledSlide>
 							<StyledSlide index={5}>
-								<Image
-									src="/assets/images/partners/le-village.png"
-									alt="le-village"
-								/>
+								<StyledImage src={LeVillage} alt="le-village" />
 							</StyledSlide>
 						</Slider>
 						{/* <ButtonBack className="partner_button partner_button--left">

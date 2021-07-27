@@ -1,31 +1,39 @@
 // Dependencies
 import styled from 'styled-components';
 import TextLoop from 'react-text-loop';
+import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import ImageBox from '../components/ImageBox';
-
+import Line1Img from '../public/assets/images/line-1.svg';
+import Line2Img from '../public/assets/images/line-2.svg';
+import Line3Img from '../public/assets/images/line-3.svg';
+import Line4Img from '../public/assets/images/line-4.svg';
+import SuccessionSimplifiee from '../public/assets/images/succession-simplifiee.jpg';
+import HeritageNumerique from '../public/assets/images/heritage-numerique.jpg';
+import DemarchesAdministratives from '../public/assets/images/demarches-administratives.jpg';
+import SouvenirsTransmis from '../public/assets/images/souvenirs-transmis.jpg';
 // Style
-const Line1 = styled.img`
+const Line1 = styled(Image)`
 	position: absolute;
 	top: 14rem;
 	right: -5rem;
 `;
 
-const Line2 = styled.img`
+const Line2 = styled(Image)`
 	position: absolute;
 	top: 48rem;
 	left: 5rem;
 `;
 
-const Line3 = styled.img`
+const Line3 = styled(Image)`
 	position: absolute;
 	top: 80rem;
 	right: 17rem;
 `;
 
-const Line4 = styled.img`
+const Line4 = styled(Image)`
 	position: absolute;
 	top: 110rem;
 	right: -8rem;
@@ -68,7 +76,7 @@ export default function Solution() {
 			</Title>
 			<ImageBox
 				className="mt-5"
-				src="/assets/images/succession-simplifiee.jpg"
+				src={SuccessionSimplifiee}
 				alt="succession simplifiée"
 				title={
 					<>
@@ -78,10 +86,10 @@ export default function Solution() {
 				}
 				caption="Désormais, tous les documents nécessaires à la gestion de votre succession : vos informations administratives et documents importants, vos consignes et instructions sont organisés, sécurisés et transmis rapidement à vos proches."
 			/>
-			<Line1 src="/assets/images/line-1.svg" className="d-none d-xl-block" />
+			<Line1 src={Line1Img} className="d-none d-xl-block" />
 			<ImageBox
 				inversed="true"
-				src="/assets/images/heritage-numerique.jpg"
+				src={HeritageNumerique}
 				alt="héritage numérique"
 				title={
 					<>
@@ -91,9 +99,9 @@ export default function Solution() {
 				}
 				caption="Vos actifs sous toutes leurs formes (titres et placements, immobilier, collections, cryptomonnaies, neobanques, jeux et paris, trading) sont intégrés à la succession : tout est documenté, rien n'est oublié."
 			/>
-			<Line2 src="/assets/images/line-2.svg" className="d-none d-xl-block" />
+			<Line2 src={Line2Img} className="d-none d-xl-block" />
 			<ImageBox
-				src="/assets/images/demarches-administratives.jpg"
+				src={DemarchesAdministratives}
 				alt="démarches administratives"
 				title={
 					<>
@@ -103,10 +111,10 @@ export default function Solution() {
 				}
 				caption="La gestion d'une succession est longue et complexe. Avec Legitbee, vous épargnez à votre proches des recherches et démarches éprouvantes."
 			/>
-			<Line3 src="/assets/images/line-3.svg" className="d-none d-xl-block" />
+			<Line3 src={Line3Img} className="d-none d-xl-block" />
 			<ImageBox
 				inversed="true"
-				src="/assets/images/souvenirs-transmis.jpg"
+				src={SouvenirsTransmis}
 				alt="Messages, souvenirs et souhaits transmis"
 				title={
 					<>
@@ -116,7 +124,7 @@ export default function Solution() {
 				}
 				caption="Vos proches veulent conserver votre souvenir et celui de votre famille. Transmettez-leur tout ce que vous souhaitez leur confier : photos, vidéos, correspondances, textes, histoires, généalogie… Vous pouvez également préciser vos souhaits quant au devenir de vos comptes en ligne."
 			/>
-			<Line4 src="/assets/images/line-4.svg" className="d-none d-xl-block" />
+			<Line4 src={Line4Img} className="d-none d-xl-block" />
 		</Container>
 	);
 }

@@ -1,6 +1,7 @@
 // Dependencies
 import styled from 'styled-components';
 import { boxShadow } from '../Theme';
+import Image from 'next/image';
 
 // Components
 
@@ -39,7 +40,7 @@ const Box = styled.div`
 	}
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 6rem;
 	position: absolute;
 	top: 0;
@@ -51,7 +52,7 @@ const Image = styled.img`
 export default function IconBox({ src, alt, title, caption, className }) {
 	return (
 		<Box className={className}>
-			<Image src={src} alt={alt} />
+			<StyledImage src={src} alt={alt} />
 			<h2 className="mb-05">
 				<mark>{title}</mark>
 			</h2>

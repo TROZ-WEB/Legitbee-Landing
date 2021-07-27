@@ -2,15 +2,18 @@
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 import { boxShadow } from '../../Theme';
+import Image from 'next/image';
 
 // Components
 import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
+import Guillaume from '../../public/assets/images/about/guillaume.jpg';
+import Pierre from '../../public/assets/images/about/pierre.jpg';
 
 // Style
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 15rem;
 	border-radius: 2rem;
 	${boxShadow}
@@ -51,12 +54,12 @@ export default function About() {
 
 				<Row>
 					<StyledCol xs={12} md={6}>
-						<Image src="/assets/images/about/guillaume.jpg" alt="Guillaume Parisot" />
+						<StyledImage src={Guillaume} alt="Guillaume Parisot" />
 						<h2 className="my-1">Guillaume Parisot</h2>
 						<p>CEO et co-fondateur</p>
 					</StyledCol>
 					<StyledCol xs={12} md={6}>
-						<Image src="/assets/images/about/pierre.jpg" alt="Pierre Delannoy" />
+						<StyledImage src={Pierre} alt="Pierre Delannoy" />
 						<h2 className="my-1">Pierre Delannoy</h2>
 						<p>CTO et co-fondateur</p>
 					</StyledCol>

@@ -1,11 +1,13 @@
 // Dependencies
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 import Container from './Container';
 import StyledLink from './StyledLink';
 import IconLink from './IconLink';
+import Logo from '../public/assets/images/logo.svg';
 
 // SVG
 import Linkedin from './Svg/Linkedin';
@@ -16,7 +18,7 @@ import Email from './Svg/Email';
 import Location from './Svg/Location';
 
 // Style
-const Logo = styled.img`
+const StyledLogo = styled(Image)`
 	width: 9rem;
 `;
 
@@ -43,7 +45,7 @@ export default function Footer() {
 		<Container>
 			<FooterContainer>
 				<StyledCol xs={12} md={4}>
-					<Logo src="/assets/images/logo.svg" alt="logo" />
+					<StyledLogo src={Logo} alt="logo" layout="fill" />
 					<SocialContainer>
 						<IconLink href="https://www.linkedin.com/company/legitbee/about/" blank>
 							<Linkedin />

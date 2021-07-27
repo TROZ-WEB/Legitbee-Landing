@@ -3,18 +3,20 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { boxShadow } from '../../Theme';
 import { Navbar as Nav, Row, Col, Collapse } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 import Button from '../Button';
 import NavLink from './NavLink';
 import Hamburger from './Hamburger';
+import Logo from '../../public/assets/images/logo.jpg';
 
 // Functions
 import useEvent from '../../functions/useEvent';
 
-if (typeof window === 'undefined') {
-	global.window = {};
-}
+// if (typeof window === 'undefined') {
+// 	global.window = {};
+// }
 
 // Style
 const NavbarContainer = styled(Nav)`
@@ -50,7 +52,7 @@ const LinksContainer = styled(Col)`
 	}
 `;
 
-const Logo = styled.img`
+const StyledLogo = styled(Image)`
 	width: 9rem;
 `;
 
@@ -87,7 +89,7 @@ export default function Navbar({ active }) {
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
 			<Col xs={6} md={2}>
 				<NavLink to="/">
-					<Logo src="/assets/images/logo.svg" alt="logo" />
+					<StyledLogo src={Logo} alt="logo" layout="fill" />
 				</NavLink>
 			</Col>
 			<Col className="d-block d-lg-none d-flex justify-content-end">

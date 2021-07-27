@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { boxShadow } from '../Theme';
 import { Row, Col } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 
@@ -46,7 +47,7 @@ const TextCol = styled(Col)`
 	}
 `;
 
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	width: 18rem;
 `;
 
@@ -59,7 +60,7 @@ export default function ImageBox({ src, alt, title, caption, inversed, className
 				<p>{caption}</p>
 			</TextCol>
 			<ImgCol xs={{ size: 12, order: 1 }} md={{ size: 4, order: inversed && 1 }}>
-				<Image src={src} alt={alt} />
+				<StyledImage src={src} alt={alt} />
 			</ImgCol>
 		</Box>
 	);

@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 import { boxShadow } from '../../Theme';
+import Image from 'next/image';
 
 // Components
 import Navbar from '../../components/Navbar';
@@ -9,9 +10,12 @@ import List from '../../components/List';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
 import Banner from '../../components/Banner';
+import EspaceAdministratif from '../../public/assets/images/features/espace-administratif.png';
+import Destinataire from '../../public/assets/images/features/destinataire.png';
+import PatrimoineClassique from '../../public/assets/images/features/patrimoine-classique.png';
 
 // Style
-const Image = styled.img`
+const StyledImage = styled(Image)`
 	max-width: 90%;
 	border-radius: 2rem;
 	${boxShadow};
@@ -46,10 +50,7 @@ export default function Features() {
 
 				<Row>
 					<Col xs={12} md={6}>
-						<Image
-							src="/assets/images/features/espace-administratif.png"
-							alt="Espace administratif"
-						/>
+						<StyledImage src={EspaceAdministratif} alt="Espace administratif" />
 					</Col>
 					<StyledCol xs={12} md={6}>
 						<h2 className="mb-2">
@@ -80,16 +81,13 @@ export default function Features() {
 						/>
 					</StyledCol>
 					<Col xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
-						<Image src="/assets/images/features/destinataire.png" alt="Destinataire" />
+						<StyledImage src={Destinataire} alt="Destinataire" />
 					</Col>
 				</Row>
 
 				<Row>
 					<Col xs={12} md={6}>
-						<Image
-							src="/assets/images/features/patrimoine-classique.png"
-							alt="Patrimoine classique"
-						/>
+						<StyledImage src={PatrimoineClassique} alt="Patrimoine classique" />
 					</Col>
 					<StyledCol xs={12} md={6}>
 						<h2 className="mb-2">

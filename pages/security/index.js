@@ -1,6 +1,7 @@
 // Dependencies
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
+import Image from 'next/image';
 
 // Components
 import Navbar from '../../components/Navbar';
@@ -10,25 +11,25 @@ import TextBlock from './components/TextBlock';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
+import Encryption from '../../public/assets/images/encryption.svg';
+import Conformity from '../../public/assets/images/conformity.svg';
+import RGPD from '../../public/assets/images/rgpd.svg';
+import CSNImage from '../../public/assets/images/CSN.png';
+import BVImage from '../../public/assets/images/BV.png';
 
 // Style
-const Image = styled.img`
-	max-width: 90%;
-	border-radius: 2rem;
-`;
-
 const StyledCol = styled(Col)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 `;
 
-const CSN = styled.img`
+const CSN = styled(Image)`
 	max-height: 4rem;
 	margin-right: 2rem;
 `;
 
-const BV = styled.img`
+const BV = styled(Image)`
 	max-height: 5rem;
 `;
 
@@ -52,14 +53,14 @@ export default function Security({ ...props }) {
 						Legitbee est une solution labellisée par le Conseil Supérieur du Notariat et
 						auditée par le Bureau Veritas.
 					</p>
-					<CSN src="/assets/images/CSN.png" alt="Conseil Supérieur du Notariat" />
-					<BV src="/assets/images/BV.png" alt="Bureau Veritas" />
+					<CSN src={CSNImage} alt="Conseil Supérieur du Notariat" />
+					<BV src={BVImage} alt="Bureau Veritas" />
 				</Banner>
 
 				<Row>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/encryption.svg"
+							src={Encryption}
 							alt="Chiffrement"
 							title="Chiffrement"
 							caption="Nous mettons en oeuvre les algorithmes de chiffrement les plus robustes du marché et sommes fréquemment audités par des spécialistes de la sécurité."
@@ -67,7 +68,7 @@ export default function Security({ ...props }) {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/conformity.svg"
+							src={Conformity}
 							alt="Conformité"
 							title="Conformité"
 							caption="Nous respectons les procédures successorales et la charte pour un développement éthique du numérique notarial."
@@ -75,7 +76,7 @@ export default function Security({ ...props }) {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src="/assets/images/rgpd.svg"
+							src={RGPD}
 							alt="Respect RGPD"
 							title="Respect RGPD"
 							caption="Le respect des données utilisateurs est au coeur de notre projet. Vous restez souverains de vos données à tout moment."
