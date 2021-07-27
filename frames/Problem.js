@@ -24,7 +24,7 @@ export default function Problem() {
 	return (
 		<Container>
 			<Title>
-				Avez-vous pensé à tout pour <br />
+				Avez-vous pensé à tout pour <br className="d-none d-lg-block" />
 				<mark>votre succession</mark> ?
 			</Title>
 			<Row>

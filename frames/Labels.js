@@ -28,6 +28,10 @@ const StyledCol = styled(Col)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		padding-bottom: 2rem;
+	}
 `;
 
 // Render
@@ -38,21 +42,21 @@ export default function Labels() {
 	return (
 		<Background>
 			<Container>
-				<div className="d-flex flex-column align-items-center">
+				<div className="d-flex flex-column align-items-center text-center">
 					<CSN src="/assets/images/CSN.png" alt="Conseil Supérieur du Notariat" />
 					<h2 className="mt-2 mb-2">
 						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
 					</h2>
 					<Row>
-						<StyledCol>
+						<StyledCol xs={12} md={4}>
 							<Icon src="/assets/images/rules.svg" alt="Respect de la déontologie" />
 							<p>Respect de la déontologie</p>
 						</StyledCol>
-						<StyledCol>
+						<StyledCol xs={12} md={4}>
 							<Icon src="/assets/images/security.svg" alt="Respect de la sécurité" />
 							<p>Données sécurisées</p>
 						</StyledCol>
-						<StyledCol>
+						<StyledCol xs={12} md={4}>
 							<Icon
 								src="/assets/images/privacy.svg"
 								alt="Respect du droit et de la vie privée"
@@ -80,8 +84,8 @@ export default function Labels() {
 							<p className="mb-1">
 								La labellisation de notre société en tant que solutions numériques
 								pour les notaires et leurs clients a été prononcée par le président
-								du Conseil Supérieur du Notariat pour la période du 28 Juin 2021
-								au 27 Juin 2024.
+								du Conseil Supérieur du Notariat pour la période du 28 Juin 2021 au
+								27 Juin 2024.
 							</p>
 							<p>
 								Le périmètre audité inclus les activités de formalités postérieures

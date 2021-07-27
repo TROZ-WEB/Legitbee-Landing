@@ -9,6 +9,10 @@ import SimpleBox from '../components/SimpleBox';
 // Style
 const Icon = styled.img`
 	margin-right: 1rem;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		transform: scale(0.8);
+	}
 `;
 
 const Image = styled.img`

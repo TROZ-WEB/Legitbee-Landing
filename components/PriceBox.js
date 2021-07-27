@@ -23,6 +23,8 @@ const Box = styled.div`
 
 	@media (max-width: ${(props) => props.theme.sm}) {
 		height: auto;
+		text-align: left;
+		padding: 2rem 2rem;
 	}
 `;
 
@@ -30,6 +32,10 @@ const Title = styled.h2`
 	position: relative;
 	left: -3rem;
 	margin-bottom: 2rem;
+
+	@media (max-width: ${(props) => props.theme.sm}) {
+		left: 0rem;
+	}
 `;
 
 const Price = styled.div`
