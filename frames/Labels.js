@@ -66,7 +66,6 @@ export default function Labels() {
 
 					<Modal isOpen={modal} toggle={toggle}>
 						<ModalBody className="d-flex flex-column align-items-center">
-							<h2>Mesurez la qualité de nos services !</h2>
 							<CSN
 								src="/assets/images/CSN.png"
 								alt="Conseil Supérieur du Notariat"
@@ -81,8 +80,8 @@ export default function Labels() {
 							<p className="mb-1">
 								La labellisation de notre société en tant que solutions numériques
 								pour les notaires et leurs clients a été prononcée par le président
-								du Conseil Supérieur du Notariat pour la période du 8 octobre 2020
-								au 7 octobre 2023.
+								du Conseil Supérieur du Notariat pour la période du 28 Juin 2021
+								au 27 Juin 2024.
 							</p>
 							<p>
 								Le périmètre audité inclus les activités de formalités postérieures
