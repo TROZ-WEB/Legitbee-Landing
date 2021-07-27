@@ -8,7 +8,7 @@ import Banner from '../../components/Banner';
 import StyledLink from '../../components/StyledLink';
 
 // Render
-export default function LegalNotices() {
+export default function ReportDeath() {
 	return (
 		<>
 			<Navbar />

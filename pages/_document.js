@@ -38,8 +38,12 @@ class MyDocument extends Document {
 					/>
 					<meta name="theme-color" content="#004080" />
 
-					<script type="text/javascript" src="/assets/js/hotjar.js"></script>
-					<script type="text/javascript" src="/assets/js/google-tag-manager.js"></script>
+					<script async type="text/javascript" src="/assets/js/hotjar.js"></script>
+					<script
+						async
+						type="text/javascript"
+						src="/assets/js/google-tag-manager.js"
+					></script>
 					<script
 						async
 						type="text/javascript"
@@ -62,7 +66,7 @@ class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
-					<script type="text/javascript" src="/assets/js/axeptio.js"></script>
+					<script async type="text/javascript" src="/assets/js/axeptio.js"></script>
 				</body>
 			</Html>
 		);

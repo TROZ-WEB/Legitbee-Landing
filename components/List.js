@@ -19,10 +19,10 @@ const ListItem = styled.li`
 `;
 
 // Render
-export default function List({ items }) {
+export default function List({ items, ...props }) {
 	return (
 		<ListContainer>
-			{items.map((item, i) => (
+			{items?.map((item, i) => (
 				<ListItem key={i}>{item}</ListItem>
 			))}
 		</ListContainer>

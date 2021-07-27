@@ -22,7 +22,7 @@ const ListItem = styled.li`
 `;
 
 // Render
-export default function List({ list }) {
+export default function List({ list, ...props }) {
 	const [openId, setOpenId] = useState(-1);
 
 	const handleInfoClick = (questionId) => {
@@ -35,7 +35,7 @@ export default function List({ list }) {
 
 	return (
 		<ListContainer>
-			{list.map((item, i) => (
+			{list?.map((item, i) => (
 				<ListItem key={i}>
 					{item.label}{' '}
 					{item.info && (

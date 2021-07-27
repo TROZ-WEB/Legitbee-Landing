@@ -7,7 +7,7 @@ import StyledLink from '../../../components/StyledLink';
 // Style
 
 // Render
-export default function TextBlock({ title, caption, list, link }) {
+export default function TextBlock({ title, caption, list, link, ...props }) {
 	return (
 		<>
 			<h2 className="my-2">{title}</h2>

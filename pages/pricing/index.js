@@ -12,7 +12,7 @@ import Table from './components/pc/Table';
 // Style
 
 // Render
-export default function About() {
+export default function Pricing() {
 	var isMobile = useMediaQuery({ query: '(max-width: 36rem)' });
 	return (
 		<>

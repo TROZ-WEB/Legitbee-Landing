@@ -36,7 +36,7 @@ const BV = styled.img`
 import Content from '../../public/assets/data/content.json';
 
 // Render
-export default function features() {
+export default function Security({ ...props }) {
 	return (
 		<>
 			<Navbar active="security" />
@@ -83,7 +83,7 @@ export default function features() {
 					</StyledCol>
 				</Row>
 
-				{Content.security.content.map((item, i) => (
+				{Content.security.content?.map((item, i) => (
 					<TextBlock
 						key={i}
 						title={item.title}

@@ -21,7 +21,7 @@ const Button = styled.button`
 `;
 
 // Render
-export default function Info({ info, openId, id, handleInfoClick }) {
+export default function Info({ info, openId, id, handleInfoClick, ...props }) {
 	return (
 		<>
 			<Button onClick={() => handleInfoClick(id)}>?</Button>

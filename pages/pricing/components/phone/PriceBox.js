@@ -1,6 +1,6 @@
 // Dependencies
 import styled from 'styled-components';
-import { fontSize, boxShadow } from '../../../../Theme';
+import { boxShadow } from '../../../../Theme';
 
 // Components
 import List from './List';
@@ -29,7 +29,7 @@ const Title = styled.h2`
 `;
 
 // Render
-export default function PriceBox({ monthPrice, yearPrice, title, caption, list, link }) {
+export default function PriceBox({ monthPrice, yearPrice, title, caption, list, link, ...props }) {
 	return (
 		<Box>
 			<Price monthPrice={monthPrice} yearPrice={yearPrice} />

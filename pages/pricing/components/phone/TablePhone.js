@@ -8,11 +8,11 @@ import { Row, Col } from 'reactstrap';
 import Content from '../../../../public/assets/data/content.json';
 
 // Render
-export default function TablePhone() {
+export default function TablePhone({ ...props }) {
 	return (
 		<Row>
-			{Content.pricingPhone.content.map((item, i) => (
-				<>
+			{Content.pricingPhone.content?.map((item, i) => (
+				<div key={i}>
 					{item.title !== 'Numérique' && (
 						<Col key={i} xs={12}>
 							<PriceBox
@@ -25,7 +25,7 @@ export default function TablePhone() {
 							/>
 						</Col>
 					)}
-				</>
+				</div>
 			))}
 		</Row>
 	);
