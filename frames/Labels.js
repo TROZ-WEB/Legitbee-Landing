@@ -72,7 +72,7 @@ export default function Labels() {
 								className="my-1"
 							/>
 							<p className="mb-1">
-								Notre Société est labellisée pour un développement éthique et du
+								Notre solution est labellisée pour un développement éthique et du
 								numérique notarial. Nous contribuons ainsi au développement vertueux
 								d’un écosystème d’acteurs qui s’inscrivent dans les valeurs de la
 								profession.
