@@ -3,9 +3,9 @@ import { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 
-// if (typeof window === 'undefined') {
-// 	global.window = {};
-// }
+if (typeof window === 'undefined') {
+	global.window = {};
+}
 
 // Components
 import Title from '../components/Title';

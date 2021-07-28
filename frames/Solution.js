@@ -15,25 +15,25 @@ import HeritageNumerique from '../public/assets/images/heritage-numerique.jpg';
 import DemarchesAdministratives from '../public/assets/images/demarches-administratives.jpg';
 import SouvenirsTransmis from '../public/assets/images/souvenirs-transmis.jpg';
 // Style
-const Line1 = styled(Image)`
+const Line1 = styled.img`
 	position: absolute;
 	top: 14rem;
 	right: -5rem;
 `;
 
-const Line2 = styled(Image)`
+const Line2 = styled.img`
 	position: absolute;
 	top: 48rem;
 	left: 5rem;
 `;
 
-const Line3 = styled(Image)`
+const Line3 = styled.img`
 	position: absolute;
 	top: 80rem;
 	right: 17rem;
 `;
 
-const Line4 = styled(Image)`
+const Line4 = styled.img`
 	position: absolute;
 	top: 110rem;
 	right: -8rem;
@@ -78,6 +78,8 @@ export default function Solution() {
 				className="mt-5"
 				src={SuccessionSimplifiee}
 				alt="succession simplifiée"
+				width="500"
+				height="488"
 				title={
 					<>
 						L&apos;organisation de votre succession est <mark>simplifiée</mark> et{' '}
@@ -91,6 +93,8 @@ export default function Solution() {
 				inversed="true"
 				src={HeritageNumerique}
 				alt="héritage numérique"
+				width="500"
+				height="442"
 				title={
 					<>
 						Tout votre patrimoine intègre enfin votre succession, même votre
@@ -103,6 +107,8 @@ export default function Solution() {
 			<ImageBox
 				src={DemarchesAdministratives}
 				alt="démarches administratives"
+				width="500"
+				height="495"
 				title={
 					<>
 						Finies les <mark>démarches administratives</mark> interminables qui
@@ -116,6 +122,8 @@ export default function Solution() {
 				inversed="true"
 				src={SouvenirsTransmis}
 				alt="Messages, souvenirs et souhaits transmis"
+				width="500"
+				height="432"
 				title={
 					<>
 						Vos <mark>messages</mark>, <mark>souvenirs</mark> et <mark>souhaits</mark>{' '}

@@ -24,12 +24,12 @@ const StyledCol = styled(Col)`
 	justify-content: center;
 `;
 
-const CSN = styled(Image)`
+const CSNContainer = styled.div`
 	max-height: 4rem;
 	margin-right: 2rem;
 `;
 
-const BV = styled(Image)`
+const BVContainer = styled.div`
 	max-height: 5rem;
 `;
 
@@ -53,8 +53,17 @@ export default function Security({ ...props }) {
 						Legitbee est une solution labellisée par le Conseil Supérieur du Notariat et
 						auditée par le Bureau Veritas.
 					</p>
-					<CSN src={CSNImage} alt="Conseil Supérieur du Notariat" />
-					<BV src={BVImage} alt="Bureau Veritas" />
+					<CSNContainer>
+						<Image
+							src={CSNImage}
+							alt="Conseil Supérieur du Notariat"
+							width="294"
+							height="171"
+						/>
+					</CSNContainer>
+					<BVContainer>
+						<Image src={BVImage} alt="Bureau Veritas" width="150" height="186" />
+					</BVContainer>
 				</Banner>
 
 				<Row>
@@ -62,6 +71,8 @@ export default function Security({ ...props }) {
 						<IconBox
 							src={Encryption}
 							alt="Chiffrement"
+							width="166.505"
+							height="192.263"
 							title="Chiffrement"
 							caption="Nous mettons en oeuvre les algorithmes de chiffrement les plus robustes du marché et sommes fréquemment audités par des spécialistes de la sécurité."
 						/>
@@ -70,6 +81,8 @@ export default function Security({ ...props }) {
 						<IconBox
 							src={Conformity}
 							alt="Conformité"
+							width="166.505"
+							height="192.263"
 							title="Conformité"
 							caption="Nous respectons les procédures successorales et la charte pour un développement éthique du numérique notarial."
 						/>
@@ -78,6 +91,8 @@ export default function Security({ ...props }) {
 						<IconBox
 							src={RGPD}
 							alt="Respect RGPD"
+							width="166.505"
+							height="192.263"
 							title="Respect RGPD"
 							caption="Le respect des données utilisateurs est au coeur de notre projet. Vous restez souverains de vos données à tout moment."
 						/>

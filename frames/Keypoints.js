@@ -23,7 +23,7 @@ const BlueContainer = styled(Row)`
 	}
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 20vw;
 	max-width: 29rem;
 	position: relative;
@@ -49,6 +49,8 @@ export default function Keypoints() {
 						<IconBox
 							className="noshadow height"
 							src="/assets/images/safe.svg"
+							width="126.831"
+							height="146.452"
 							alt="Pas de mots de passe"
 							title="Pas de mots de passe"
 							caption={
@@ -72,6 +74,8 @@ export default function Keypoints() {
 							className="noshadow height"
 							src="/assets/images/id.svg"
 							alt="Pas de pièce d'identité"
+							width="126.831"
+							height="146.452"
 							title="Pas de pièce d'identité"
 							caption={
 								<>
@@ -94,6 +98,8 @@ export default function Keypoints() {
 							className="noshadow height"
 							src="/assets/images/secure.svg"
 							alt="Données sécurisées"
+							width="126.831"
+							height="146.452"
 							title="Données sécurisées"
 							caption={
 								<>
@@ -113,6 +119,8 @@ export default function Keypoints() {
 							className="noshadow height"
 							src="/assets/images/fast.svg"
 							alt="Vérification des décès"
+							width="126.831"
+							height="146.452"
 							title="Vérification des décès"
 							caption={
 								<>
@@ -131,7 +139,9 @@ export default function Keypoints() {
 						/>
 					</Col>
 				</BlueContainer>
-				<StyledImage src={Serenite} alt="soyez serains" className="d-none d-lg-block" />
+				<ImageContainer className="d-none d-lg-block">
+					<Image src={Serenite} alt="soyez serains" width="700" height="673" />
+				</ImageContainer>
 			</FlexContainer>
 		</Container>
 	);

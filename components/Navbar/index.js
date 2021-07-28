@@ -9,14 +9,14 @@ import Image from 'next/image';
 import Button from '../Button';
 import NavLink from './NavLink';
 import Hamburger from './Hamburger';
-import Logo from '../../public/assets/images/logo.jpg';
+import Logo from '../../public/assets/images/logo.svg';
 
 // Functions
 import useEvent from '../../functions/useEvent';
 
-// if (typeof window === 'undefined') {
-// 	global.window = {};
-// }
+if (typeof window === 'undefined') {
+	global.window = {};
+}
 
 // Style
 const NavbarContainer = styled(Nav)`
@@ -52,7 +52,7 @@ const LinksContainer = styled(Col)`
 	}
 `;
 
-const StyledLogo = styled(Image)`
+const ImageContainer = styled.div`
 	width: 9rem;
 `;
 
@@ -89,7 +89,9 @@ export default function Navbar({ active }) {
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
 			<Col xs={6} md={2}>
 				<NavLink to="/">
-					<StyledLogo src={Logo} alt="logo" layout="fill" />
+					<ImageContainer>
+						<Image src={Logo} alt="logo" width="413.246" height="128.353" />
+					</ImageContainer>
 				</NavLink>
 			</Col>
 			<Col className="d-block d-lg-none d-flex justify-content-end">

@@ -10,7 +10,7 @@ import Button from '../components/Button';
 import HeroImage from '../public/assets/images/hero.jpg';
 
 // Style
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 100%;
 	max-width: 32rem;
 `;
@@ -80,7 +80,9 @@ export default function Hero() {
 					md={{ size: 5, order: 2 }}
 					lg={{ size: 6, order: 2 }}
 				>
-					<StyledImage src={HeroImage} alt="hero" />
+					<ImageContainer>
+						<Image src={HeroImage} alt="hero" width="900" height="1147" />
+					</ImageContainer>
 				</RightCol>
 			</StyledRow>
 		</Container>

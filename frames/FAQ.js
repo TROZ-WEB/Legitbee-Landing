@@ -12,12 +12,12 @@ import StyledLink from '../components/StyledLink';
 import FAQImage from '../public/assets/images/faq.jpg';
 
 // Style
-const ImageContainer = styled(Col)`
+const FlexContainer = styled(Col)`
 	display: flex;
 	justify-content: center;
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 100%;
 	max-width: 20rem;
 	height: fit-content;
@@ -64,13 +64,11 @@ export default function FAQ() {
 						</StyledLink>
 					</div>
 				</Col>
-				<ImageContainer>
-					<StyledImage
-						src={FAQImage}
-						alt="faq illustration"
-						className="d-none d-lg-block"
-					/>
-				</ImageContainer>
+				<FlexContainer>
+					<ImageContainer className="d-none d-lg-block">
+						<Image src={FAQImage} alt="faq illustration" widht="700" height="1034" />
+					</ImageContainer>
+				</FlexContainer>
 			</Row>
 		</Container>
 	);

@@ -13,7 +13,7 @@ import Guillaume from '../../public/assets/images/about/guillaume.jpg';
 import Pierre from '../../public/assets/images/about/pierre.jpg';
 
 // Style
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 15rem;
 	border-radius: 2rem;
 	${boxShadow}
@@ -54,12 +54,21 @@ export default function About() {
 
 				<Row>
 					<StyledCol xs={12} md={6}>
-						<StyledImage src={Guillaume} alt="Guillaume Parisot" />
+						<ImageContainer>
+							<Image
+								src={Guillaume}
+								alt="Guillaume Parisot"
+								width="200"
+								height="200"
+							/>
+						</ImageContainer>
 						<h2 className="my-1">Guillaume Parisot</h2>
 						<p>CEO et co-fondateur</p>
 					</StyledCol>
 					<StyledCol xs={12} md={6}>
-						<StyledImage src={Pierre} alt="Pierre Delannoy" />
+						<ImageContainer>
+							<Image src={Pierre} alt="Pierre Delannoy" width="200" height="200" />
+						</ImageContainer>
 						<h2 className="my-1">Pierre Delannoy</h2>
 						<p>CTO et co-fondateur</p>
 					</StyledCol>

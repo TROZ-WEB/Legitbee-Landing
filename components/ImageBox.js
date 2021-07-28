@@ -47,12 +47,12 @@ const TextCol = styled(Col)`
 	}
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 18rem;
 `;
 
 // Render
-export default function ImageBox({ src, alt, title, caption, inversed, className }) {
+export default function ImageBox({ src, alt, width, height, title, caption, inversed, className }) {
 	return (
 		<Box inversed={inversed} className={className}>
 			<TextCol md={{ size: 8, order: inversed && 2 }} inversed={inversed}>
@@ -60,7 +60,9 @@ export default function ImageBox({ src, alt, title, caption, inversed, className
 				<p>{caption}</p>
 			</TextCol>
 			<ImgCol xs={{ size: 12, order: 1 }} md={{ size: 4, order: inversed && 1 }}>
-				<StyledImage src={src} alt={alt} />
+				<ImageContainer>
+					<Image src={src} alt={alt} width={width} height={height} />
+				</ImageContainer>
 			</ImgCol>
 		</Box>
 	);

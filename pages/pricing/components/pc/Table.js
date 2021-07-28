@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Button from '../../../../components/Button';
 
 // Style
-const Checkmark = styled(Image)`
+const Checkmark = styled.div`
 	width: 1rem;
 `;
 
@@ -135,7 +135,7 @@ export default function Table() {
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
 						{item.free && typeof item.free === 'boolean' ? (
-							<Checkmark src="assets/images/pricing/checkmark.svg" alt="Checkmark" />
+							<Checkmark><Image src="assets/images/pricing/checkmark.svg" alt="Checkmark" width="29.546" height="22.468"/></Checkmark>
 						) : (
 							typeof item.free === 'string' && item.free
 						)}
@@ -160,7 +160,14 @@ export default function Table() {
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
 						{item.serenity && typeof item.serenity === 'boolean' ? (
-							<Checkmark src="assets/images/pricing/checkmark.svg" alt="Checkmark" />
+							<Checkmark>
+								<Image
+									src="assets/images/pricing/checkmark.svg"
+									alt="Checkmark"
+									width="29.546"
+									height="22.468"
+								/>
+							</Checkmark>
 						) : (
 							typeof item.serenity === 'string' && item.serenity
 						)}
@@ -188,7 +195,14 @@ export default function Table() {
 				{Content.pricing.list.map((item, i) => (
 					<StyledLi key={i}>
 						{item.premium && typeof item.premium === 'boolean' ? (
-							<Checkmark src="assets/images/pricing/checkmark.svg" alt="Checkmark" />
+							<Checkmark>
+								<Image
+									src="assets/images/pricing/checkmark.svg"
+									alt="Checkmark"
+									width="29.546"
+									height="22.468"
+								/>
+							</Checkmark>
 						) : (
 							typeof item.premium === 'string' && item.premium
 						)}

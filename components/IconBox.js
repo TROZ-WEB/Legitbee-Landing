@@ -40,7 +40,7 @@ const Box = styled.div`
 	}
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 6rem;
 	position: absolute;
 	top: 0;
@@ -49,10 +49,12 @@ const StyledImage = styled(Image)`
 `;
 
 // Render
-export default function IconBox({ src, alt, title, caption, className }) {
+export default function IconBox({ src, alt, width, height, title, caption, className }) {
 	return (
 		<Box className={className}>
-			<StyledImage src={src} alt={alt} />
+			<ImageContainer>
+				<Image src={src} alt={alt} width={width} height={height} />
+			</ImageContainer>
 			<h2 className="mb-05">
 				<mark>{title}</mark>
 			</h2>

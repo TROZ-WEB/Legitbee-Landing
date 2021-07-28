@@ -35,6 +35,8 @@ export default function Problem() {
 					<IconBox
 						src={Money}
 						alt="Patrimoine diversifié"
+						width="166.505"
+						height="192.263"
 						title="Patrimoine diversifié"
 						caption="Comment vos héritiers vont-ils retrouver l'ensemble du patrimoine que vous avez constitué ?"
 					/>
@@ -43,6 +45,8 @@ export default function Problem() {
 					<IconBox
 						src={Memories}
 						alt="Héritage numérique"
+						width="166.505"
+						height="192.263"
 						title="Héritage numérique"
 						caption="Comment allez-vous transmettre vos actifs et fichiers captifs de vos comptes en ligne ?"
 					/>
@@ -51,6 +55,8 @@ export default function Problem() {
 					<IconBox
 						src={Infos}
 						alt="Informations personnelles"
+						width="166.505"
+						height="192.263"
 						title="Informations personnelles"
 						caption="Combien de jours passeront vos héritiers à chercher vos informations nécessaires aux démarches ?"
 					/>

@@ -24,7 +24,7 @@ const StyledSlide = styled(Slide)`
 	}
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	width: 100%;
 	padding: 0rem 3rem;
 	align-self: center;
@@ -66,22 +66,49 @@ export default function Partners() {
 					<div>
 						<Slider>
 							<StyledSlide index={0}>
-								<StyledImage src={CEHDF} alt="cehdf" />
+								<ImageContainer>
+									<Image src={CEHDF} alt="cehdf" width="200" height="44" />
+								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={1}>
-								<StyledImage src={Euratechnologies} alt="euratechnologies" />
+								<ImageContainer>
+									<Image
+										src={Euratechnologies}
+										alt="euratechnologies"
+										width="200"
+										height="77"
+									/>
+								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={2}>
-								<StyledImage src={Nataxis} alt="nataxis" />
+								<ImageContainer>
+									<Image src={Nataxis} alt="nataxis" width="200" height="64" />
+								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={3}>
-								<StyledImage src={NotairesPdc} alt="notaires-pdc" />
+								<ImageContainer>
+									<Image
+										src={NotairesPdc}
+										alt="notaires-pdc"
+										width="200"
+										height="76"
+									/>
+								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={4}>
-								<StyledImage src={Hodefi} alt="hodefi" />
+								<ImageContainer>
+									<Image src={Hodefi} alt="hodefi" width="200" height="54" />
+								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={5}>
-								<StyledImage src={LeVillage} alt="le-village" />
+								<ImageContainer>
+									<Image
+										src={LeVillage}
+										alt="le-village"
+										width="200"
+										height="144"
+									/>
+								</ImageContainer>
 							</StyledSlide>
 						</Slider>
 						{/* <ButtonBack className="partner_button partner_button--left">

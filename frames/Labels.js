@@ -15,12 +15,12 @@ import Security from '../public/assets/images/security.svg';
 import Privacy from '../public/assets/images/privacy.svg';
 
 // Style
-const Icon = styled(Image)`
+const IconContainer = styled.div`
 	width: 3rem;
 	margin-right: 1rem;
 `;
 
-const CSN = styled(Image)`
+const CSNContainer = styled.div`
 	max-height: 5rem;
 `;
 
@@ -48,21 +48,49 @@ export default function Labels() {
 		<Background>
 			<Container>
 				<div className="d-flex flex-column align-items-center text-center">
-					<CSN src={CSNImage} alt="Conseil Supérieur du Notariat" />
+					<CSNContainer>
+						<Image
+							src={CSNImage}
+							alt="Conseil Supérieur du Notariat"
+							width="294"
+							height="171"
+						/>
+					</CSNContainer>
 					<h2 className="mt-2 mb-2">
 						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
 					</h2>
 					<Row>
 						<StyledCol xs={12} md={4}>
-							<Icon src={Rules} alt="Respect de la déontologie" />
+							<IconContainer>
+								<Image
+									src={Rules}
+									alt="Respect de la déontologie"
+									width="512"
+									height="512"
+								/>
+							</IconContainer>
 							<p>Respect de la déontologie</p>
 						</StyledCol>
 						<StyledCol xs={12} md={4}>
-							<Icon src={Security} alt="Respect de la sécurité" />
+							<IconContainer>
+								<Image
+									src={Security}
+									alt="Respect de la sécurité"
+									width="512"
+									height="512"
+								/>
+							</IconContainer>
 							<p>Données sécurisées</p>
 						</StyledCol>
 						<StyledCol xs={12} md={4}>
-							<Icon src={Privacy} alt="Respect du droit et de la vie privée" />
+							<IconContainer>
+								<Image
+									src={Privacy}
+									alt="Respect du droit et de la vie privée"
+									width="512"
+									height="512"
+								/>
+							</IconContainer>
 							<p>Respect du droit et de la vie privée</p>
 						</StyledCol>
 					</Row>
@@ -72,11 +100,14 @@ export default function Labels() {
 
 					<Modal isOpen={modal} toggle={toggle}>
 						<ModalBody className="d-flex flex-column align-items-center">
-							<CSN
-								src="/assets/images/CSN.png"
-								alt="Conseil Supérieur du Notariat"
-								className="my-1"
-							/>
+							<CSNContainer className="my-1">
+								<Image
+									src={CSNImage}
+									alt="Conseil Supérieur du Notariat"
+									width="294"
+									height="171"
+								/>
+							</CSNContainer>
 							<p className="mb-1">
 								Notre solution est labellisée pour un développement éthique et du
 								numérique notarial. Nous contribuons ainsi au développement vertueux

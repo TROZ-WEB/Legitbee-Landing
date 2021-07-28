@@ -15,7 +15,7 @@ import Destinataire from '../../public/assets/images/features/destinataire.png';
 import PatrimoineClassique from '../../public/assets/images/features/patrimoine-classique.png';
 
 // Style
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	max-width: 90%;
 	border-radius: 2rem;
 	${boxShadow};
@@ -50,7 +50,14 @@ export default function Features() {
 
 				<Row>
 					<Col xs={12} md={6}>
-						<StyledImage src={EspaceAdministratif} alt="Espace administratif" />
+						<ImageContainer>
+							<Image
+								src={EspaceAdministratif}
+								alt="Espace administratif"
+								width="531"
+								height="472"
+							/>
+						</ImageContainer>
 					</Col>
 					<StyledCol xs={12} md={6}>
 						<h2 className="mb-2">
@@ -81,13 +88,22 @@ export default function Features() {
 						/>
 					</StyledCol>
 					<Col xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
-						<StyledImage src={Destinataire} alt="Destinataire" />
+						<ImageContainer>
+							<Image src={Destinataire} alt="Destinataire" width="531" height="472" />
+						</ImageContainer>
 					</Col>
 				</Row>
 
 				<Row>
 					<Col xs={12} md={6}>
-						<StyledImage src={PatrimoineClassique} alt="Patrimoine classique" />
+						<ImageContainer>
+							<Image
+								src={PatrimoineClassique}
+								alt="Patrimoine classique"
+								width="531"
+								height="472"
+							/>
+						</ImageContainer>
 					</Col>
 					<StyledCol xs={12} md={6}>
 						<h2 className="mb-2">

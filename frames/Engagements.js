@@ -13,7 +13,7 @@ import Conformite from '../public/assets/images/conformite.svg';
 import EngagementsImage from '../public/assets/images/engagements.jpg';
 
 // Style
-const Icon = styled(Image)`
+const IconContainer = styled.div`
 	margin-right: 1rem;
 
 	@media (max-width: ${(props) => props.theme.sm}) {
@@ -21,7 +21,7 @@ const Icon = styled(Image)`
 	}
 `;
 
-const StyledImage = styled(Image)`
+const ImageContainer = styled.div`
 	height: 26rem;
 
 	@media (max-width: ${(props) => props.theme.md}) {
@@ -51,11 +51,9 @@ export default function Engagements() {
 			</StyledTitle>
 			<Row>
 				<Col xs={12} lg={5} className="text-center">
-					<StyledImage
-						src={EngagementsImage}
-						alt="engagements"
-						className="mb-2 mb-lg-0"
-					/>
+					<ImageContainer className="mb-2 mb-lg-0">
+						<Image src={EngagementsImage} alt="engagements" widht="700" height="579" />
+					</ImageContainer>
 				</Col>
 				<Col>
 					<Row>
@@ -63,7 +61,14 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon src={Accompagnement} alt="Accompagnement" />{' '}
+										<IconContainer>
+											<Image
+												src={Accompagnement}
+												alt="Accompagnement"
+												width="41.234"
+												height="50.309"
+											/>
+										</IconContainer>
 										Accompagnement
 									</>
 								}
@@ -74,7 +79,15 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon src={Securite} alt="Sécurité" /> Sécurité
+										<IconContainer>
+											<Image
+												src={Securite}
+												alt="Sécurité"
+												width="39"
+												height="47.012"
+											/>
+										</IconContainer>
+										Sécurité
 									</>
 								}
 								caption="Nous sommes audités par le Bureau Veritas et labellisés par le Conseil Supérieur du Notariat."
@@ -84,7 +97,15 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon src={Protection} alt="Protection" /> Protection
+										<IconContainer>
+											<Image
+												src={Protection}
+												alt="Protection"
+												width="42"
+												height="42"
+											/>
+										</IconContainer>
+										Protection
 									</>
 								}
 								caption="Nous respectons votre vie privée et nous interdisons toute commercialisation de vos données personnelles."
@@ -94,7 +115,15 @@ export default function Engagements() {
 							<SimpleBox
 								title={
 									<>
-										<Icon src={Conformite} alt="Conformité" /> Conformité
+										<IconContainer>
+											<Image
+												src={Conformite}
+												alt="Conformité"
+												width="42"
+												height="38.407"
+											/>
+										</IconContainer>
+										Conformité
 									</>
 								}
 								caption="Nous sommes conformes au règlement général sur la protection des données et au droit des successions."

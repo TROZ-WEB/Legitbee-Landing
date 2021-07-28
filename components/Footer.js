@@ -18,7 +18,7 @@ import Email from './Svg/Email';
 import Location from './Svg/Location';
 
 // Style
-const StyledLogo = styled(Image)`
+const ImageContainer = styled.div`
 	width: 9rem;
 `;
 
@@ -45,7 +45,9 @@ export default function Footer() {
 		<Container>
 			<FooterContainer>
 				<StyledCol xs={12} md={4}>
-					<StyledLogo src={Logo} alt="logo" layout="fill" />
+					<ImageContainer>
+						<Image src={Logo} alt="logo" width="413.246" height="128.353" />
+					</ImageContainer>
 					<SocialContainer>
 						<IconLink href="https://www.linkedin.com/company/legitbee/about/" blank>
 							<Linkedin />

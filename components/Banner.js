@@ -10,11 +10,9 @@ const Container = styled.div`
 	margin: 6rem 0rem 2rem 0rem;
 `;
 
-const StyledImage = styled(Image)`
-	img {
-		width: 100%;
-		margin: 2rem 0rem !important;
-	}
+const ImageContainer = styled.div`
+	width: 100%;
+	margin: 2rem 0rem !important;
 `;
 
 // Render
@@ -22,7 +20,9 @@ export default function Banner(props) {
 	return (
 		<Container>
 			{props.children}
-			<StyledImage src={Delimitation} alt="delimitation" layout="fill" />
+			<ImageContainer>
+				<Image src={Delimitation} alt="delimitation" width="1212.623" height="45.656" />
+			</ImageContainer>
 		</Container>
 	);
 }
