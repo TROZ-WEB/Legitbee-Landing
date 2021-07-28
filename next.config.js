@@ -4,6 +4,10 @@ const withFonts = require('next-fonts');
 
 const nextConfig = {
 	trailingSlash: true,
+  images: {
+    loader: 'imgix',
+    path: '/',
+  },
 };
 
 module.exports = withPlugins(

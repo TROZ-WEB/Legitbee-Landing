@@ -25,6 +25,22 @@ const Background = styled.div`
 	padding: 2rem 0rem;
 `;
 
+const TitleH2Big = styled.h2`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: ${(props) => props.theme.sm}) {
+		display: none
+	}
+`;
+
+const TitleH2Small = styled.h2`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media (min-width: ${(props) => props.theme.sm}) {
+		display: none
+	}
+`;
+
 const StyledCol = styled(Col)`
 	display: flex;
 	align-items: center;
@@ -32,6 +48,7 @@ const StyledCol = styled(Col)`
 
 	@media (max-width: ${(props) => props.theme.sm}) {
 		padding-bottom: 2rem;
+    justify-content: start;
 	}
 `;
 
@@ -59,9 +76,13 @@ export default function Labels() {
 							height="171"
 						/>
 					</CSNContainer>
-					<h2 className="mt-2 mb-2">
+					<TitleH2Big>
 						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
-					</h2>
+					</TitleH2Big>
+          <TitleH2Small>
+						Audité et labellisé par le
+            <br/><mark>Conseil Supérieur du Notariat</mark>
+					</TitleH2Small>
 					<Row>
 						<StyledCol xs={12} md={4}>
 							<IconContainer>

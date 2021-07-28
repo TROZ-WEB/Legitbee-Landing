@@ -27,7 +27,7 @@ const Title = styled.h2`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.4rem;
 `;
 
 // Render

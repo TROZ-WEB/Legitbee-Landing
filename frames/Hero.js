@@ -90,9 +90,11 @@ export default function Hero() {
 							Tout est organisé, sécurisé et transmis le moment venu aux bénéficiaires
 							de votre choix.
 						</p>
-						<Button onClick={toggle} className="big">
-							Préparer ma succession
-						</Button>
+            <a href="https://app.legitbee.com/auth/register" target="_blank">
+              <Button className="big">
+                Préparer ma succession
+              </Button>
+            </a>
 					</TextContainer>
 				</LeftCol>
 				<RightCol
