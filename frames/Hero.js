@@ -67,7 +67,7 @@ export default function Hero() {
 							]}
 						/>
 						<p className="my-2">
-							Tout est organisé, sécurisé et transmit le moment venu aux bénéficiaires
+							Tout est organisé, sécurisé et transmis le moment venu aux bénéficiaires
 							de votre choix.
 						</p>
 						<Button to="https://app.legitbee.com/auth/login" className="big">
