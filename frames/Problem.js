@@ -6,9 +6,6 @@ import styled from 'styled-components';
 import IconBox from '../components/IconBox';
 import Container from '../components/Container';
 import Title from '../components/Title';
-import Money from '../public/assets/images/money.svg';
-import Memories from '../public/assets/images/memories.svg';
-import Infos from '../public/assets/images/infos.svg';
 
 // Style
 const StyledCol = styled(Col)`
@@ -33,7 +30,7 @@ export default function Problem() {
 			<Row>
 				<StyledCol xs={12} md={4}>
 					<IconBox
-						src={Money}
+						src="/assets/images/money.svg"
 						alt="Patrimoine diversifié"
 						width="166.505"
 						height="192.263"
@@ -43,7 +40,7 @@ export default function Problem() {
 				</StyledCol>
 				<StyledCol xs={12} md={4}>
 					<IconBox
-						src={Memories}
+						src="/assets/images/memories.svg"
 						alt="Héritage numérique"
 						width="166.505"
 						height="192.263"
@@ -53,7 +50,7 @@ export default function Problem() {
 				</StyledCol>
 				<StyledCol xs={12} md={4}>
 					<IconBox
-						src={Infos}
+						src="/assets/images/infos.svg"
 						alt="Informations personnelles"
 						width="166.505"
 						height="192.263"

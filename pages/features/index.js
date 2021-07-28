@@ -10,16 +10,18 @@ import List from '../../components/List';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
 import Banner from '../../components/Banner';
-import EspaceAdministratif from '../../public/assets/images/features/espace-administratif.png';
-import Destinataire from '../../public/assets/images/features/destinataire.png';
-import PatrimoineClassique from '../../public/assets/images/features/patrimoine-classique.png';
 
 // Style
 const ImageContainer = styled.div`
-	max-width: 90%;
+	width: 45vw;
+	height: 35vw;
+	max-width: 531px;
+	max-height: 472px;
 	border-radius: 2rem;
 	${boxShadow};
 	margin: 2rem 0rem;
+	overflow: hidden;
+	position: relative;
 `;
 
 const StyledCol = styled(Col)`
@@ -52,7 +54,7 @@ export default function Features() {
 					<Col xs={12} md={6}>
 						<ImageContainer>
 							<Image
-								src={EspaceAdministratif}
+								src="/assets/images/features/espace-administratif.png"
 								alt="Espace administratif"
 								width="531"
 								height="472"
@@ -89,7 +91,12 @@ export default function Features() {
 					</StyledCol>
 					<Col xs={{ size: 12, order: 1 }} md={{ size: 6, order: 2 }}>
 						<ImageContainer>
-							<Image src={Destinataire} alt="Destinataire" width="531" height="472" />
+							<Image
+								src="/assets/images/features/destinataire.png"
+								alt="Destinataire"
+								width="531"
+								height="472"
+							/>
 						</ImageContainer>
 					</Col>
 				</Row>
@@ -98,7 +105,7 @@ export default function Features() {
 					<Col xs={12} md={6}>
 						<ImageContainer>
 							<Image
-								src={PatrimoineClassique}
+								src="/assets/images/features/patrimoine-classique.png"
 								alt="Patrimoine classique"
 								width="531"
 								height="472"

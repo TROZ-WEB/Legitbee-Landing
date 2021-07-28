@@ -8,11 +8,6 @@ import Container from '../components/Container';
 import IconBox from '../components/IconBox';
 import Title from '../components/Title';
 import StyledLink from '../components/StyledLink';
-import Serenite from '../public/assets/images/serenite.jpg';
-import Safe from '../public/assets/images/safe.svg';
-import Id from '../public/assets/images/id.svg';
-import Secure from '../public/assets/images/secure.svg';
-import Fast from '../public/assets/images/fast.svg';
 
 // Style
 const BlueContainer = styled(Row)`
@@ -52,7 +47,7 @@ export default function Keypoints() {
 					<Col xs={12} md={6}>
 						<IconBox
 							className="noshadow height"
-							src={Safe}
+							src="/assets/images/safe.svg"
 							width="126.831"
 							height="146.452"
 							alt="Pas de mots de passe"
@@ -76,7 +71,7 @@ export default function Keypoints() {
 					<Col xs={12} md={6}>
 						<IconBox
 							className="noshadow height"
-							src={Id}
+							src="/assets/images/id.svg"
 							alt="Pas de pièce d'identité"
 							width="126.831"
 							height="146.452"
@@ -100,7 +95,7 @@ export default function Keypoints() {
 					<Col xs={12} md={6}>
 						<IconBox
 							className="noshadow height"
-							src={Secure}
+							src="/assets/images/secure.svg"
 							alt="Données sécurisées"
 							width="126.831"
 							height="146.452"
@@ -121,7 +116,7 @@ export default function Keypoints() {
 					<Col xs={12} md={6}>
 						<IconBox
 							className="noshadow height"
-							src={Fast}
+							src="/assets/images/fast.svg"
 							alt="Vérification des décès"
 							width="126.831"
 							height="146.452"
@@ -144,7 +139,12 @@ export default function Keypoints() {
 					</Col>
 				</BlueContainer>
 				<ImageContainer className="d-none d-lg-block">
-					<Image src={Serenite} alt="soyez serains" width="700" height="673" />
+					<Image
+						src="/assets/images/serenite.jpg"
+						alt="soyez serains"
+						width="700"
+						height="673"
+					/>
 				</ImageContainer>
 			</FlexContainer>
 		</Container>

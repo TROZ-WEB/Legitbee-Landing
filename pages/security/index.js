@@ -11,11 +11,6 @@ import TextBlock from './components/TextBlock';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
-import Encryption from '../../public/assets/images/encryption.svg';
-import Conformity from '../../public/assets/images/conformity.svg';
-import RGPD from '../../public/assets/images/rgpd.svg';
-import CSNImage from '../../public/assets/images/CSN.png';
-import BVImage from '../../public/assets/images/BV.png';
 
 // Style
 const StyledCol = styled(Col)`
@@ -25,12 +20,12 @@ const StyledCol = styled(Col)`
 `;
 
 const CSNContainer = styled.div`
-	max-height: 4rem;
+	width: 8rem;
 	margin-right: 2rem;
 `;
 
 const BVContainer = styled.div`
-	max-height: 5rem;
+	width: 5rem;
 `;
 
 // Data
@@ -53,23 +48,30 @@ export default function Security({ ...props }) {
 						Legitbee est une solution labellisée par le Conseil Supérieur du Notariat et
 						auditée par le Bureau Veritas.
 					</p>
-					<CSNContainer>
-						<Image
-							src={CSNImage}
-							alt="Conseil Supérieur du Notariat"
-							width="294"
-							height="171"
-						/>
-					</CSNContainer>
-					<BVContainer>
-						<Image src={BVImage} alt="Bureau Veritas" width="150" height="186" />
-					</BVContainer>
+					<div className="d-flex align-items-center">
+						<CSNContainer>
+							<Image
+								src="/assets/images/CSN.png"
+								alt="Conseil Supérieur du Notariat"
+								width="294"
+								height="171"
+							/>
+						</CSNContainer>
+						<BVContainer>
+							<Image
+								src="/assets/images/BV.png"
+								alt="Bureau Veritas"
+								width="150"
+								height="186"
+							/>
+						</BVContainer>
+					</div>
 				</Banner>
 
 				<Row>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src={Encryption}
+							src="/assets/images/encryption.svg"
 							alt="Chiffrement"
 							width="166.505"
 							height="192.263"
@@ -79,7 +81,7 @@ export default function Security({ ...props }) {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src={Conformity}
+							src="/assets/images/conformity.svg"
 							alt="Conformité"
 							width="166.505"
 							height="192.263"
@@ -89,7 +91,7 @@ export default function Security({ ...props }) {
 					</StyledCol>
 					<StyledCol xs={12} md={4}>
 						<IconBox
-							src={RGPD}
+							src="/assets/images/rgpd.svg"
 							alt="Respect RGPD"
 							width="166.505"
 							height="192.263"

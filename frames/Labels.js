@@ -9,10 +9,6 @@ import Image from 'next/image';
 import Container from '../components/Container';
 import StyledLink from '../components/StyledLink';
 import Button from '../components/Button';
-import CSNImage from '../public/assets/images/CSN.png';
-import Rules from '../public/assets/images/rules.svg';
-import Security from '../public/assets/images/security.svg';
-import Privacy from '../public/assets/images/privacy.svg';
 
 // Style
 const IconContainer = styled.div`
@@ -21,7 +17,7 @@ const IconContainer = styled.div`
 `;
 
 const CSNContainer = styled.div`
-	max-height: 5rem;
+	width: 9rem;
 `;
 
 const Background = styled.div`
@@ -39,6 +35,13 @@ const StyledCol = styled(Col)`
 	}
 `;
 
+const CloseButton = styled(Button)`
+	width: 1rem;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+`;
+
 // Render
 export default function Labels() {
 	const [modal, setModal] = useState(false);
@@ -50,7 +53,7 @@ export default function Labels() {
 				<div className="d-flex flex-column align-items-center text-center">
 					<CSNContainer>
 						<Image
-							src={CSNImage}
+							src="/assets/images/CSN.png"
 							alt="Conseil Supérieur du Notariat"
 							width="294"
 							height="171"
@@ -63,7 +66,7 @@ export default function Labels() {
 						<StyledCol xs={12} md={4}>
 							<IconContainer>
 								<Image
-									src={Rules}
+									src="/assets/images/rules.svg"
 									alt="Respect de la déontologie"
 									width="512"
 									height="512"
@@ -74,7 +77,7 @@ export default function Labels() {
 						<StyledCol xs={12} md={4}>
 							<IconContainer>
 								<Image
-									src={Security}
+									src="/assets/images/security.svg"
 									alt="Respect de la sécurité"
 									width="512"
 									height="512"
@@ -85,7 +88,7 @@ export default function Labels() {
 						<StyledCol xs={12} md={4}>
 							<IconContainer>
 								<Image
-									src={Privacy}
+									src="/assets/images/privacy.svg"
 									alt="Respect du droit et de la vie privée"
 									width="512"
 									height="512"
@@ -100,9 +103,17 @@ export default function Labels() {
 
 					<Modal isOpen={modal} toggle={toggle}>
 						<ModalBody className="d-flex flex-column align-items-center">
+							<CloseButton className="nobutton" onClick={toggle}>
+								<Image
+									src="/assets/images/close.svg"
+									alt="fermer"
+									width="100"
+									height="100"
+								/>
+							</CloseButton>
 							<CSNContainer className="my-1">
 								<Image
-									src={CSNImage}
+									src="/assets/images/CSN.png"
 									alt="Conseil Supérieur du Notariat"
 									width="294"
 									height="171"
@@ -125,7 +136,7 @@ export default function Labels() {
 								et préalables.
 							</p>
 						</ModalBody>
-						<ModalFooter className="border-top-0">
+						<ModalFooter className="border-top-0 justify-content-center">
 							<Button onClick={toggle}>Fermer</Button>
 						</ModalFooter>
 					</Modal>

@@ -9,7 +9,6 @@ import Container from '../components/Container';
 import FAQCollapse from '../components/FAQCollapse';
 import Title from '../components/Title';
 import StyledLink from '../components/StyledLink';
-import FAQImage from '../public/assets/images/faq.jpg';
 
 // Style
 const FlexContainer = styled(Col)`
@@ -66,7 +65,12 @@ export default function FAQ() {
 				</Col>
 				<FlexContainer>
 					<ImageContainer className="d-none d-lg-block">
-						<Image src={FAQImage} alt="faq illustration" widht="700" height="1034" />
+						<Image
+							src="/assets/images/faq.jpg"
+							alt="faq illustration"
+							width="700"
+							height="1034"
+						/>
 					</ImageContainer>
 				</FlexContainer>
 			</Row>

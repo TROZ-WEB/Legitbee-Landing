@@ -1,11 +1,7 @@
 // Dependencies
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
-
-if (typeof window === 'undefined') {
-	global.window = {};
-}
 
 // Components
 import Title from '../components/Title';
@@ -58,10 +54,14 @@ import Content from '../public/assets/data/content.json';
 // Render
 export default function How() {
 	const [Xpos, setXpos] = useState(0);
-	// const [sliderTop, setSliderTop] = useState(0);
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-	const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+	const [windowWidth, setWindowWidth] = useState(null);
+	const [windowHeight, setWindowHeight] = useState(null);
 	const [position, setPosition] = useState('');
+
+	useEffect(() => {
+		setWindowWidth(window.innerWidth);
+		setWindowHeight(window.innerHeight);
+	}, []);
 
 	let section = useRef();
 	let slider = useRef();

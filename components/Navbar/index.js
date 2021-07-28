@@ -9,14 +9,9 @@ import Image from 'next/image';
 import Button from '../Button';
 import NavLink from './NavLink';
 import Hamburger from './Hamburger';
-import Logo from '../../public/assets/images/logo.svg';
 
 // Functions
 import useEvent from '../../functions/useEvent';
-
-if (typeof window === 'undefined') {
-	global.window = {};
-}
 
 // Style
 const NavbarContainer = styled(Nav)`
@@ -90,7 +85,12 @@ export default function Navbar({ active }) {
 			<Col xs={6} md={2}>
 				<NavLink to="/">
 					<ImageContainer>
-						<Image src={Logo} alt="logo" width="413.246" height="128.353" />
+						<Image
+							src="/assets/images/logo.svg"
+							alt="logo"
+							width="413.246"
+							height="128.353"
+						/>
 					</ImageContainer>
 				</NavLink>
 			</Col>

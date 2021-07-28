@@ -11,7 +11,7 @@ import StyledLink from '../../components/StyledLink';
 export default function ReportDeath() {
 	return (
 		<>
-			{/* <Navbar /> */}
+			<Navbar />
 			<Container>
 				<Banner>
 					<h1 className="mb-2">Signaler un décès</h1>
@@ -27,7 +27,7 @@ export default function ReportDeath() {
 					afin que nous puissions vous assister dans les plus brefs délais.
 				</p>
 			</Container>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

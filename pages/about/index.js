@@ -9,14 +9,14 @@ import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
-import Guillaume from '../../public/assets/images/about/guillaume.jpg';
-import Pierre from '../../public/assets/images/about/pierre.jpg';
 
 // Style
 const ImageContainer = styled.div`
 	width: 15rem;
+	height: 15rem;
 	border-radius: 2rem;
 	${boxShadow}
+	overflow: hidden;
 `;
 
 const StyledCol = styled(Col)`
@@ -56,10 +56,10 @@ export default function About() {
 					<StyledCol xs={12} md={6}>
 						<ImageContainer>
 							<Image
-								src={Guillaume}
+								src="/assets/images/about/guillaume.jpg"
 								alt="Guillaume Parisot"
-								width="200"
-								height="200"
+								width="300"
+								height="300"
 							/>
 						</ImageContainer>
 						<h2 className="my-1">Guillaume Parisot</h2>
@@ -67,7 +67,12 @@ export default function About() {
 					</StyledCol>
 					<StyledCol xs={12} md={6}>
 						<ImageContainer>
-							<Image src={Pierre} alt="Pierre Delannoy" width="200" height="200" />
+							<Image
+								src="/assets/images/about/pierre.jpg"
+								alt="Pierre Delannoy"
+								width="300"
+								height="300"
+							/>
 						</ImageContainer>
 						<h2 className="my-1">Pierre Delannoy</h2>
 						<p>CTO et co-fondateur</p>

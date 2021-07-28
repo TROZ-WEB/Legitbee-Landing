@@ -6,11 +6,6 @@ import Image from 'next/image';
 // Components
 import Container from '../components/Container';
 import SimpleBox from '../components/SimpleBox';
-import Accompagnement from '../public/assets/images/accompagnement.svg';
-import Securite from '../public/assets/images/securite.svg';
-import Protection from '../public/assets/images/protection.svg';
-import Conformite from '../public/assets/images/conformite.svg';
-import EngagementsImage from '../public/assets/images/engagements.jpg';
 
 // Style
 const IconContainer = styled.div`
@@ -52,7 +47,12 @@ export default function Engagements() {
 			<Row>
 				<Col xs={12} lg={5} className="text-center">
 					<ImageContainer className="mb-2 mb-lg-0">
-						<Image src={EngagementsImage} alt="engagements" widht="700" height="579" />
+						<Image
+							src="/assets/images/engagements.jpg"
+							alt="engagements"
+							width="700"
+							height="579"
+						/>
 					</ImageContainer>
 				</Col>
 				<Col>
@@ -63,7 +63,7 @@ export default function Engagements() {
 									<>
 										<IconContainer>
 											<Image
-												src={Accompagnement}
+												src="/assets/images/accompagnement.svg"
 												alt="Accompagnement"
 												width="41.234"
 												height="50.309"
@@ -81,7 +81,7 @@ export default function Engagements() {
 									<>
 										<IconContainer>
 											<Image
-												src={Securite}
+												src="/assets/images/securite.svg"
 												alt="Sécurité"
 												width="39"
 												height="47.012"
@@ -99,7 +99,7 @@ export default function Engagements() {
 									<>
 										<IconContainer>
 											<Image
-												src={Protection}
+												src="/assets/images/protection.svg"
 												alt="Protection"
 												width="42"
 												height="42"
@@ -117,7 +117,7 @@ export default function Engagements() {
 									<>
 										<IconContainer>
 											<Image
-												src={Conformite}
+												src="/assets/images/conformite.svg"
 												alt="Conformité"
 												width="42"
 												height="38.407"

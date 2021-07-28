@@ -7,7 +7,6 @@ import Image from 'next/image';
 import Container from './Container';
 import StyledLink from './StyledLink';
 import IconLink from './IconLink';
-import Logo from '../public/assets/images/logo.svg';
 
 // SVG
 import Linkedin from './Svg/Linkedin';
@@ -46,7 +45,12 @@ export default function Footer() {
 			<FooterContainer>
 				<StyledCol xs={12} md={4}>
 					<ImageContainer>
-						<Image src={Logo} alt="logo" width="413.246" height="128.353" />
+						<Image
+							src="/assets/images/logo.svg"
+							alt="logo"
+							width="413.246"
+							height="128.353"
+						/>
 					</ImageContainer>
 					<SocialContainer>
 						<IconLink href="https://www.linkedin.com/company/legitbee/about/" blank>

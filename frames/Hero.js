@@ -1,13 +1,15 @@
 // Dependencies
+import { useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 import Image from 'next/image';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 // Components
 import Container from '../components/Container';
 import List from '../components/List';
 import Button from '../components/Button';
-import HeroImage from '../public/assets/images/hero.jpg';
+import Pricing from '../components/Pricing';
 
 // Style
 const ImageContainer = styled.div`
@@ -44,8 +46,26 @@ const TextContainer = styled.div`
 	max-width: 30rem;
 `;
 
+const StyledModal = styled(Modal)`
+	&.modal-dialog {
+		width: 81.25rem;
+		max-width: 90vw;
+		position: relative;
+	}
+`;
+
+const CloseButton = styled(Button)`
+	width: 1rem;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+`;
+
 // Render
 export default function Hero() {
+	const [modal, setModal] = useState(false);
+	const toggle = () => setModal(!modal);
+
 	return (
 		<Container>
 			<StyledRow>
@@ -56,7 +76,7 @@ export default function Hero() {
 				>
 					<TextContainer>
 						<h1 className="mb-2">
-							Rien ne se perd <br />
+							Rien ne se perd, <br />
 							<mark>tout se transmet</mark>
 						</h1>
 						<List
@@ -70,7 +90,7 @@ export default function Hero() {
 							Tout est organisé, sécurisé et transmis le moment venu aux bénéficiaires
 							de votre choix.
 						</p>
-						<Button to="https://app.legitbee.com/auth/login" className="big">
+						<Button onClick={toggle} className="big">
 							Préparer ma succession
 						</Button>
 					</TextContainer>
@@ -81,10 +101,24 @@ export default function Hero() {
 					lg={{ size: 6, order: 2 }}
 				>
 					<ImageContainer>
-						<Image src={HeroImage} alt="hero" width="900" height="1147" />
+						<Image src="/assets/images/hero.jpg" alt="hero" width="900" height="1147" />
 					</ImageContainer>
 				</RightCol>
 			</StyledRow>
+
+			<StyledModal isOpen={modal} toggle={toggle}>
+				<ModalBody className="d-flex flex-column align-items-center mb-3">
+					<CloseButton className="nobutton" onClick={toggle}>
+						<Image
+							src="/assets/images/close.svg"
+							alt="fermer"
+							width="100"
+							height="100"
+						/>
+					</CloseButton>
+					<Pricing />
+				</ModalBody>
+			</StyledModal>
 		</Container>
 	);
 }

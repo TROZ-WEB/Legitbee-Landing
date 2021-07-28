@@ -7,12 +7,6 @@ import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
-import CEHDF from '../public/assets/images/partners/cehdf.png';
-import Euratechnologies from '../public/assets/images/partners/euratechnologies.png';
-import Nataxis from '../public/assets/images/partners/nataxis.png';
-import NotairesPdc from '../public/assets/images/partners/notaires-pdc.png';
-import Hodefi from '../public/assets/images/partners/hodefi.png';
-import LeVillage from '../public/assets/images/partners/le-village.png';
 
 // Style
 const StyledSlide = styled(Slide)`
@@ -67,13 +61,18 @@ export default function Partners() {
 						<Slider>
 							<StyledSlide index={0}>
 								<ImageContainer>
-									<Image src={CEHDF} alt="cehdf" width="200" height="44" />
+									<Image
+										src="/assets/images/partners/cehdf.png"
+										alt="cehdf"
+										width="200"
+										height="44"
+									/>
 								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={1}>
 								<ImageContainer>
 									<Image
-										src={Euratechnologies}
+										src="/assets/images/partners/euratechnologies.png"
 										alt="euratechnologies"
 										width="200"
 										height="77"
@@ -82,13 +81,18 @@ export default function Partners() {
 							</StyledSlide>
 							<StyledSlide index={2}>
 								<ImageContainer>
-									<Image src={Nataxis} alt="nataxis" width="200" height="64" />
+									<Image
+										src="/assets/images/partners/nataxis.png"
+										alt="nataxis"
+										width="200"
+										height="64"
+									/>
 								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={3}>
 								<ImageContainer>
 									<Image
-										src={NotairesPdc}
+										src="/assets/images/partners/notaires-pdc.png"
 										alt="notaires-pdc"
 										width="200"
 										height="76"
@@ -97,13 +101,18 @@ export default function Partners() {
 							</StyledSlide>
 							<StyledSlide index={4}>
 								<ImageContainer>
-									<Image src={Hodefi} alt="hodefi" width="200" height="54" />
+									<Image
+										src="/assets/images/partners/hodefi.png"
+										alt="hodefi"
+										width="200"
+										height="54"
+									/>
 								</ImageContainer>
 							</StyledSlide>
 							<StyledSlide index={5}>
 								<ImageContainer>
 									<Image
-										src={LeVillage}
+										src="/assets/images/partners/le-village.png"
 										alt="le-village"
 										width="200"
 										height="144"

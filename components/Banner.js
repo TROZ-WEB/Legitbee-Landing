@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 // Components
-import Delimitation from '../public/assets/images/delimitation.svg';
 
 // Style
 const Container = styled.div`
@@ -21,7 +20,12 @@ export default function Banner(props) {
 		<Container>
 			{props.children}
 			<ImageContainer>
-				<Image src={Delimitation} alt="delimitation" width="1212.623" height="45.656" />
+				<Image
+					src="/assets/images/delimitation.svg"
+					alt="delimitation"
+					width="1212.623"
+					height="45.656"
+				/>
 			</ImageContainer>
 		</Container>
 	);
