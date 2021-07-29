@@ -102,9 +102,9 @@ const Price = styled.div`
 import Content from '../../../../public/assets/data/content.json';
 
 // Render
-export default function Table() {
+export default function Table({ className }) {
 	return (
-		<Container>
+		<Container className={className}>
 			<StyledUl white>
 				<StyledLi>
 					<h2>

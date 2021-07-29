@@ -44,31 +44,46 @@ const Title = styled.h1`
 export default function Solution() {
 	return (
 		<Container>
-			<Title className="d-none d-md-block">
+			<Title>
 				Préservez <br />
 				<TextLoop mask="true" interval="1500">
 					<h1>
-						<mark>ce(ux) que vous avez de plus cher(s)</mark>
+						<mark>
+							ce(ux) que vous <br className="d-md-none" />
+							avez de plus cher(s)
+						</mark>
 					</h1>
 					<h1>
-						<mark>vos héritiers</mark>
+						<mark>
+							vos <br className="d-md-none" />
+							héritiers
+						</mark>
 					</h1>
 					<h1>
-						<mark>vos souvenirs</mark>
+						<mark>
+							vos <br className="d-md-none" />
+							souvenirs
+						</mark>
 					</h1>
 					<h1>
-						<mark>votre héritage numérique</mark>
+						<mark>
+							votre héritage <br className="d-md-none" />
+							numérique
+						</mark>
 					</h1>
 					<h1>
-						<mark>votre patrimoine personnel</mark>
+						<mark>
+							votre patrimoine <br className="d-md-none" />
+							personnel
+						</mark>
 					</h1>
 					<h1>
-						<mark>votre patrimoine professionnel</mark>
+						<mark>
+							votre patrimoine <br className="d-md-none" />
+							professionnel
+						</mark>
 					</h1>
 				</TextLoop>
-			</Title>
-			<Title className="d-block d-md-none">
-				Préservez <mark>votre patrimoine traditionnel</mark>
 			</Title>
 			<ImageBox
 				className="mt-5"
