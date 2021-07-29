@@ -8,7 +8,7 @@ import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
-import Image from '../components/Image';
+import Image from '../../components/Image';
 
 // Style
 const ImageContainer = styled.div`

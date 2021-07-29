@@ -142,20 +142,10 @@ export default function Labels() {
 								/>
 							</CSNContainer>
 							<p className="mb-1">
-								Notre solution est labellisée pour un développement éthique et du
-								numérique notarial. Nous contribuons ainsi au développement vertueux
-								d’un écosystème d’acteurs qui s’inscrivent dans les valeurs de la
-								profession.
-							</p>
-							<p className="mb-1">
 								La labellisation de notre société en tant que solutions numériques
 								pour les notaires et leurs clients a été prononcée par le président
 								du Conseil Supérieur du Notariat pour la période du 28 Juin 2021 au
 								27 Juin 2024.
-							</p>
-							<p>
-								Le périmètre audité inclus les activités de formalités postérieures
-								et préalables.
 							</p>
 						</ModalBody>
 						<ModalFooter className="border-top-0 justify-content-center">

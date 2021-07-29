@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 
 // Components
-import Image from '../components/Image';
+import Image from '../../components/Image';
 import Navbar from '../../components/Navbar';
 import Title from '../../components/Title';
 import IconBox from '../../components/IconBox';
