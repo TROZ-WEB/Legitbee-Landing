@@ -90,6 +90,7 @@ export default function Navbar({ active }) {
 							alt="logo"
 							width="413.246"
 							height="128.353"
+							loading="eager"
 						/>
 					</ImageContainer>
 				</NavLink>

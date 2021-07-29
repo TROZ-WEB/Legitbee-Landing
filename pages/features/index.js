@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 import { boxShadow } from '../../Theme';
-import Image from 'next/image';
 
 // Components
 import Navbar from '../../components/Navbar';
@@ -10,6 +9,7 @@ import List from '../../components/List';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
 import Banner from '../../components/Banner';
+import Image from '../components/Image';
 
 // Style
 const ImageContainer = styled.div`

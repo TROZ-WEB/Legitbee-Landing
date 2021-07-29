@@ -1,8 +1,8 @@
 // Dependencies
 import styled from 'styled-components';
-import Image from 'next/image';
 
 // Components
+import Image from '../components/Image';
 
 // Style
 const Container = styled.div`

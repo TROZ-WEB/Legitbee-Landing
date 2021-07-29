@@ -2,9 +2,9 @@
 import styled from 'styled-components';
 import { boxShadow } from '../Theme';
 import { Row, Col } from 'reactstrap';
-import Image from 'next/image';
 
 // Components
+import Image from '../components/Image';
 
 // Style
 const Box = styled(Row)`

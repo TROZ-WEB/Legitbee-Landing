@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import FAQCollapse from '../components/FAQCollapse';
 import Title from '../components/Title';
 import StyledLink from '../components/StyledLink';
+import Image from '../components/Image';
 
 // Style
 const FlexContainer = styled(Col)`

@@ -1,12 +1,12 @@
 // Dependencies
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
-import Image from 'next/image';
 
 // Components
 import Container from './Container';
 import StyledLink from './StyledLink';
 import IconLink from './IconLink';
+import Image from '../components/Image';
 
 // SVG
 import Linkedin from './Svg/Linkedin';

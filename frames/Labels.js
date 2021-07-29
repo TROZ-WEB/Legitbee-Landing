@@ -3,12 +3,12 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
 import { Modal, ModalBody, ModalFooter } from 'reactstrap';
-import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import StyledLink from '../components/StyledLink';
 import Button from '../components/Button';
+import Image from '../components/Image';
 
 // Style
 const IconContainer = styled.div`
@@ -26,18 +26,18 @@ const Background = styled.div`
 `;
 
 const TitleH2Big = styled.h2`
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  @media (max-width: ${(props) => props.theme.sm}) {
-		display: none
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media (max-width: ${(props) => props.theme.sm}) {
+		display: none;
 	}
 `;
 
 const TitleH2Small = styled.h2`
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  @media (min-width: ${(props) => props.theme.sm}) {
-		display: none
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media (min-width: ${(props) => props.theme.sm}) {
+		display: none;
 	}
 `;
 
@@ -48,7 +48,7 @@ const StyledCol = styled(Col)`
 
 	@media (max-width: ${(props) => props.theme.sm}) {
 		padding-bottom: 2rem;
-    justify-content: start;
+		justify-content: start;
 	}
 `;
 
@@ -79,9 +79,10 @@ export default function Labels() {
 					<TitleH2Big>
 						Audité et labellisé par le <mark>Conseil Supérieur du Notariat</mark>
 					</TitleH2Big>
-          <TitleH2Small>
+					<TitleH2Small>
 						Audité et labellisé par le
-            <br/><mark>Conseil Supérieur du Notariat</mark>
+						<br />
+						<mark>Conseil Supérieur du Notariat</mark>
 					</TitleH2Small>
 					<Row>
 						<StyledCol xs={12} md={4}>

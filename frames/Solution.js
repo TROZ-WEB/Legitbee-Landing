@@ -1,15 +1,12 @@
 // Dependencies
 import styled from 'styled-components';
 import TextLoop from 'react-text-loop';
-import Image from 'next/image';
 
 // Components
+import Image from '../components/Image';
 import Container from '../components/Container';
 import ImageBox from '../components/ImageBox';
-import Line1Img from '../public/assets/images/line-1.svg';
-import Line2Img from '../public/assets/images/line-2.svg';
-import Line3Img from '../public/assets/images/line-3.svg';
-import Line4Img from '../public/assets/images/line-4.svg';
+
 // Style
 const Line1Container = styled.div`
 	position: absolute;
@@ -100,7 +97,12 @@ export default function Solution() {
 				caption="Désormais, tous les documents nécessaires à la gestion de votre succession : vos informations administratives et documents importants, vos consignes et instructions sont organisés, sécurisés et transmis rapidement à vos proches."
 			/>
 			<Line1Container className="d-none d-xl-block">
-				<Image src={Line1Img} alt="decoration" width="493.634" height="527.209" />
+				<Image
+					src="/assets/images/line-1.svg"
+					alt="decoration"
+					width="493.634"
+					height="527.209"
+				/>
 			</Line1Container>
 			<ImageBox
 				inversed="true"
@@ -117,7 +119,12 @@ export default function Solution() {
 				caption="Vos actifs sous toutes leurs formes (titres et placements, immobilier, collections, cryptomonnaies, neobanques, jeux et paris, trading) sont intégrés à la succession : tout est documenté, rien n'est oublié."
 			/>
 			<Line2Container className="d-none d-xl-block">
-				<Image src={Line2Img} alt="decoration" width="874.952" height="603.448" />
+				<Image
+					src="/assets/images/line-2.svg"
+					alt="decoration"
+					width="874.952"
+					height="603.448"
+				/>
 			</Line2Container>
 			<ImageBox
 				src="/assets/images/demarches-administratives.jpg"
@@ -134,7 +141,12 @@ export default function Solution() {
 			/>
 
 			<Line3Container className="d-none d-xl-block">
-				<Image src={Line3Img} alt="decoration" width="563.329" height="367.126" />
+				<Image
+					src="/assets/images/line-3.svg"
+					alt="decoration"
+					width="563.329"
+					height="367.126"
+				/>
 			</Line3Container>
 			<ImageBox
 				inversed="true"
@@ -151,7 +163,12 @@ export default function Solution() {
 				caption="Vos proches veulent conserver votre souvenir et celui de votre famille. Transmettez-leur tout ce que vous souhaitez leur confier : photos, vidéos, correspondances, textes, histoires, généalogie… Vous pouvez également préciser vos souhaits quant au devenir de vos comptes en ligne."
 			/>
 			<Line4Container className="d-none d-xl-block">
-				<Image src={Line4Img} alt="decoration" width="1470.438" height="748.791" />
+				<Image
+					src="/assets/images/line-4.svg"
+					alt="decoration"
+					width="1470.438"
+					height="748.791"
+				/>
 			</Line4Container>
 		</Container>
 	);

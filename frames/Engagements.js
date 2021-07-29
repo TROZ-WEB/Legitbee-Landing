@@ -1,11 +1,11 @@
 // Dependencies
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
 import SimpleBox from '../components/SimpleBox';
+import Image from '../components/Image';
 
 // Style
 const IconContainer = styled.div`

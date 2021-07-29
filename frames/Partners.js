@@ -3,10 +3,10 @@ import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
-import Image from 'next/image';
 
 // Components
 import Container from '../components/Container';
+import Image from '../components/Image';
 
 // Style
 const StyledSlide = styled(Slide)`

@@ -1,10 +1,10 @@
 // Dependencies
 import Info from './Info';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 // Components
 import Button from '../../../../components/Button';
+import Image from '../../../../components/Image';
 
 // Style
 const Checkmark = styled.div`

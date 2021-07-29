@@ -2,14 +2,14 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap';
-import Image from 'next/image';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalBody } from 'reactstrap';
 
 // Components
 import Container from '../components/Container';
 import List from '../components/List';
 import Button from '../components/Button';
 import Pricing from '../components/Pricing';
+import Image from '../components/Image';
 
 // Style
 const ImageContainer = styled.div`
