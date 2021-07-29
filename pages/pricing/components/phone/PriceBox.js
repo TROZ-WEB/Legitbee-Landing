@@ -5,7 +5,6 @@ import { boxShadow } from '../../../../Theme';
 // Components
 import List from './List';
 import Button from '../../../../components/Button';
-import Price from '../Price';
 
 // Style
 const Box = styled.div`
@@ -18,27 +17,45 @@ const Box = styled.div`
 	position: relative;
 	padding: 2rem 1rem;
 	margin-top: 4rem;
-	text-align: center;
 	height: auto;
 `;
 
 const Title = styled.h2`
-	position: relative;
-	left: -3rem;
 	margin-bottom: 2rem;
+`;
+
+const Price = styled.div`
+	background-color: ${(props) => props.theme.primary};
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 4rem;
+	margin: 1rem -1rem;
+
+	h2,
+	p {
+		color: white;
+	}
 `;
 
 // Render
 export default function PriceBox({ monthPrice, yearPrice, title, caption, list, link, ...props }) {
 	return (
 		<Box>
-			<Price monthPrice={monthPrice} yearPrice={yearPrice} />
 			<Title>
 				<mark>{title}</mark>
 			</Title>
-			<p className="mb-2">{caption}</p>
+			<p className="mb-1">{caption}</p>
+			<Price>
+				<h2>{monthPrice}</h2>
+				<p>{yearPrice}</p>
+			</Price>
 			<List list={list} />
-			<Button to={link}>Découvrir</Button>
+			<div className="text-center">
+				<Button to={link}>Découvrir</Button>
+			</div>
 		</Box>
 	);
 }
