@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { boxShadow } from '../../Theme';
 import { Navbar as Nav, Row, Col, Collapse } from 'reactstrap';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Components
 import Button from '../Button';
@@ -49,12 +50,15 @@ const LinksContainer = styled(Col)`
 
 const ImageContainer = styled.div`
 	width: 9rem;
+	display: flex;
+	align-items: center;
 `;
 
 const StyledCollapse = styled(Collapse)`
 	@media (max-width: ${(props) => props.theme.md}) {
 		width: 100vw;
-		position: 3.75rem;
+		position: absolute;
+		top: 3.75rem;
 		left: 0rem;
 		padding: 2rem;
 		background-color: white;
@@ -83,7 +87,7 @@ export default function Navbar({ active }) {
 	return (
 		<NavbarContainer className={`${showShadow && 'navshadow'}`} expand="lg">
 			<Col xs={6} md={2}>
-				<NavLink to="/">
+				<Link href="/" passHref>
 					<ImageContainer>
 						<Image
 							src="/assets/images/logo.svg"
@@ -93,7 +97,7 @@ export default function Navbar({ active }) {
 							loading="eager"
 						/>
 					</ImageContainer>
-				</NavLink>
+				</Link>
 			</Col>
 			<Col className="d-block d-lg-none d-flex justify-content-end">
 				<Hamburger onClick={handleToggleMenu} isMenuOpen={isMenuOpen} />
