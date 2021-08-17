@@ -24,6 +24,7 @@ const Box = styled.div`
 
 	@media (max-width: ${(props) => props.theme.sm}) {
 		height: auto;
+		margin-right: auto;
 	}
 `;
 
@@ -34,14 +35,6 @@ const Title = styled.h2`
 	justify-content: center;
 	margin-bottom: 0.5rem;
 `;
-
-// const Number = styled.h1`
-// 	height: 3rem;
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	margin-bottom: 0.5rem;
-// `;
 
 // Render
 export default function NumberBox({ number, title, caption }) {

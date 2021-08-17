@@ -10,10 +10,12 @@ const SLink = styled.a`
 	color: ${(props) => props.theme.primary};
 	text-decoration: none;
 	transition: all 0.2s;
-	display: block;
 	position: relative;
 	width: fit-content;
 	display: inline;
+	border: 0rem;
+	background-color: transparent;
+	padding: 0rem;
 
 	&:hover,
 	&:focus {
@@ -25,7 +27,7 @@ const SLink = styled.a`
 	}
 
 	&.arrow::after {
-		content: '▶';
+		content: '►';
 		${fontSize(12)}
 		transition: all 0.2s;
 		position: absolute;

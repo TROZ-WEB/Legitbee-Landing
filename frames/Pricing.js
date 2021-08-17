@@ -49,7 +49,6 @@ const StyledArrowLink = styled(StyledLink)`
 	z-index: 150;
 
 	@media (max-width: ${(props) => props.theme.sm}) {
-		position: relative;
 		bottom: auto;
 		margin-top: 1rem;
 	}
