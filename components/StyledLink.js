@@ -16,6 +16,7 @@ const SLink = styled.a`
 	border: 0rem;
 	background-color: transparent;
 	padding: 0rem;
+	-webkit-appearance: none !important;
 
 	&:hover,
 	&:focus {
@@ -77,7 +78,7 @@ export default function StyledLink({ className, href, blank, onClick, ...props }
 					</SLink>
 				</Link>
 			) : (
-				<SLink className={className} onClick={onClick} type="button">
+				<SLink className={className} onClick={onClick} as="button" type="button">
 					{props.children}
 				</SLink>
 			)}

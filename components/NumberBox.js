@@ -25,6 +25,7 @@ const Box = styled.div`
 	@media (max-width: ${(props) => props.theme.sm}) {
 		height: auto;
 		margin-right: auto;
+		max-width: 25rem;
 	}
 `;
 
@@ -32,7 +33,7 @@ const Title = styled.h2`
 	height: 3rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	margin-bottom: 0.5rem;
 `;
 
